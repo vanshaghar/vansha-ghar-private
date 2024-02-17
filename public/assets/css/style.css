@@ -2081,7 +2081,7 @@ button {
   position: relative;
   z-index: 1;
   padding: 40px 45px;
-  background-color: #FDF1ED;
+  background-color: #E8F4EA;
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-out 0s;
 }
@@ -3471,7 +3471,7 @@ form.reservation-form .nice-select ul.list {
   margin-inline-start: auto;
 }
 .accordion-card .accordion-header h3.accordion-title[aria-expanded=true] {
-  background-color: #FDF1ED;
+  background-color: #E8F4EA;
 }
 .accordion-card .accordion-header h3.accordion-title[aria-expanded=true]:after {
   content: "\f063";
@@ -4278,7 +4278,7 @@ form.reservation-form .nice-select ul.list {
 
 .post-author-box {
   padding: 40px 40px 35px;
-  background-color: #FDF1ED;
+  background-color: #E8F4EA;
   border: 1px solid rgba(14, 19, 23, 0.1);
 }
 @media (max-width: 767px) {
@@ -4383,7 +4383,7 @@ form.reservation-form .nice-select ul.list {
 }
 
 .comments-area {
-  background-color: #FDF1ED;
+  background-color: #E8F4EA;
   border: 1px solid rgba(14, 19, 23, 0.1);
   padding: 52px 40px 30px;
 }
@@ -4667,7 +4667,7 @@ form.reservation-form .nice-select ul.list {
 }
 
 .contact-form-one .form_control {
-  background-color: #FDF1ED;
+  background-color: #E8F4EA;
   border: 1px solid rgba(14, 19, 23, 0.1);
   border-radius: 5px;
   height: 70px;
