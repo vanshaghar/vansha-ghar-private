@@ -217,7 +217,7 @@ const Index = () => {
               {/*=== About Content Box ===*/}
               <div className="about-content-box content-box-gap mb-40 wow fadeInLeft">
                 <div className="section-title section-title-left mb-30">
-                  <span className="sub-title">About Qichen</span>
+                  <span className="sub-title">About Vansha Ghar</span>
                   <h2>
                     The Best Tasty &amp; Yamee Food and Chief Based on Italiano
                   </h2>
