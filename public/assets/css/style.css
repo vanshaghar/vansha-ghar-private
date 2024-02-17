@@ -1101,7 +1101,7 @@ button {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   display: block;
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 .header-navigation.breakpoint-on .nav-menu.menu-on {
   left: 0;
