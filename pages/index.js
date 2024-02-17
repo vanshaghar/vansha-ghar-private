@@ -8,7 +8,7 @@ const Index = () => {
     <Layout header={1} footer={1}>
       {/*=== Start Banner Section ===*/}
       <section className="banner-one p-r z-1">
-        <div className="shape shape-one">
+        {/* <div className="shape shape-one">
           <span>
             <img src="assets/images/hero/hero-shape-1.png" alt="shape" />
           </span>
@@ -17,7 +17,7 @@ const Index = () => {
           <span>
             <img src="assets/images/hero/hero-shape-2.png" alt="shape" />
           </span>
-        </div>
+        </div> */}
         <div className="shape line-shape-one">
           <span>
             <img src="assets/images/shape/line-1.png" alt="shape" />
@@ -28,7 +28,8 @@ const Index = () => {
             <div className="col-lg-6 order-lg-1 order-2">
               {/*=== Hero Content ===*/}
               <div className="hero-content mb-40 pr-lg-40">
-                <h1 className="wow fadeInUp">Crispy Chicken Burgers</h1>
+                <h1 className="wow fadeInUp">Kurkure
+                  mo-mo</h1>
                 <p className="wow fadeInDown">
                   Sit amet consectetur adipiscing Malesuada morbigrave ullamore
                   alesuada nec pulvinar nisle
@@ -49,7 +50,7 @@ const Index = () => {
             <div className="col-lg-6 order-lg-2 order-1">
               {/*=== Hero Image ===*/}
               <div className="hero-image-box mb-40 wow fadeInRight">
-                <img src="assets/images/hero/hero-1.jpg" alt="Hero Image" />
+                <img src="assets/images/hero/hero-1.png" alt="Hero Image" />
               </div>
             </div>
           </div>
