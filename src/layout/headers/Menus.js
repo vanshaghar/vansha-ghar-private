@@ -5,57 +5,22 @@ const DeskTopMenus = () => {
   return (
     <nav className="main-menu desktop-menu">
       <ul>
-        <li className="menu-item has-children">
-          <a href="#">
+        <li className="menu-item ">
+          <a href="/">
             Home
-            <span className="dd-trigger">
-              <i className="far fa-angle-down" />
-            </span>
           </a>
-          <ul className="sub-menu">
-            <li>
-              <Link legacyBehavior href="/">
-                Home Restaurant
-              </Link>
-            </li>
-            <li>
-              <Link legacyBehavior href="index-2">
-                Home Fastfood
-              </Link>
-            </li>
-            <li>
-              <Link legacyBehavior href="index-3">
-                Home Seafood
-              </Link>
-            </li>
-          </ul>
         </li>
-        <li className="menu-item has-children">
+        <li className="menu-item ">
           <a href="#">
             Menu
-            <span className="dd-trigger">
-              <i className="far fa-angle-down" />
-            </span>
           </a>
-          <ul className="sub-menu">
-            <li>
-              <Link legacyBehavior href="menu-fastfood">
-                Menu Fastfood
-              </Link>
-            </li>
-            <li>
-              <Link legacyBehavior href="menu-seafood">
-                Menu Seafood
-              </Link>
-            </li>
-          </ul>
         </li>
         <li className="menu-item">
           <Link legacyBehavior href="about">
             About
           </Link>
         </li>
-        <li className="menu-item has-children">
+        {/* <li className="menu-item has-children">
           <a href="#">
             Shop
             <span className="dd-trigger">
@@ -74,26 +39,11 @@ const DeskTopMenus = () => {
               </Link>
             </li>
           </ul>
-        </li>
-        <li className="menu-item has-children">
-          <a href="#">
-            Blog
-            <span className="dd-trigger">
-              <i className="far fa-angle-down" />
-            </span>
+        </li> */}
+        <li className="menu-item ">
+          <a href="blog-standard">
+            Blogs
           </a>
-          <ul className="sub-menu">
-            <li>
-              <Link legacyBehavior href="blog-standard">
-                Blog Standard
-              </Link>
-            </li>
-            <li>
-              <Link legacyBehavior href="blog-details">
-                Blog Details
-              </Link>
-            </li>
-          </ul>
         </li>
         <li className="menu-item has-children">
           <a href="#">

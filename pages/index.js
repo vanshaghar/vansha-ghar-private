@@ -297,7 +297,7 @@ const Index = () => {
                         <a className="item-title">Hamburger</a>
                       </Link>
                       <span className="dot-border" />
-                      <span className="price">$25</span>
+                      <span className="price">AED 25</span>
                     </h3>
                     <p>Roasted langoustine, consommé</p>
                     <ul className="ratings">
@@ -335,7 +335,7 @@ const Index = () => {
                         <a className="item-title">Pizza</a>
                       </Link>
                       <span className="dot-border" />
-                      <span className="price">$63</span>
+                      <span className="price">AED 63</span>
                     </h3>
                     <p>Roasted langoustine, consommé</p>
                     <ul className="ratings">
@@ -373,7 +373,7 @@ const Index = () => {
                         <a className="item-title">Baked Chicken Wings</a>
                       </Link>
                       <span className="dot-border" />
-                      <span className="price">$199</span>
+                      <span className="price">AED 199</span>
                     </h3>
                     <p>Roasted langoustine, consommé</p>
                     <ul className="ratings">
@@ -411,7 +411,7 @@ const Index = () => {
                         <a className="item-title">Seafood Pizza</a>
                       </Link>
                       <span className="dot-border" />
-                      <span className="price">$352</span>
+                      <span className="price">AED 352</span>
                     </h3>
                     <p>Roasted langoustine, consommé</p>
                     <ul className="ratings">
@@ -462,7 +462,7 @@ const Index = () => {
                 <ul className="check-style-one">
                   <li>25 Years of Experience in Restaurant Services in USA</li>
                   <li>
-                    Any Kind Of Food Made For Customer and So Much Yamee $ Testy
+                    Any Kind Of Food Made For Customer and So Much Yamee AED  Testy
                   </li>
                 </ul>
                 <p>

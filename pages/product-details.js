@@ -123,7 +123,7 @@ const ProductsDetails = () => {
                           </Link>
                         </h6>
                         <span className="price">
-                          <span className="curreny">$</span>58.63
+                          <span className="curreny">AED </span>58.63
                         </span>
                       </div>
                     </li>
@@ -155,7 +155,7 @@ const ProductsDetails = () => {
                           </Link>
                         </h6>
                         <span className="price">
-                          <span className="curreny">$</span>83.25
+                          <span className="curreny">AED </span>83.25
                         </span>
                       </div>
                     </li>
@@ -187,7 +187,7 @@ const ProductsDetails = () => {
                           </Link>
                         </h6>
                         <span className="price">
-                          <span className="curreny">$</span>83.25
+                          <span className="curreny">AED </span>83.25
                         </span>
                       </div>
                     </li>
@@ -222,7 +222,7 @@ const ProductsDetails = () => {
                       <div className="product-info pl-lg-70 mb-50 wow fadeInRight">
                         <h3 className="title">Italian FastFoods</h3>
                         <span className="price">
-                          <span className="curreny">$</span>59.56
+                          <span className="curreny">AED </span>59.56
                         </span>
                         <ul className="ratings">
                           <li>
@@ -530,7 +530,7 @@ const ProductsDetails = () => {
                   </Link>
                 </h3>
                 <span className="price">
-                  <span className="curreny">$</span>253.59
+                  <span className="curreny">AED </span>253.59
                 </span>
               </div>
             </div>
@@ -566,7 +566,7 @@ const ProductsDetails = () => {
                   </Link>
                 </h3>
                 <span className="price">
-                  <span className="curreny">$</span>152.53
+                  <span className="curreny">AED </span>152.53
                 </span>
               </div>
             </div>
@@ -601,7 +601,7 @@ const ProductsDetails = () => {
                   </Link>
                 </h3>
                 <span className="price">
-                  <span className="curreny">$</span>85.59
+                  <span className="curreny">AED </span>85.59
                 </span>
               </div>
             </div>
@@ -637,7 +637,7 @@ const ProductsDetails = () => {
                   </Link>
                 </h3>
                 <span className="price">
-                  <span className="curreny">$</span>240.59
+                  <span className="curreny">AED </span>240.59
                 </span>
               </div>
             </div>

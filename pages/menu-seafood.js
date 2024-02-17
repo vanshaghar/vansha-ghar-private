@@ -29,7 +29,7 @@ const MenuSeaFood = () => {
                       <a className="item-title">Red king Crab</a>
                     </Link>
                     <span className="dot-border" />
-                    <span className="price">$25</span>
+                    <span className="price">AED 25</span>
                   </h3>
                   <p>Roasted langoustine, consommé</p>
                   <ul className="ratings">
@@ -68,7 +68,7 @@ const MenuSeaFood = () => {
                       <a className="item-title">Alaskan king Crab</a>
                     </Link>
                     <span className="dot-border" />
-                    <span className="price">$73</span>
+                    <span className="price">AED 73</span>
                   </h3>
                   <p>Roasted langoustine, consommé</p>
                   <ul className="ratings">
@@ -107,7 +107,7 @@ const MenuSeaFood = () => {
                       <a className="item-title">Boston Lobster</a>
                     </Link>
                     <span className="dot-border" />
-                    <span className="price">$25</span>
+                    <span className="price">AED 25</span>
                   </h3>
                   <p>Roasted langoustine, consommé</p>
                   <ul className="ratings">
@@ -146,7 +146,7 @@ const MenuSeaFood = () => {
                       <a className="item-title">Boston Lobster</a>
                     </Link>
                     <span className="dot-border" />
-                    <span className="price">$34</span>
+                    <span className="price">AED 34</span>
                   </h3>
                   <p>Roasted langoustine, consommé</p>
                   <ul className="ratings">
@@ -185,7 +185,7 @@ const MenuSeaFood = () => {
                       <a className="item-title">Flat-lay Delicious</a>
                     </Link>
                     <span className="dot-border" />
-                    <span className="price">$49</span>
+                    <span className="price">AED 49</span>
                   </h3>
                   <p>Roasted langoustine, consommé</p>
                   <ul className="ratings">
@@ -224,7 +224,7 @@ const MenuSeaFood = () => {
                       <a className="item-title">Shrimp Food Prawns</a>
                     </Link>
                     <span className="dot-border" />
-                    <span className="price">$73</span>
+                    <span className="price">AED 73</span>
                   </h3>
                   <p>Roasted langoustine, consommé</p>
                   <ul className="ratings">
@@ -263,7 +263,7 @@ const MenuSeaFood = () => {
                       <a className="item-title">Steamed Crabs Dish</a>
                     </Link>
                     <span className="dot-border" />
-                    <span className="price">$25</span>
+                    <span className="price">AED 25</span>
                   </h3>
                   <p>Roasted langoustine, consommé</p>
                   <ul className="ratings">
@@ -302,7 +302,7 @@ const MenuSeaFood = () => {
                       <a className="item-title">Steamed Crabs</a>
                     </Link>
                     <span className="dot-border" />
-                    <span className="price">$73</span>
+                    <span className="price">AED 73</span>
                   </h3>
                   <p>Roasted langoustine, consommé</p>
                   <ul className="ratings">

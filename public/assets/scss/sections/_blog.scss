@@ -318,7 +318,7 @@
                     width: 40px;
                     height: 40px;
                     border-radius: 50%;
-                    background-color: rgba(223, 63, 0, 0.07);
+                    background-color: #E8F4EA;
                     font-size: 13px;
                     color: $heading;
                     @extend %flex-center;
@@ -537,7 +537,7 @@
 .sidebar-widget-area{
     & .sidebar-widget{
         padding: 27px 30px 30px;
-        background-color: rgba(223, 63, 0, 0.07);
+        background-color: #E8F4EA;
         border: 1px solid rgba(14, 19, 23, 0.1);
         border-radius: 5px;
         & h4.widget-title{
@@ -556,7 +556,7 @@
                 color: $heading;
             }
             & .form_control{
-                background-color: rgba(223, 63, 0, 0.07);
+                background-color: #E8F4EA;
                 border: 1px solid rgba(14, 19, 23, 0.1);
                 border-radius: 5px;
                 font-weight: 600;

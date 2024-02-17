@@ -11,7 +11,7 @@ const DefaultHeader = ({ openSearchModal }) => {
             <div className="col-lg-7">
               <div className="top-left">
                 <span className="text">
-                  Free delivery for all orders over $50. Order your food now!
+                  Free delivery for all orders over AED 50. Order your food now!
                 </span>
               </div>
             </div>
@@ -59,7 +59,7 @@ const DefaultHeader = ({ openSearchModal }) => {
               <Link legacyBehavior href="/">
                 <a className="brand-logo">
                   <img
-                    src="assets/images/logo/logo-white.png"
+                    src="assets/images/logo/logo-white.svg "
                     alt="Site Logo"
                   />
                 </a>
@@ -73,7 +73,7 @@ const DefaultHeader = ({ openSearchModal }) => {
                   <Link legacyBehavior href="/">
                     <a className="brand-logo">
                       <img
-                        src="assets/images/logo/logo-black.png"
+                        src="assets/images/logo/logo-white.svg"
                         alt="Site Logo"
                       />
                     </a>

@@ -13,7 +13,7 @@ const DefaultFooter = () => {
                   <Link legacyBehavior href="/">
                     <a className="footer-logo mb-30">
                       <img
-                        src="assets/images/logo/logo-white.png"
+                        src="assets/images/logo/logo-white.svg"
                         alt="Brand Logo"
                       />
                     </a>
@@ -128,7 +128,7 @@ const DefaultFooter = () => {
           <div className="row">
             <div className="col-lg-6">
               <div className="copyright-text">
-                <p>© 2023 Qichen, All Rights Reserved</p>
+                <p>© 2023 Vansha Ghar, All Rights Reserved</p>
               </div>
             </div>
             <div className="col-lg-6">

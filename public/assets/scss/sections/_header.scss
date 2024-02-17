@@ -389,7 +389,7 @@
         & .site-branding{
             & .brand-logo{
                 padding: 20px 35px;
-                background-color: $primary;
+                background-color: $white;
                 @media #{$xm}{
                     padding: 10px 15px;
                 }
@@ -405,7 +405,7 @@
     & .primary-menu{
         & .site-branding{
             & .brand-logo{
-                background-color: $primary;
+                background-color: $white;
                 padding: 20px 35px;
                 @media #{$xs}{
                     padding: 20px 25px;
@@ -470,7 +470,11 @@
             }
         }
         &.sticky{
-            background-color: $heading;
+            & .menu-items{
+                color:#fff
+            }
+            color:#fff;
+            background-color: $white;
             & .site-branding{
                 & .brand-logo{
                     padding: 0;

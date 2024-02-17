@@ -117,7 +117,7 @@ const Products = () => {
                           </Link>
                         </h6>
                         <span className="price">
-                          <span className="curreny">$</span>58.63
+                          <span className="curreny">AED </span>58.63
                         </span>
                       </div>
                     </li>
@@ -149,7 +149,7 @@ const Products = () => {
                           </Link>
                         </h6>
                         <span className="price">
-                          <span className="curreny">$</span>83.25
+                          <span className="curreny">AED </span>83.25
                         </span>
                       </div>
                     </li>
@@ -181,7 +181,7 @@ const Products = () => {
                           </Link>
                         </h6>
                         <span className="price">
-                          <span className="curreny">$</span>83.25
+                          <span className="curreny">AED </span>83.25
                         </span>
                       </div>
                     </li>
@@ -278,7 +278,7 @@ const Products = () => {
                           </Link>
                         </h3>
                         <span className="price">
-                          <span className="curreny">$</span>253.59
+                          <span className="curreny">AED </span>253.59
                         </span>
                       </div>
                     </div>
@@ -316,7 +316,7 @@ const Products = () => {
                           </Link>
                         </h3>
                         <span className="price">
-                          <span className="curreny">$</span>152.53
+                          <span className="curreny">AED </span>152.53
                         </span>
                       </div>
                     </div>
@@ -353,7 +353,7 @@ const Products = () => {
                           </Link>
                         </h3>
                         <span className="price">
-                          <span className="curreny">$</span>85.59
+                          <span className="curreny">AED </span>85.59
                         </span>
                       </div>
                     </div>
@@ -391,7 +391,7 @@ const Products = () => {
                           </Link>
                         </h3>
                         <span className="price">
-                          <span className="curreny">$</span>240.59
+                          <span className="curreny">AED </span>240.59
                         </span>
                       </div>
                     </div>
@@ -428,7 +428,7 @@ const Products = () => {
                           </Link>
                         </h3>
                         <span className="price">
-                          <span className="curreny">$</span>152.53
+                          <span className="curreny">AED </span>152.53
                         </span>
                       </div>
                     </div>
@@ -466,7 +466,7 @@ const Products = () => {
                           </Link>
                         </h3>
                         <span className="price">
-                          <span className="curreny">$</span>320.59
+                          <span className="curreny">AED </span>320.59
                         </span>
                       </div>
                     </div>
@@ -504,7 +504,7 @@ const Products = () => {
                           </Link>
                         </h3>
                         <span className="price">
-                          <span className="curreny">$</span>440.59
+                          <span className="curreny">AED </span>440.59
                         </span>
                       </div>
                     </div>
@@ -541,7 +541,7 @@ const Products = () => {
                           </Link>
                         </h3>
                         <span className="price">
-                          <span className="curreny">$</span>352.53
+                          <span className="curreny">AED </span>352.53
                         </span>
                       </div>
                     </div>
@@ -579,7 +579,7 @@ const Products = () => {
                           </Link>
                         </h3>
                         <span className="price">
-                          <span className="curreny">$</span>530.59
+                          <span className="curreny">AED </span>530.59
                         </span>
                       </div>
                     </div>

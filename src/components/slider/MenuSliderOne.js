@@ -16,7 +16,7 @@ const MenuSliderOne = () => {
           </h3>
           <p>Roasted langoustine, consommé</p>
           <span className="price">
-            <span className="currency">$</span>253.59
+            <span className="currency">AED </span>253.59
           </span>
         </div>
       </div>
@@ -32,7 +32,7 @@ const MenuSliderOne = () => {
           </h3>
           <p>Roasted langoustine, consommé</p>
           <span className="price">
-            <span className="currency">$</span>253.59
+            <span className="currency">AED </span>253.59
           </span>
         </div>
       </div>
@@ -48,7 +48,7 @@ const MenuSliderOne = () => {
           </h3>
           <p>Roasted langoustine, consommé</p>
           <span className="price">
-            <span className="currency">$</span>253.59
+            <span className="currency">AED </span>253.59
           </span>
         </div>
       </div>
@@ -64,7 +64,7 @@ const MenuSliderOne = () => {
           </h3>
           <p>Roasted langoustine, consommé</p>
           <span className="price">
-            <span className="currency">$</span>253.59
+            <span className="currency">AED </span>253.59
           </span>
         </div>
       </div>
@@ -80,7 +80,7 @@ const MenuSliderOne = () => {
           </h3>
           <p>Roasted langoustine, consommé</p>
           <span className="price">
-            <span className="currency">$</span>253.59
+            <span className="currency">AED </span>253.59
           </span>
         </div>
       </div>

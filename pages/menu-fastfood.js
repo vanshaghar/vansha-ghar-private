@@ -40,7 +40,7 @@ const MenuFastFood = () => {
                         <a className="item-title">Hamburger</a>
                       </Link>
                       <span className="dot-border" />
-                      <span className="price">$25</span>
+                      <span className="price">AED 25</span>
                     </h3>
                     <p>Roasted langoustine, consommé</p>
                     <ul className="ratings">
@@ -77,7 +77,7 @@ const MenuFastFood = () => {
                         <a className="item-title">Pizza</a>
                       </Link>
                       <span className="dot-border" />
-                      <span className="price">$63</span>
+                      <span className="price">AED 63</span>
                     </h3>
                     <p>Roasted langoustine, consommé</p>
                     <ul className="ratings">
@@ -114,7 +114,7 @@ const MenuFastFood = () => {
                         <a className="item-title">Baked Chicken Wings</a>
                       </Link>
                       <span className="dot-border" />
-                      <span className="price">$199</span>
+                      <span className="price">AED 199</span>
                     </h3>
                     <p>Roasted langoustine, consommé</p>
                     <ul className="ratings">
@@ -151,7 +151,7 @@ const MenuFastFood = () => {
                         <a className="item-title">Seafood Pizza</a>
                       </Link>
                       <span className="dot-border" />
-                      <span className="price">$352</span>
+                      <span className="price">AED 352</span>
                     </h3>
                     <p>Roasted langoustine, consommé</p>
                     <ul className="ratings">
@@ -194,7 +194,7 @@ const MenuFastFood = () => {
                         <a className="item-title">Pasta Fettuccine</a>
                       </Link>
                       <span className="dot-border" />
-                      <span className="price">$25</span>
+                      <span className="price">AED 25</span>
                     </h3>
                     <p>Roasted langoustine, consommé</p>
                     <ul className="ratings">
@@ -231,7 +231,7 @@ const MenuFastFood = () => {
                         <a className="item-title">Submarine Sandwich</a>
                       </Link>
                       <span className="dot-border" />
-                      <span className="price">$78</span>
+                      <span className="price">AED 78</span>
                     </h3>
                     <p>Roasted langoustine, consommé</p>
                     <ul className="ratings">
@@ -268,7 +268,7 @@ const MenuFastFood = () => {
                         <a className="item-title">Chicken Biryani</a>
                       </Link>
                       <span className="dot-border" />
-                      <span className="price">$205</span>
+                      <span className="price">AED 205</span>
                     </h3>
                     <p>Roasted langoustine, consommé</p>
                     <ul className="ratings">
@@ -305,7 +305,7 @@ const MenuFastFood = () => {
                         <a className="item-title">Shawarma-roll</a>
                       </Link>
                       <span className="dot-border" />
-                      <span className="price">$352</span>
+                      <span className="price">AED 352</span>
                     </h3>
                     <p>Roasted langoustine, consommé</p>
                     <ul className="ratings">
