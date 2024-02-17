@@ -296,8 +296,7 @@ const About = () => {
               <div className="team-button mt-30 text-center wow fadeInUp">
                 <Link legacyBehavior href="/chefs">
                   <a className="main-btn btn-red">
-                    become a chef
-                    <i className="far fa-arrow-right" />
+                    Meet Our Chefs                    <i className="far fa-arrow-right" />
                   </a>
                 </Link>
               </div>
@@ -325,7 +324,7 @@ const About = () => {
                 <div className="image-overlay" />
                 <div className="play-content-box">
                   <a
-                    href="https://www.youtube.com/watch?v=t8k71QcArnk"
+                    href="#"
                     className="video-popup"
                   >
                     <i className="fas fa-play" />

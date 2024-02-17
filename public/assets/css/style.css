@@ -717,7 +717,7 @@ button {
   content: "";
   width: 100%;
   height: 100%;
-  background-color: rgba(223, 63, 0, 0.9);
+  background-color: #11492C;
   z-index: -1;
 }
 
@@ -1964,7 +1964,7 @@ button {
 }
 
 .single-menu-item-three {
-  background-color: #FDF5F2;
+  background-color: #E8F4EA;
   border: 1px solid rgba(14, 19, 23, 0.1);
   padding: 20px 30px;
   display: flex;
@@ -2419,7 +2419,7 @@ ul.slick-dots li.slick-active {
 
 .single-hour-box h4.title {
   padding: 22px 45px;
-  background: url(../images/shape/hour-bg-1.png) no-repeat;
+  background: url(../images/shape/hour-bg-1.svg) no-repeat;
   background-size: cover;
   text-align: center;
   color: #fff;
@@ -2941,7 +2941,7 @@ form.reservation-form .nice-select ul.list {
 }
 .reservation-style-four form.reservation-form .nice-select, .reservation-style-four form.reservation-form .form_control {
   height: 70px;
-  background-color: #FDF5F2;
+  background-color: #E8F4EA;
   border: 1px solid rgba(14, 19, 23, 0.1);
   border-radius: 5px;
   margin-bottom: 30px;
@@ -3540,7 +3540,7 @@ form.reservation-form .nice-select ul.list {
 
 .single-product-item {
   padding: 35px 30px;
-  background-color: #FDF5F2;
+  background-color: #E8F4EA;
   border: 1px solid rgba(14, 19, 23, 0.07);
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -3789,7 +3789,7 @@ form.reservation-form .nice-select ul.list {
   margin-bottom: 33px;
 }
 .review-form-area .review-form .form_control {
-  background-color: #FDF5F2;
+  background-color: #E8F4EA;
   border: 1px solid rgba(14, 19, 23, 0.1);
   height: 60px;
   margin-bottom: 20px;
@@ -4107,7 +4107,7 @@ form.reservation-form .nice-select ul.list {
 }
 
 .blog-quote-item {
-  background-color: #FCECE6;
+  background-color: #E8F4EA;
   padding: 32px 40px 36px;
 }
 .blog-quote-item .entry-content h3.title {
@@ -4473,7 +4473,7 @@ form.reservation-form .nice-select ul.list {
   line-height: 39px;
 }
 .comments-respond .comment-form .form_control {
-  background-color: #FDF5F2;
+  background-color: #E8F4EA;
   border: 1px solid rgba(14, 19, 23, 0.1);
   border-radius: 5px;
   margin-bottom: 20px;
