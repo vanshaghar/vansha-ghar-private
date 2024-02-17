@@ -5,7 +5,7 @@ import Layout from "../src/layout/Layout";
 const History = () => {
   return (
     <Layout>
-      <PageBanner pageName={"Fastfood"} title="Menu" />{" "}
+      <PageBanner pageName={"Fastfood"} title="Our History" />{" "}
       <section className="who-we-section pt-130 pb-80">
         <div className="container">
           <div className="row align-items-center">
