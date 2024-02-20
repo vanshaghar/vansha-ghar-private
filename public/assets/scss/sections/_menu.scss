@@ -336,3 +336,14 @@
         }
     }
 }
+
+
+.menu-image-box{
+    @media #{$xs}{
+        display: none;
+    }
+    & img{
+        width: 100%;
+        height: auto;
+    }
+}

@@ -2185,6 +2185,16 @@ button {
   color: #11492C;
 }
 
+@media (max-width: 767px) {
+  .menu-image-box {
+    display: none;
+  }
+}
+.menu-image-box img {
+  width: 100%;
+  height: auto;
+}
+
 /*---==================
     09. Video css 
 =================----*/
