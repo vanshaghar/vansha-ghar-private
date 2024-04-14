@@ -321,7 +321,7 @@ const MenuSeaFood = () => {
         return () => {
             MENU_ITEMS.forEach((elem) => {
                 const categoryElements = document.getElementById(elem.link.replace("#", ""));
-                observer.unobserve(categoryElements);
+                observer?.unobserve(categoryElements);
             });
         };
     }, []);

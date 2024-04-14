@@ -41,18 +41,8 @@ const DeskTopMenus = () => {
           </ul>
         </li> */}
         <li className="menu-item ">
-          <Link legacyBehavior href="blog-standard">
+          <Link legacyBehavior href="blogs">
             Blogs
-          </Link>
-        </li>
-        <li className="menu-item ">
-          <Link legacyBehavior href="gallery">
-            Our Gallery
-          </Link>
-        </li>
-        <li className="menu-item ">
-          <Link legacyBehavior href="chefs">
-            Our Chefs
           </Link>
         </li>
         <li className="menu-item ">
@@ -65,51 +55,7 @@ const DeskTopMenus = () => {
             Contact
           </Link>
         </li>
-        {/* <li className="menu-item has-children">
-          <a href="#">
-            Pages
-            <span className="dd-trigger">
-              <i className="far fa-angle-down" />
-            </span>
-          </a>
-          <ul className="sub-menu">
-            <li>
-              <Link legacyBehavior href="gallery">
-                Our Gallery
-              </Link>
-            </li>
-            <li>
-              <Link legacyBehavior href="chefs">
-                Our Chefs
-              </Link>
-            </li>
-            <li>
-              <Link legacyBehavior href="history">
-                Our History
-              </Link>
-            </li>
-            <li>
-              <Link legacyBehavior href="reservations">
-                Reservations
-              </Link>
-            </li>
-            <li>
-              <Link legacyBehavior href="404">
-                404
-              </Link>
-            </li>
-            <li>
-              <Link legacyBehavior href="faq">
-                Faq
-              </Link>
-            </li>
-            <li>
-              <Link legacyBehavior href="contact">
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </li> */}
+
       </ul>
     </nav>
   );
@@ -139,39 +85,9 @@ const MobileMenu = () => {
             About
           </Link>
         </li>
-        {/* <li className="menu-item has-children">
-          <a href="#">
-            Shop
-            <span className="dd-trigger">
-              <i className="far fa-angle-down" />
-            </span>
-          </a>
-          <ul className="sub-menu">
-            <li>
-              <Link legacyBehavior href="products">
-                Our Products
-              </Link>
-            </li>
-            <li>
-              <Link legacyBehavior href="product-details">
-                Product Details
-              </Link>
-            </li>
-          </ul>
-        </li> */}
         <li className="menu-item ">
-          <Link legacyBehavior href="blog-standard">
+          <Link legacyBehavior href="blogs">
             Blogs
-          </Link>
-        </li>
-        <li className="menu-item ">
-          <Link legacyBehavior href="gallery">
-            Our Gallery
-          </Link>
-        </li>
-        <li className="menu-item ">
-          <Link legacyBehavior href="chefs">
-            Our Chefs
           </Link>
         </li>
         <li className="menu-item ">

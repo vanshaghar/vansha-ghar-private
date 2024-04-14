@@ -135,22 +135,17 @@ export const testimonialSliderThree = {
 
 export const heroSliderOne = {
   dots: false,
-  arrows: true,
+  arrows: false,
   infinite: true,
   speed: 800,
-  fade: true,
+  fade: false,
   // appendArrows: sliderArrows,
   autoplay: true,
   slidesToShow: 1,
+  lazyLoad: true,
   slidesToScroll: 1,
-  responsive: [
-    {
-      breakpoint: 767,
-      settings: {
-        arrows: false,
-      },
-    },
-  ],
+  pauseOnHover: false,
+
 };
 
 export const recentProductSlider = {
