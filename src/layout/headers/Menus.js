@@ -11,7 +11,7 @@ const DeskTopMenus = () => {
           </a>
         </li>
         <li className="menu-item ">
-          <a href="#">
+          <a href="menu">
             Menu
           </a>
         </li>
@@ -20,26 +20,6 @@ const DeskTopMenus = () => {
             About
           </Link>
         </li>
-        {/* <li className="menu-item has-children">
-          <a href="#">
-            Shop
-            <span className="dd-trigger">
-              <i className="far fa-angle-down" />
-            </span>
-          </a>
-          <ul className="sub-menu">
-            <li>
-              <Link legacyBehavior href="products">
-                Our Products
-              </Link>
-            </li>
-            <li>
-              <Link legacyBehavior href="product-details">
-                Product Details
-              </Link>
-            </li>
-          </ul>
-        </li> */}
         <li className="menu-item ">
           <Link legacyBehavior href="blogs">
             Blogs
@@ -76,7 +56,7 @@ const MobileMenu = () => {
           </a>
         </li>
         <li className="menu-item ">
-          <a href="#">
+          <a href="menu">
             Menu
           </a>
         </li>
