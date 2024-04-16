@@ -1,5 +1,5 @@
 import PageBanner from "../src/components/PageBanner";
-import Partners from "../src/components/Partners";
+import Skyline from "../src/components/Skyline";
 import Layout from "../src/layout/Layout";
 const Contact = () => {
   return (
@@ -155,7 +155,7 @@ const Contact = () => {
           <iframe src="https://maps.google.com/maps?q=new%20york&t=&z=13&ie=UTF8&iwloc=&output=embed" />
         </div>
       </section>{" "}
-      <Partners />
+      <Skyline />
     </Layout>
   );
 };

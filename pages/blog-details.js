@@ -1,6 +1,6 @@
 import Link from "next/link";
 import PageBanner from "../src/components/PageBanner";
-import Partners from "../src/components/Partners";
+import Skyline from "../src/components/Skyline";
 import Layout from "../src/layout/Layout";
 const BlogDetails = () => {
   return (
@@ -482,7 +482,7 @@ const BlogDetails = () => {
           </div>
         </div>
       </section>
-      <Partners />
+      <Skyline />
     </Layout>
   );
 };

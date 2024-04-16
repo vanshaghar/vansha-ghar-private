@@ -1,6 +1,6 @@
 import { Nav, Tab } from "react-bootstrap";
 import PageBanner from "../src/components/PageBanner";
-import Partners from "../src/components/Partners";
+import Skyline from "../src/components/Skyline";
 import QichenAccordion from "../src/components/QichenAccordion";
 import ReservationsFrom from "../src/components/ReservationsFrom";
 import Layout from "../src/layout/Layout";
@@ -124,7 +124,7 @@ const FAQ = () => {
           </div>
         </div>
       </section>
-      <Partners />
+      <Skyline />
     </Layout>
   );
 };

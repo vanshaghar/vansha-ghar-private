@@ -1,5 +1,5 @@
 import PageBanner from "../src/components/PageBanner";
-import Partners from "../src/components/Partners";
+import Skyline from "../src/components/Skyline";
 import ReservationsFrom from "../src/components/ReservationsFrom";
 import Layout from "../src/layout/Layout";
 const Reservations = () => {
@@ -41,7 +41,7 @@ const Reservations = () => {
           </div>
         </div>
       </section>{" "}
-      <Partners />
+      <Skyline />
     </Layout>
   );
 };

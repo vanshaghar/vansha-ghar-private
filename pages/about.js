@@ -1,6 +1,6 @@
 import Link from "next/link";
 import PageBanner from "../src/components/PageBanner";
-import Partners from "../src/components/Partners";
+import Skyline from "../src/components/Skyline";
 import QichenCounter from "../src/components/QichenCounter";
 import TestimonialSliderThree from "../src/components/slider/TestimonialSliderThree";
 import Layout from "../src/layout/Layout";
@@ -50,13 +50,12 @@ const About = () => {
               <div className="about-three_content-box content-box-gap pl-lg-45 mb-50">
                 <div className="section-title section-title-left mb-30 wow fadeInUp">
                   <span className="sub-title">About Vansha Ghar</span>
-                  <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                  <h2
+                    className="text-5xl"
+                  >The Cleanest, Most Delicious Nepalese Food Ever</h2>
                 </div>
                 <p className="wow fadeInDown">
-                  Sed ut perspiciatis unde omnis natus sit voluptatem
-                  accusantium doloremque laudantium totam aperiam eaque
-                  queabillo inventore veritatis et quasi architecto beatae vitae
-                  sunt explicabo.
+                  We source almost all of the most important spices used in our traditional Nepali dishes directly from Nepal, making Vansha Ghar one of the best restaurants in Abu Dhabi to try authentic Nepali cuisine.
                 </p>
                 <div className="row">
                   <div className="col-md-6">
@@ -136,21 +135,24 @@ const About = () => {
           <div className="row align-items-center">
             <div className="col-xl-6 col-lg-12">
               <div className="choose-content-box content-box-gap mb-30 wow fadeInLeft">
-                <div className="section-title section-title-left mb-20">
+                <div className="section-title section-title-left mb-10">
                   <span className="sub-title">Why Choos us</span>
-                  <h2>
-                    We’re Awards Winning Restaurant. 25+ Years Of Experience In
-                    Restaurant Services
-                  </h2>
+                  <h2
+                    className="text-5xl"
+                  >
+                    8+ Years Of Experience In Restaurant Service                   </h2>
                 </div>
                 <p>
-                  Sed ut perspiciatis unde omnis iste natus sit voluptatem
-                  accusantium doloremque laudantium totam rem aperiam eaque ipsa
-                  quae ab illo inventore veritatis
+                  Vansha Ghar was founded in 2016 and providing service to nepelese cuisine lovers since then. Nepali cuisine has gained popularity among adventurous foodies worldwide.
+                </p> <p>
+                  Vansha Ghar's staff, from the head chef to the wait staff, are all exclusively Nepali.  We serve the dishes that we know and love from Nepal.
                 </p>
                 <ul className="check-style-one mb-35">
-                  <li>Best Way to Serve Our Foods</li>
-                  <li>Low Cost &amp; Onlie Orders</li>
+                  <li>Authentic Nepali Experience</li>
+                  <li>Culinary Expertise</li>
+                  <li>Quality Ingredients</li>
+                  <li>Warm Hospitality</li>
+
                 </ul>
                 <Link legacyBehavior href="/about">
                   <a className="main-btn btn-red">
@@ -169,11 +171,11 @@ const About = () => {
                         <i className="flaticon-pizza-slice-1" />
                       </div>
                       <div className="text">
-                        <h3 className="title">Fastfoods</h3>
-                        <p>Sit amet consecte adisce epsum nisi commos</p>
-                        <Link legacyBehavior href="/about">
+                        <h3 className="title">Nepali Cusine</h3>
+                        <p>Rich, Spicy, Flavorful, Diverse, Authentic</p>
+                        {/* <Link legacyBehavior href="/about">
                           <a className="btn-link">Read more</a>
-                        </Link>
+                        </Link> */}
                       </div>
                     </div>
                   </div>
@@ -184,24 +186,24 @@ const About = () => {
                       </div>
                       <div className="text">
                         <h3 className="title">Experience Chefs</h3>
-                        <p>Sit amet consecte adisce epsum nisi commos</p>
-                        <Link legacyBehavior href="/about">
+                        <p>Skilled Culinary Nepalese Experts</p>
+                        {/* <Link legacyBehavior href="/about">
                           <a className="btn-link">Read more</a>
-                        </Link>
+                        </Link> */}
                       </div>
                     </div>
                   </div>
-                  <div className="col-md-6">
+                  <div className="col-md-6 mt-1">
                     <div className="fancy-features-item mb-30 wow fadeInUp">
                       <div className="icon">
                         <i className="flaticon-delivery-man" />
                       </div>
                       <div className="text">
                         <h3 className="title">Online Delivery</h3>
-                        <p>Sit amet consecte adisce epsum nisi commos</p>
-                        <Link legacyBehavior href="/about">
+                        <p>Convenient, Fast, Reliable, Delicious, Accessible.</p>
+                        {/* <Link legacyBehavior href="/about">
                           <a className="btn-link">Read more</a>
-                        </Link>
+                        </Link> */}
                       </div>
                     </div>
                   </div>
@@ -211,11 +213,11 @@ const About = () => {
                         <i className="flaticon-food-serving" />
                       </div>
                       <div className="text">
-                        <h3 className="title">Fine Dining</h3>
-                        <p>Sit amet consecte adisce epsum nisi commos</p>
-                        <Link legacyBehavior href="/about">
+                        <h3 className="title">Casual Dinning</h3>
+                        <p>Comfortable, Informal, Welcoming, Enjoyable.</p>
+                        {/* <Link legacyBehavior href="/about">
                           <a className="btn-link">Read more</a>
-                        </Link>
+                        </Link> */}
                       </div>
                     </div>
                   </div>
@@ -337,16 +339,16 @@ const About = () => {
               <div className="video-content-box content-box-gap pl-lg-40 mb-50 wow fadeInRight">
                 <div className="section-title section-title-left">
                   <span className="sub-title">Watch Videos</span>
-                  <h2>How Can We Made Foods For Customers</h2>
+                  <h2
+                    className="text-5xl"
+                  >Our Happy Customers</h2>
                 </div>
                 <p>
-                  Sit amet consectetur adipiscing elitsue risus mauris quam
-                  adipiscing phasellus aene ante orcirat scelerisque enim ut
-                  nulla
+                  "Guests are like gods." It reflects the deeply ingrained cultural value of hospitality in many societies, including Nepali culture. We are delighted to share our customer’s experience with you.
                 </p>
                 <ul className="check-style-one mb-30">
-                  <li>Best Way to Serve Our Foods</li>
-                  <li>Low Cost &amp; Onlie Orders</li>
+                  <li>Customer Satisfaction</li>
+                  <li>Feedback and Engagement</li>
                 </ul>
                 <Link legacyBehavior href="/about">
                   <a className="main-btn btn-black">
@@ -368,7 +370,7 @@ const About = () => {
       </section>
       {/*=== End Team Section ===*/}
       {/*====== Start Partners Section ======*/}
-      <Partners />
+      <Skyline />
     </Layout>
   );
 };

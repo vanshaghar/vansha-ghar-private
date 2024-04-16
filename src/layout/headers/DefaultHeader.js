@@ -49,7 +49,7 @@ const DefaultHeader = ({ openSearchModal }) => {
         </div>
       </div>
       {/*=== Header Navigation ===*/}
-      <div className="header-navigation navigation-two navigation-white">
+      <div className="header-navigation  navigation-two navigation-white">
         <div className="nav-overlay" />
         <div className="container-fluid">
           {/*=== Primary Menu ===*/}

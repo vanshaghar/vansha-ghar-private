@@ -1,6 +1,6 @@
 import dynamic from "next/dynamic";
 import PageBanner from "../src/components/PageBanner";
-import Partners from "../src/components/Partners";
+import Skyline from "../src/components/Skyline";
 import Layout from "../src/layout/Layout";
 const GalleryIsotope = dynamic(
   () => import("../src/components/GalleryIsotope"),
@@ -25,7 +25,7 @@ const Gallery = () => {
           <GalleryIsotope />
         </div>
       </section>{" "}
-      <Partners />
+      <Skyline />
     </Layout>
   );
 };

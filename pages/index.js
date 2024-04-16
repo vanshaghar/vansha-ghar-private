@@ -12,6 +12,7 @@ import WorkingHoursSection from "../src/components/sections/WorkingHoursSection"
 import ReservationSection from "../src/components/sections/ReservationSection.";
 import TestimonialSection from "../src/components/sections/TestimonialSection";
 import InstagramGallerySection from "../src/components/sections/InstagramgallerySection";
+import Skyline from "../src/components/Skyline";
 const Index = () => {
   return (
     <Layout header={1} footer={1}>
@@ -25,6 +26,7 @@ const Index = () => {
       <ReservationSection />
       <TestimonialSection />
       <InstagramGallerySection />
+      <Skyline />
     </Layout>
   );
 };

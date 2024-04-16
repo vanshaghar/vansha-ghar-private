@@ -183,3 +183,35 @@ p.amount span {
   line-height: 22px;
   color: #666666;
 }
+
+
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.font-cabinet {
+  font-family: 'CabinetGrotesk-Bold', sans-serif;
+}
+
+@font-face {
+  font-family: 'CabinetGrotesk-Bold';
+  src: url('/fonts/CabinetGrotesk-Bold.woff2') format('woff2'),
+       url('/fonts/CabinetGrotesk-Bold.woff') format('woff'),
+       url('/fonts/CabinetGrotesk-Bold.ttf') format('truetype');
+       font-weight: 700;
+       font-display: swap;
+       font-style: normal;
+}
+
+/* remove scrollbar from body */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
+
