@@ -369,7 +369,7 @@ const About = () => {
         </div>
       </section>
       {/*=== End Team Section ===*/}
-      {/*====== Start Partners Section ======*/}
+      {/*====== Start Skyline Section ======*/}
       <Skyline />
     </Layout>
   );

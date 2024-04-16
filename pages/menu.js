@@ -1,6 +1,6 @@
 import Link from "next/link";
 import PageBanner from "../src/components/PageBanner";
-import Partners from "../src/components/Skyline";
+import Skyline from "../src/components/Skyline";
 import MenuSliderOne from "../src/components/slider/MenuSliderOne";
 import Layout from "../src/layout/Layout";
 import { useEffect, useState } from "react";

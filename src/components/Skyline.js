@@ -1,4 +1,4 @@
-const Partners = () => {
+const Skyline = () => {
   return (
     <section className="bg-[#E8F4EA] pt-6"
       style={{
@@ -19,4 +19,4 @@ const Partners = () => {
     </section >
   );
 };
-export default Partners;
+export default Skyline;
