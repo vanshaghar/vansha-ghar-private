@@ -46,7 +46,7 @@ export async function getStaticProps() {
         })
     }).then((response) => response.json());
 
-    const menus = res.data.Menus.docs ?? [];
+    const menus = res.data?.Menus?.docs ?? [];
 
     const formattedMenu = menus && menus.length ?
         menus.reduce((acc, menu) => {
