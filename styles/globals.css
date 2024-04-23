@@ -3,7 +3,7 @@
 @tailwind utilities;
   html{
     scroll-behavior: smooth;
-    scroll-padding-top: 100px;
+    scroll-padding-top: 70px;
   }
 body {
   min-height: 200vh;
