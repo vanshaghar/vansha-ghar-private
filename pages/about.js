@@ -238,7 +238,7 @@ const About = () => {
           <div className="row justify-content-center">
             <div className="col-xl-5 col-lg-10">
               <div className="section-title text-center mb-50 wow fadeInDown">
-                <span className="sub-title">Best food menu</span>
+                <span className="sub-title">Chef's Special</span>
                 <h2>Meet Our Experience &amp; Master Chefs</h2>
               </div>
             </div>
