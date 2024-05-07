@@ -13,7 +13,7 @@ const BlogStandard = () => {
               <div className="blog-standard-wrapper mb-30">
                 <div className="blog-item-two mb-50 wow fadeInUp">
                   <div className="post-thumbnail">
-                    <img src="assets/images/blog/blog-4.jpg" alt="Post Image" />
+                    <img src="/assets/images/blog/blog-4.jpg" alt="Post Image" />
                     <span className="post-date">
                       <a href="#">
                         25<span>Sep</span>
@@ -76,7 +76,7 @@ const BlogStandard = () => {
                 </div>
                 <div className="blog-item-two mb-50 wow fadeInUp">
                   <div className="post-thumbnail">
-                    <img src="assets/images/blog/blog-5.jpg" alt="Post Image" />
+                    <img src="/assets/images/blog/blog-5.jpg" alt="Post Image" />
                     <span className="post-date">
                       <a href="#">
                         25<span>Sep</span>
@@ -138,7 +138,7 @@ const BlogStandard = () => {
                 </div>
                 <div className="blog-item-two mb-50 wow fadeInUp">
                   <div className="post-thumbnail">
-                    <img src="assets/images/blog/blog-6.jpg" alt="Post Image" />
+                    <img src="/assets/images/blog/blog-6.jpg" alt="Post Image" />
                     <span className="post-date">
                       <a href="#">
                         25<span>Sep</span>
@@ -272,7 +272,7 @@ const BlogStandard = () => {
                   <ul className="recent-post-list">
                     <li className="post-thumbnail-content">
                       <img
-                        src="assets/images/blog/post-thumb-1.jpg"
+                        src="/assets/images/blog/post-thumb-1.jpg"
                         alt="post thumb"
                       />
                       <div className="post-title-date">
@@ -291,7 +291,7 @@ const BlogStandard = () => {
                     </li>
                     <li className="post-thumbnail-content">
                       <img
-                        src="assets/images/blog/post-thumb-2.jpg"
+                        src="/assets/images/blog/post-thumb-2.jpg"
                         alt="post thumb"
                       />
                       <div className="post-title-date">
@@ -308,7 +308,7 @@ const BlogStandard = () => {
                     </li>
                     <li className="post-thumbnail-content">
                       <img
-                        src="assets/images/blog/post-thumb-3.jpg"
+                        src="/assets/images/blog/post-thumb-3.jpg"
                         alt="post thumb"
                       />
                       <div className="post-title-date">
@@ -325,7 +325,7 @@ const BlogStandard = () => {
                     </li>
                     <li className="post-thumbnail-content">
                       <img
-                        src="assets/images/blog/post-thumb-4.jpg"
+                        src="/assets/images/blog/post-thumb-4.jpg"
                         alt="post thumb"
                       />
                       <div className="post-title-date">

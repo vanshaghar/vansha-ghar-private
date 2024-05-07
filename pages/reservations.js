@@ -11,7 +11,7 @@ const Reservations = () => {
           <div className="row">
             <div className="col-lg-4">
               <div className="reservation-img wow fadeInLeft mb-50">
-                <img src="assets/images/contact/contact-5.jpg" alt="" />
+                <img src="/assets/images/contact/contact-5.jpg" alt="" />
               </div>
             </div>
             <div className="col-lg-8">

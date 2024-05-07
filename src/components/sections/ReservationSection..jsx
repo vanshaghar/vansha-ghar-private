@@ -5,7 +5,7 @@ const ReservationSection = () => {
     <section className="reservation-line-section p-r z-1 pt-130 pb-40">
       <div className="line-shape line-shape-one">
         <span>
-          <img src="assets/images/shape/line-1.png" alt="Shape" />
+          <img src="/assets/images/shape/line-1.png" alt="Shape" />
         </span>
       </div>
       <div className="container">
@@ -14,7 +14,7 @@ const ReservationSection = () => {
             {/*=== Reservation Image Box ===*/}
             <div className="reservation-image-box wow fadeInLeft mb-50 mb-20 ">
               <img
-                src="assets/images/partners/delivery.png"
+                src="/assets/images/partners/delivery.png"
                 alt="Reservation Image"
                 className='img-fluid w-full object-cover max-w-[500px]'
               />

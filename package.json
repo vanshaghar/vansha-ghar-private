@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "export": "next export",
+    "serve": "next start -p 8080",
     "lint": "next lint"
   },
   "dependencies": {

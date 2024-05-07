@@ -90,7 +90,7 @@ const GalleryIsotope = () => {
           <div className="gallery-item-two mb-35 wow fadeInUp">
             <div className="gallery-img">
               <img
-                src="assets/images/gallery/gallery-5.jpg"
+                src="/assets/images/gallery/gallery-5.jpg"
                 alt="Gallery Image"
               />
               <div className="hover-overlay">
@@ -108,7 +108,7 @@ const GalleryIsotope = () => {
           <div className="gallery-item-two mb-35 wow fadeInUp">
             <div className="gallery-img">
               <img
-                src="assets/images/gallery/gallery-6.jpg"
+                src="/assets/images/gallery/gallery-6.jpg"
                 alt="Gallery Image"
               />
               <div className="hover-overlay">
@@ -126,7 +126,7 @@ const GalleryIsotope = () => {
           <div className="gallery-item-two mb-35 wow fadeInUp">
             <div className="gallery-img">
               <img
-                src="assets/images/gallery/gallery-7.jpg"
+                src="/assets/images/gallery/gallery-7.jpg"
                 alt="Gallery Image"
               />
               <div className="hover-overlay">
@@ -144,7 +144,7 @@ const GalleryIsotope = () => {
           <div className="gallery-item-two mb-35 wow fadeInUp">
             <div className="gallery-img">
               <img
-                src="assets/images/gallery/gallery-8.jpg"
+                src="/assets/images/gallery/gallery-8.jpg"
                 alt="Gallery Image"
               />
               <div className="hover-overlay">
@@ -162,7 +162,7 @@ const GalleryIsotope = () => {
           <div className="gallery-item-two mb-35 wow fadeInUp">
             <div className="gallery-img">
               <img
-                src="assets/images/gallery/gallery-9.jpg"
+                src="/assets/images/gallery/gallery-9.jpg"
                 alt="Gallery Image"
               />
               <div className="hover-overlay">
@@ -180,7 +180,7 @@ const GalleryIsotope = () => {
           <div className="gallery-item-two mb-35 wow fadeInUp">
             <div className="gallery-img">
               <img
-                src="assets/images/gallery/gallery-10.jpg"
+                src="/assets/images/gallery/gallery-10.jpg"
                 alt="Gallery Image"
               />
               <div className="hover-overlay">
@@ -198,7 +198,7 @@ const GalleryIsotope = () => {
           <div className="gallery-item-two mb-35 wow fadeInUp">
             <div className="gallery-img">
               <img
-                src="assets/images/gallery/gallery-11.jpg"
+                src="/assets/images/gallery/gallery-11.jpg"
                 alt="Gallery Image"
               />
               <div className="hover-overlay">
@@ -216,7 +216,7 @@ const GalleryIsotope = () => {
           <div className="gallery-item-two mb-35 wow fadeInUp">
             <div className="gallery-img">
               <img
-                src="assets/images/gallery/gallery-12.jpg"
+                src="/assets/images/gallery/gallery-12.jpg"
                 alt="Gallery Image"
               />
               <div className="hover-overlay">
@@ -234,7 +234,7 @@ const GalleryIsotope = () => {
           <div className="gallery-item-two mb-35 wow fadeInUp">
             <div className="gallery-img">
               <img
-                src="assets/images/gallery/gallery-13.jpg"
+                src="/assets/images/gallery/gallery-13.jpg"
                 alt="Gallery Image"
               />
               <div className="hover-overlay">
@@ -252,7 +252,7 @@ const GalleryIsotope = () => {
           <div className="gallery-item-two mb-35 wow fadeInUp">
             <div className="gallery-img">
               <img
-                src="assets/images/gallery/gallery-14.jpg"
+                src="/assets/images/gallery/gallery-14.jpg"
                 alt="Gallery Image"
               />
               <div className="hover-overlay">
@@ -270,7 +270,7 @@ const GalleryIsotope = () => {
           <div className="gallery-item-two mb-35 wow fadeInUp">
             <div className="gallery-img">
               <img
-                src="assets/images/gallery/gallery-15.jpg"
+                src="/assets/images/gallery/gallery-15.jpg"
                 alt="Gallery Image"
               />
               <div className="hover-overlay">
@@ -288,7 +288,7 @@ const GalleryIsotope = () => {
           <div className="gallery-item-two mb-35 wow fadeInUp">
             <div className="gallery-img">
               <img
-                src="assets/images/gallery/gallery-16.jpg"
+                src="/assets/images/gallery/gallery-16.jpg"
                 alt="Gallery Image"
               />
               <div className="hover-overlay">

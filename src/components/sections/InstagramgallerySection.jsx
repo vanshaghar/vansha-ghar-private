@@ -1,17 +1,17 @@
 import React from 'react';
 const INSTAGRAM_DATA = [
-    "assets/images/instagram/insta-1.jpg",
-    "assets/images/instagram/insta-2.jpg",
-    "assets/images/instagram/insta-3.jpg",
-    "assets/images/instagram/insta-4.jpg",
-    "assets/images/instagram/insta-5.jpg",
-    "assets/images/instagram/insta-6.jpg",
-    "assets/images/instagram/insta-7.jpg",
-    "assets/images/instagram/insta-8.jpg",
-    "assets/images/instagram/insta-9.jpg",
-    "assets/images/instagram/insta-10.jpg",
-    "assets/images/instagram/insta-11.jpg",
-    "assets/images/instagram/insta-12.jpg"];
+    "/assets/images/instagram/insta-1.jpg",
+    "/assets/images/instagram/insta-2.jpg",
+    "/assets/images/instagram/insta-3.jpg",
+    "/assets/images/instagram/insta-4.jpg",
+    "/assets/images/instagram/insta-5.jpg",
+    "/assets/images/instagram/insta-6.jpg",
+    "/assets/images/instagram/insta-7.jpg",
+    "/assets/images/instagram/insta-8.jpg",
+    "/assets/images/instagram/insta-9.jpg",
+    "/assets/images/instagram/insta-10.jpg",
+    "/assets/images/instagram/insta-11.jpg",
+    "/assets/images/instagram/insta-12.jpg"];
 
 
 

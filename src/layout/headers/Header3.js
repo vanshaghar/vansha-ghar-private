@@ -14,7 +14,7 @@ const Header3 = () => {
               <Link legacyBehavior href="/">
                 <a className="brand-logo">
                   <img
-                    src="assets/images/logo/logo-white.svg "
+                    src="/assets/images/logo/logo-white.svg "
                     alt="Site Logo"
                   />
                 </a>
@@ -32,7 +32,7 @@ const Header3 = () => {
               <div className="nav-right-item d-flex align-items-center">
                 <div className="nav-call-button">
                   <span>
-                    <img src="assets/images/call.png" alt="icon" />
+                    <img src="/assets/images/call.png" alt="icon" />
                     <a href="tel:000(123)45689">000 (123) 456 89</a>
                   </span>
                 </div>

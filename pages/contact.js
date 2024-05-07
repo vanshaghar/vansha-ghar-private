@@ -20,7 +20,7 @@ const Contact = () => {
               <div className="col-lg-4 col-md-6 col-sm-12">
                 <div className="single-info-box mb-40">
                   <div className="icon">
-                    <img src="assets/images/icon/icon-7.png" alt="icon" />
+                    <img src="/assets/images/icon/icon-7.png" alt="icon" />
                   </div>
                   <div className="info">
                     <span className="title">Location</span>
@@ -31,7 +31,7 @@ const Contact = () => {
               <div className="col-lg-4 col-md-6 col-sm-12">
                 <div className="single-info-box mb-40">
                   <div className="icon">
-                    <img src="assets/images/icon/icon-8.png" alt="icon" />
+                    <img src="/assets/images/icon/icon-8.png" alt="icon" />
                   </div>
                   <div className="info">
                     <span className="title">Email Address</span>
@@ -47,7 +47,7 @@ const Contact = () => {
               <div className="col-lg-4 col-md-6 col-sm-12">
                 <div className="single-info-box mb-40">
                   <div className="icon">
-                    <img src="assets/images/icon/icon-9.png" alt="icon" />
+                    <img src="/assets/images/icon/icon-9.png" alt="icon" />
                   </div>
                   <div className="info">
                     <span className="title">Contact Us</span>

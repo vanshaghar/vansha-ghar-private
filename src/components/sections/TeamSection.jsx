@@ -32,7 +32,7 @@ const TeamSection = () => {
             </div>
           </div>
           <div className="col-xl-8 col-lg-12">
-            <img src="assets/images/partners/staff.JPG"
+            <img src="/assets/images/partners/staff.JPG"
               className=" w-full h-full wow fadeInRight"
               alt="groupphoto" />
           </div>

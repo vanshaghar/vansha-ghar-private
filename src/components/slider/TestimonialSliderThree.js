@@ -76,7 +76,7 @@ export class TestimonialSliderThree extends Component {
               <div className="author-title-thumb">
                 <div className="author-thumb">
                   <img
-                    src="assets/images/testimonial/author-thumb-2.jpg"
+                    src="/assets/images/testimonial/author-thumb-2.jpg"
                     alt="Author Thumb"
                   />
                 </div>
@@ -122,7 +122,7 @@ export class TestimonialSliderThree extends Component {
               <div className="author-title-thumb">
                 <div className="author-thumb">
                   <img
-                    src="assets/images/testimonial/author-thumb-3.jpg"
+                    src="/assets/images/testimonial/author-thumb-3.jpg"
                     alt="Author Thumb"
                   />
                 </div>
@@ -168,7 +168,7 @@ export class TestimonialSliderThree extends Component {
               <div className="author-title-thumb">
                 <div className="author-thumb">
                   <img
-                    src="assets/images/testimonial/author-thumb-4.jpg"
+                    src="/assets/images/testimonial/author-thumb-4.jpg"
                     alt="Author Thumb"
                   />
                 </div>
@@ -214,7 +214,7 @@ export class TestimonialSliderThree extends Component {
               <div className="author-title-thumb">
                 <div className="author-thumb">
                   <img
-                    src="assets/images/testimonial/author-thumb-2.jpg"
+                    src="/assets/images/testimonial/author-thumb-2.jpg"
                     alt="Author Thumb"
                   />
                 </div>

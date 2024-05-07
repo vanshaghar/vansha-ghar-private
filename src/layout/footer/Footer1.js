@@ -17,7 +17,7 @@ const Footer1 = () => {
                   <Link legacyBehavior href="/">
                     <a className="footer-logo mb-30">
                       <img
-                        src="assets/images/logo/logo-white.svg "
+                        src="/assets/images/logo/logo-white.svg "
                         alt="Brand Logo"
                       />
                     </a>

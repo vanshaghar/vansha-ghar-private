@@ -14,7 +14,7 @@ const BlogDetails = () => {
                 <div className="blog-post mb-60 wow fadeInUp">
                   <div className="post-thumbnail">
                     <img
-                      src="assets/images/blog/single-blog-1.jpg"
+                      src="/assets/images/blog/single-blog-1.jpg"
                       alt="Blog Image"
                     />
                     <span className="post-date">
@@ -118,7 +118,7 @@ const BlogDetails = () => {
                 <div className="post-author-box d-flex mb-60 wow fadeInUp">
                   <div className="author-thumb">
                     <img
-                      src="assets/images/blog/author-1.jpg"
+                      src="/assets/images/blog/author-1.jpg"
                       alt="post author"
                     />
                   </div>
@@ -136,7 +136,7 @@ const BlogDetails = () => {
                 <div className="post-navigation-item mb-30 wow fadeInUp">
                   <div className="prev-post post-nav-item d-flex mb-30">
                     <div className="thumb">
-                      <img src="assets/images/blog/prev.jpg" alt="Post Thumb" />
+                      <img src="/assets/images/blog/prev.jpg" alt="Post Thumb" />
                       <div className="overlay">
                         <i className="far fa-angle-left" />
                       </div>
@@ -157,7 +157,7 @@ const BlogDetails = () => {
                   </div>
                   <div className="next-post post-nav-item d-flex mb-30">
                     <div className="thumb">
-                      <img src="assets/images/blog/next.jpg" alt="Post Thumb" />
+                      <img src="/assets/images/blog/next.jpg" alt="Post Thumb" />
                       <div className="overlay">
                         <i className="far fa-angle-right" />
                       </div>
@@ -184,7 +184,7 @@ const BlogDetails = () => {
                     <li className="comment mb-30">
                       <div className="comment-avatar">
                         <img
-                          src="assets/images/blog/comment-1.jpg"
+                          src="/assets/images/blog/comment-1.jpg"
                           alt="comment author"
                         />
                       </div>
@@ -207,7 +207,7 @@ const BlogDetails = () => {
                     <li className="comment mb-30">
                       <div className="comment-avatar">
                         <img
-                          src="assets/images/blog/comment-2.jpg"
+                          src="/assets/images/blog/comment-2.jpg"
                           alt="comment author"
                         />
                       </div>
@@ -230,7 +230,7 @@ const BlogDetails = () => {
                     <li className="comment mb-30">
                       <div className="comment-avatar">
                         <img
-                          src="assets/images/blog/comment-3.jpg"
+                          src="/assets/images/blog/comment-3.jpg"
                           alt="comment author"
                         />
                       </div>
@@ -374,7 +374,7 @@ const BlogDetails = () => {
                   <ul className="recent-post-list">
                     <li className="post-thumbnail-content">
                       <img
-                        src="assets/images/blog/post-thumb-1.jpg"
+                        src="/assets/images/blog/post-thumb-1.jpg"
                         alt="post thumb"
                       />
                       <div className="post-title-date">
@@ -393,7 +393,7 @@ const BlogDetails = () => {
                     </li>
                     <li className="post-thumbnail-content">
                       <img
-                        src="assets/images/blog/post-thumb-2.jpg"
+                        src="/assets/images/blog/post-thumb-2.jpg"
                         alt="post thumb"
                       />
                       <div className="post-title-date">
@@ -410,7 +410,7 @@ const BlogDetails = () => {
                     </li>
                     <li className="post-thumbnail-content">
                       <img
-                        src="assets/images/blog/post-thumb-3.jpg"
+                        src="/assets/images/blog/post-thumb-3.jpg"
                         alt="post thumb"
                       />
                       <div className="post-title-date">
@@ -427,7 +427,7 @@ const BlogDetails = () => {
                     </li>
                     <li className="post-thumbnail-content">
                       <img
-                        src="assets/images/blog/post-thumb-4.jpg"
+                        src="/assets/images/blog/post-thumb-4.jpg"
                         alt="post thumb"
                       />
                       <div className="post-title-date">

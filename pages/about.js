@@ -11,12 +11,12 @@ const About = () => {
       <section className="about-shape-section pt-130 pb-80 p-r z-1">
         <div className="shape shape-one">
           <span>
-            <img src="assets/images/about/shape-1.png" alt="shape" />
+            <img src="/assets/images/about/shape-1.png" alt="shape" />
           </span>
         </div>
         <div className="shape shape-two">
           <span>
-            <img src="assets/images/about/shape-2.png" alt="shape" />
+            <img src="/assets/images/about/shape-2.png" alt="shape" />
           </span>
         </div>
         <div className="container">
@@ -26,19 +26,19 @@ const About = () => {
                 <div className="row align-items-center">
                   <div className="col-md-6">
                     <img
-                      src="assets/images/about/image-7.jpg"
+                      src="/assets/images/about/image-7.jpg"
                       className="about-img-one mb-30 wow fadeInUp"
                       alt="About Image"
                     />
                     <img
-                      src="assets/images/about/image-8.jpg"
+                      src="/assets/images/about/image-8.jpg"
                       className="about-img-two mb-30 wow fadeInDown"
                       alt="About Image"
                     />
                   </div>
                   <div className="col-md-6">
                     <img
-                      src="assets/images/about/image-9.jpg"
+                      src="/assets/images/about/image-9.jpg"
                       className="about-img-three mb-30 wow fadeInRight"
                       alt="About Image"
                     />
@@ -247,7 +247,7 @@ const About = () => {
             <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
               <div className="single-team-item mb-30 wow fadeInUp">
                 <div className="chef-img">
-                  <img src="assets/images/team/chef-7.jpg" alt="Chef Image" />
+                  <img src="/assets/images/team/chef-7.jpg" alt="Chef Image" />
                   <div className="chef-overlay" />
                   <div className="hover-content">
                     <h3 className="title">Jimmie K. Cryer</h3>
@@ -259,7 +259,7 @@ const About = () => {
             <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
               <div className="single-team-item mb-30 wow fadeInUp">
                 <div className="chef-img">
-                  <img src="assets/images/team/chef-8.jpg" alt="Chef Image" />
+                  <img src="/assets/images/team/chef-8.jpg" alt="Chef Image" />
                   <div className="chef-overlay" />
                   <div className="hover-content">
                     <h3 className="title">Jimmie K. Cryer</h3>
@@ -271,7 +271,7 @@ const About = () => {
             <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
               <div className="single-team-item mb-30 wow fadeInUp">
                 <div className="chef-img">
-                  <img src="assets/images/team/chef-9.jpg" alt="Chef Image" />
+                  <img src="/assets/images/team/chef-9.jpg" alt="Chef Image" />
                   <div className="chef-overlay" />
                   <div className="hover-content">
                     <h3 className="title">Jimmie K. Cryer</h3>
@@ -283,7 +283,7 @@ const About = () => {
             <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
               <div className="single-team-item mb-30 wow fadeInUp">
                 <div className="chef-img">
-                  <img src="assets/images/team/chef-10.jpg" alt="Chef Image" />
+                  <img src="/assets/images/team/chef-10.jpg" alt="Chef Image" />
                   <div className="chef-overlay" />
                   <div className="hover-content">
                     <h3 className="title">Jimmie K. Cryer</h3>
@@ -311,7 +311,7 @@ const About = () => {
       <section className="video-line-section pt-130 pb-80 p-r z-1">
         <div className="line-shape line-shape-one">
           <span>
-            <img src="assets/images/shape/line-1.png" alt="Shape" />
+            <img src="/assets/images/shape/line-1.png" alt="Shape" />
           </span>
         </div>
         <div className="container">
@@ -320,7 +320,7 @@ const About = () => {
               {/*=== Video Image Box ===*/}
               <div className="video-one_image-box mb-50 p-r z-1 wow fadeInLeft">
                 <img
-                  src="assets/images/gallery/video-1.jpg"
+                  src="/assets/images/gallery/video-1.jpg"
                   alt="Video Image"
                 />
                 <div className="image-overlay" />

@@ -9,17 +9,17 @@ const E404 = () => {
       <section className="error-page-area pt-130 pb-130 p-r z-1">
         <div className="object object-one">
           <span>
-            <img src="assets/images/shape/element-2.png" alt="" />
+            <img src="/assets/images/shape/element-2.png" alt="" />
           </span>
         </div>
         <div className="object object-two">
           <span>
-            <img src="assets/images/shape/element-3.png" alt="" />
+            <img src="/assets/images/shape/element-3.png" alt="" />
           </span>
         </div>
         <div className="object object-three">
           <span>
-            <img src="assets/images/shape/element-4.png" alt="" />
+            <img src="/assets/images/shape/element-4.png" alt="" />
           </span>
         </div>
         <div className="container">
@@ -27,7 +27,7 @@ const E404 = () => {
             <div className="col-lg-12">
               <div className="error-content text-center wow fadeInUp">
                 <img
-                  src="assets/images/gallery/404.png"
+                  src="/assets/images/gallery/404.png"
                   className="mb-110"
                   alt="404 Image"
                 />

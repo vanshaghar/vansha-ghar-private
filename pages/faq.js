@@ -102,7 +102,7 @@ const FAQ = () => {
           <div className="row">
             <div className="col-lg-3 col-md-6">
               <div className="reservation-img wow fadeInLeft mb-50">
-                <img src="assets/images/contact/contact-6.jpg" alt="" />
+                <img src="/assets/images/contact/contact-6.jpg" alt="" />
               </div>
             </div>
             <div className="col-lg-6 col-md-12 order-xl-2 order-3">
@@ -118,7 +118,7 @@ const FAQ = () => {
             </div>
             <div className="col-lg-3 col-md-6 order-xl-3 order-2">
               <div className="reservation-img wow fadeInRight mb-50">
-                <img src="assets/images/contact/contact-7.jpg" alt="" />
+                <img src="/assets/images/contact/contact-7.jpg" alt="" />
               </div>
             </div>
           </div>

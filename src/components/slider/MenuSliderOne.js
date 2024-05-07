@@ -6,7 +6,7 @@ const MenuSliderOne = () => {
     <Slider {...menuSliderOne} className="menu-slider-one wow fadeInUp">
       <div className="menu-grid-item-one text-center mb-60">
         <div className="thumb">
-          <img src="assets/images/menu/menu-1.png" alt="" />
+          <img src="/assets/images/menu/menu-1.png" alt="" />
         </div>
         <div className="text">
           <h3 className="title">
@@ -22,7 +22,7 @@ const MenuSliderOne = () => {
       </div>
       <div className="menu-grid-item-one text-center mb-60">
         <div className="thumb">
-          <img src="assets/images/menu/menu-2.png" alt="" />
+          <img src="/assets/images/menu/menu-2.png" alt="" />
         </div>
         <div className="text">
           <h3 className="title">
@@ -38,7 +38,7 @@ const MenuSliderOne = () => {
       </div>
       <div className="menu-grid-item-one text-center mb-60">
         <div className="thumb">
-          <img src="assets/images/menu/menu-3.png" alt="" />
+          <img src="/assets/images/menu/menu-3.png" alt="" />
         </div>
         <div className="text">
           <h3 className="title">
@@ -54,7 +54,7 @@ const MenuSliderOne = () => {
       </div>
       <div className="menu-grid-item-one text-center mb-60">
         <div className="thumb">
-          <img src="assets/images/menu/menu-4.png" alt="" />
+          <img src="/assets/images/menu/menu-4.png" alt="" />
         </div>
         <div className="text">
           <h3 className="title">
@@ -70,7 +70,7 @@ const MenuSliderOne = () => {
       </div>
       <div className="menu-grid-item-one text-center mb-60">
         <div className="thumb">
-          <img src="assets/images/menu/menu-5.png" alt="" />
+          <img src="/assets/images/menu/menu-5.png" alt="" />
         </div>
         <div className="text">
           <h3 className="title">

@@ -6,25 +6,25 @@ const BEST_MENU_DATA = [
     title: "Hamburger",
     price: "AED 25",
     description: "Roasted langoustine, consommé",
-    image: "assets/images/menu/thumb-1.png"
+    image: "/assets/images/menu/thumb-1.png"
   },
   {
     title: "Pizza",
     price: "AED 63",
     description: "Roasted langoustine, consommé",
-    image: "assets/images/menu/thumb-2.png"
+    image: "/assets/images/menu/thumb-2.png"
   },
   {
     title: "Baked Chicken Wings",
     price: "AED 199",
     description: "Roasted langoustine, consommé",
-    image: "assets/images/menu/thumb-3.png"
+    image: "/assets/images/menu/thumb-3.png"
   },
   {
     title: "Seafood Pizza",
     price: "AED 352",
     description: "Roasted langoustine, consommé",
-    image: "assets/images/menu/thumb-4.png"
+    image: "/assets/images/menu/thumb-4.png"
   }
 ];
 
@@ -47,7 +47,7 @@ const BestMenuSection = () => {
             {/*=== Menu Image Box ===*/}
             <div className="menu-image-box mb-50 pl-lg-30 wow fadeInLeft">
               <img
-                src="assets/images/menu/menu-single-1.jpg"
+                src="/assets/images/menu/menu-single-1.jpg"
                 alt="Menu Image"
               />
             </div>

@@ -49,7 +49,7 @@ export default class Hero3Slider extends Component {
               >
                 <div className="image-overlay" />
                 <img
-                  src="assets/images/hero/hero-slider-1.jpg"
+                  src="/assets/images/hero/hero-slider-1.jpg"
                   alt="hero image"
                 />
               </div>
@@ -81,7 +81,7 @@ export default class Hero3Slider extends Component {
               >
                 <div className="image-overlay" />
                 <img
-                  src="assets/images/hero/hero-slider-2.jpg"
+                  src="/assets/images/hero/hero-slider-2.jpg"
                   alt="hero image"
                 />
               </div>
@@ -113,7 +113,7 @@ export default class Hero3Slider extends Component {
               >
                 <div className="image-overlay" />
                 <img
-                  src="assets/images/hero/hero-slider-3.jpg"
+                  src="/assets/images/hero/hero-slider-3.jpg"
                   alt="hero image"
                 />
               </div>

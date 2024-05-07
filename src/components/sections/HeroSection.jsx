@@ -7,26 +7,26 @@ const sliderData = [
     {
         title: "Kurkure mo-mo",
         description: "Sit amet consectetur adipiscing Malesuada morbigrave ullamore alesuada nec pulvinar nisle",
-        image: "assets/images/hero/hero-1.png",
+        image: "/assets/images/hero/hero-1.png",
         link: "#"
     },
     //add 3 more data here with different title, description, but same image
     {
         title: "Tasty momo",
         description: "Sit amet consectetur adipiscing Malesuada morbigrave ullamore alesuada nec pulvinar nisle",
-        image: "assets/images/hero/hero-1.png",
+        image: "/assets/images/hero/hero-1.png",
         link: "#"
     },
     {
         title: "Dhido Set",
         description: "Sit amet consectetur adipiscing Malesuada morbigrave ullamore alesuada nec pulvinar nisle",
-        image: "assets/images/hero/hero-1.png",
+        image: "/assets/images/hero/hero-1.png",
         link: "#"
     },
     {
         title: "Thakali set",
         description: "Sit amet consectetur adipiscing Malesuada morbigrave ullamore alesuada nec pulvinar nisle",
-        image: "assets/images/hero/hero-1.png",
+        image: "/assets/images/hero/hero-1.png",
         link: "#"
     }
 
@@ -39,7 +39,7 @@ const HeroSection = () => {
             <div className="container">
                 <div className="shape line-shape-one">
                     <span>
-                        <img src="assets/images/shape/line-1.png" alt="shape" />
+                        <img src="/assets/images/shape/line-1.png" alt="shape" />
                     </span>
                 </div>
                 <Slider
@@ -59,7 +59,7 @@ const HeroSection = () => {
                                         </p>
                                         <div className="hero-button wow fadeInUp">
                                             <span>
-                                                <img src="assets/images/down-arrow.png" alt="" />
+                                                <img src="/assets/images/down-arrow.png" alt="" />
                                             </span>
                                             <Link legacyBehavior href={slide.link}
                                             >
