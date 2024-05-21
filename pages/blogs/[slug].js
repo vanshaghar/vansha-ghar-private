@@ -174,13 +174,13 @@ const BlogDetails = ({
                                     <div className="post-thumbnail">
                                         <img
                                             className="max-h-[400px] object-cover w-full"
-                                            src={postData.featuredImage.url}
-                                            alt={postData.featuredImage.alt} />
+                                            src={postData?.featuredImage?.url}
+                                            alt={postData?.featuredImage?.alt} />
                                         <span className="post-date">
                                             <a href="#">
                                                 {new Date(postData.createdAt).getDay() + 1}
                                                 <span>
-                                                    {new Intl.DateTimeFormat('en-US', { month: 'short' }).format(new Date(postData.createdAt))}
+                                                    {new Intl.DateTimeFormat('en-US', { month: 'short' }).format(new Date(postData?.createdAt))}
                                                 </span>
                                             </a>
                                         </span>
@@ -235,7 +235,7 @@ const BlogDetails = ({
                                 <div className="post-navigation-item mb-30 wow fadeInUp">
                                     <div className="prev-post post-nav-item d-flex mb-30">
                                         <div className="thumb">
-                                            <img src={navigationPosts.prev?.featuredImage.url} alt={navigationPosts.prev?.featuredImage.alt} />
+                                            <img src={navigationPosts.prev?.featuredImage?.url} alt={navigationPosts.prev?.featuredImage?.alt} />
                                             <div className="overlay">
                                                 <i className="far fa-angle-left" />
                                             </div>
@@ -249,14 +249,14 @@ const BlogDetails = ({
                                             </span>
                                             <h6>
                                                 <Link legacyBehavior href={`/blogs/${navigationPosts.prev?.slug}`}>
-                                                    <a>{navigationPosts.prev?.title}</a>
+                                                    <a>{navigationPosts?.prev?.title}</a>
                                                 </Link>
                                             </h6>
                                         </div>
                                     </div>
                                     <div className="next-post post-nav-item d-flex mb-30">
                                         <div className="thumb">
-                                            <img src={navigationPosts.next?.featuredImage.url} alt={navigationPosts.next?.featuredImage.alt} />
+                                            <img src={navigationPosts.next?.featuredImage?.url} alt={navigationPosts.next?.featuredImage?.alt} />
                                             <div className="overlay">
                                                 <i className="far fa-angle-right" />
                                             </div>

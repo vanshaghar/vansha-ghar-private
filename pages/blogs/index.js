@@ -1,7 +1,7 @@
 import Link from "next/link";
-import PageBanner from "../src/components/PageBanner";
-import Skyline from "../src/components/Skyline";
-import Layout from "../src/layout/Layout";
+import PageBanner from "../../src/components/PageBanner";
+import Skyline from "../../src/components/Skyline";
+import Layout from "../../src/layout/Layout";
 import React from "react";
 
 export async function getStaticProps() {
@@ -98,13 +98,13 @@ const BlogStandard = ({
                       <div className="post-thumbnail">
                         <img
                           className="max-h-[400px] object-cover"
-                          src={blog.featuredImage.url}
-                          alt={blog.featuredImage.alt} />
+                          src={blog?.featuredImage?.url}
+                          alt={blog?.featuredImage?.alt} />
                         <span className="post-date">
                           <a href="#">
                             {new Date(blog.createdAt).getDay() + 1}
                             <span>
-                              {new Intl.DateTimeFormat('en-US', { month: 'short' }).format(new Date(blog.createdAt))}
+                              {new Intl.DateTimeFormat('en-US', { month: 'short' }).format(new Date(blog?.createdAt))}
                             </span>
                           </a>
                         </span>

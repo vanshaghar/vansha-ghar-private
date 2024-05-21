@@ -1,5 +1,29 @@
 import React from 'react';
-import { ReservationsFromLg12 } from "../../components/ReservationsFrom";
+
+const DATA = [
+  {
+    partner: "Zomato",
+    image: "https://spydogenesis.s3.ap-south-1.amazonaws.com/vanshaghar/images/Zomato.webp",
+    link: "http://zoma.to/r/18436814",
+    bg: "#E13743"
+  },
+  {
+    partner: "Talabat",
+    image: "https://spydogenesis.s3.ap-south-1.amazonaws.com/vanshaghar/images/Talabat-logo.webp",
+    link: "https://www.talabat.com/uae/vansha-ghar-restaurant",
+    bg: "#F67005"
+  }, {
+    partner: "Noon",
+    image: "https://spydogenesis.s3.ap-south-1.amazonaws.com/vanshaghar/images/noon-food-logo.webp",
+    link: "https://food.noon.com/outlet/VNSHGHDUO6",
+    bg: "#FCE719"
+  }, {
+    partner: "Deliveroo",
+    image: "https://spydogenesis.s3.ap-south-1.amazonaws.com/vanshaghar/images/Deliveroo_Logo.webp",
+    link: "https://deliveroo.co.uk/menu/Stamford/stamford/nepalese-vansa-ghar",
+    bg: "#41CBBB"
+  }
+];
 const ReservationSection = () => {
   return (
     <section className="reservation-line-section p-r z-1 pt-130 pb-40">
@@ -31,16 +55,56 @@ const ReservationSection = () => {
               </div>
 
               {/*=== Reservation Form ===*/}
-              <div className="grid grid-cols-2 gap-4">
-                {
-                  [1, 2, 3, 4, 5, 6].map((item, index) => (
-                    <div
-                      key={item}
-                      className="border cursor-pointer bg-white hover:shadow-sm border-gray-300 rounded-md p-4 flex flex-col justify-center items-center">
-                      Zomato
-                    </div>
-                  ))
-                }
+              <div className="grid grid-cols-2 place-content-center justify-items-center gap-4">
+                {/* Zomato */}
+                <div
+                  key={DATA[0].partner}
+                  className={`flex items-center cursor-pointer relative  justify-center w-full max-w-[250px] h-[100px] rounded-md`}
+                  style={{ backgroundColor: DATA[0].bg }}
+                >
+                  <img
+                    src={DATA[0].image}
+                    alt={DATA[0].partner}
+                    className='img-fluid w-full max-h-[100px] h-auto object-contain scale-[1.5] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 '
+                  />
+                </div>
+                {/* Talabat */}
+                <div
+                  key={DATA[1].partner}
+                  className={`flex items-center cursor-pointer relative  justify-center w-full max-w-[250px] h-[100px] rounded-md`}
+                  style={{ backgroundColor: DATA[1].bg }}
+                >
+                  <img
+                    src={DATA[1].image}
+                    alt={DATA[1].partner}
+                    className='img-fluid w-full max-h-[100px] h-auto object-contain  absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 '
+                  />
+                </div>
+                {/* Noon */}
+                <div
+                  key={DATA[2].partner}
+                  className={`flex items-center cursor-pointer relative  justify-center w-full max-w-[250px] h-[100px] rounded-md`}
+                  style={{ backgroundColor: DATA[2].bg }}
+                >
+                  <img
+                    src={DATA[2].image}
+                    alt={DATA[2].partner}
+                    className='img-fluid w-full max-h-[100px] h-auto object-contain p-4 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 '
+                  />
+                </div>
+                {/* Deliveroo */}
+                <div
+                  key={DATA[3].partner}
+                  className={`flex items-center cursor-pointer relative  justify-center w-full max-w-[250px] h-[100px] rounded-md`}
+                  style={{ backgroundColor: DATA[3].bg }}
+                >
+                  <img
+                    src={DATA[3].image}
+                    alt={DATA[3].partner}
+                    className='img-fluid w-full max-h-[100px] h-auto object-contain p-3 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 '
+                  />
+                </div>
+
 
 
               </div>

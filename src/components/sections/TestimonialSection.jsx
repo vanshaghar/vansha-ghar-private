@@ -10,9 +10,11 @@ const TestimonialSection = () => {
           <img src="/assets/images/shape/line-1.png" alt="Shape" />
         </span>
       </div>
-      <div className="shape shape-one">
+      <div className="  max-w-[600px] absolute !right-[-100px] bottom-0">
         <span>
-          <img src="/assets/images/shape/element-1.png" alt="" />
+          <img src="https://spydogenesis.s3.ap-south-1.amazonaws.com/vanshaghar/images/paratha.webp"
+            className='img-fluid '
+            alt="" />
         </span>
       </div>
       <div className="container">

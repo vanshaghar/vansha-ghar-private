@@ -93,9 +93,6 @@ const DefaultHeader = ({ openSearchModal }) => {
               </div>
               {/*=== Nav right Item ===*/}
               <div className="nav-right-item d-flex align-items-center">
-                <div className="search-button">
-                  <SearchBtn openSearchModal={openSearchModal} />
-                </div>
                 <div className="nav-call-button">
                   <span>
                     <img src="/assets/images/call.png" alt="icon" />

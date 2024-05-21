@@ -25,11 +25,7 @@ const DeskTopMenus = () => {
             Blogs
           </Link>
         </li>
-        <li className="menu-item ">
-          <Link legacyBehavior href="faq">
-            Faq
-          </Link>
-        </li>
+
         <li className="menu-item ">
           <Link legacyBehavior href="contact">
             Contact
@@ -68,11 +64,6 @@ const MobileMenu = () => {
         <li className="menu-item ">
           <Link legacyBehavior href="blogs">
             Blogs
-          </Link>
-        </li>
-        <li className="menu-item ">
-          <Link legacyBehavior href="faq">
-            Faq
           </Link>
         </li>
         <li className="menu-item ">

@@ -137,9 +137,7 @@ const DefaultFooter = () => {
                   <li>
                     <a href="#">Setting &amp; Privacy</a>
                   </li>
-                  <li>
-                    <a href="#">Faqs</a>
-                  </li>
+                
                   <li>
                     <a href="#">Food Menu</a>
                   </li>

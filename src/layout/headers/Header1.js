@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Menus from "./Menus";
-import SearchBtn from "./SearchBtn";
 
 const Header1 = ({ openSearchModal }) => {
   return (
@@ -93,11 +92,10 @@ const Header1 = ({ openSearchModal }) => {
               </div>
               {/*=== Nav right Item ===*/}
               <div className="nav-right-item d-flex align-items-center">
-                <div className="search-button">
-                  <SearchBtn openSearchModal={openSearchModal} />
-                </div>
                 <div className="nav-call-button">
-                  <span>
+                  <span
+                    className="flex items-center justify-center gap-2"
+                  >
                     <img src="/assets/images/call.png" alt="icon" />
                     <a href="tel:000(123)45689">000 (123) 456 89</a>
                   </span>
@@ -105,7 +103,7 @@ const Header1 = ({ openSearchModal }) => {
                 <div className="menu-button d-xl-block d-none">
                   <Link legacyBehavior href="/contact">
                     <a className="main-btn btn-red">
-                      Book a Table
+                      Order Food Online
                       <i className="fas fa-long-arrow-right" />
                     </a>
                   </Link>

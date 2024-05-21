@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 
 const ABOUT_IMAGE = {
-  image1: "https://spydogenesis.s3.ap-south-1.amazonaws.com/vanshaghar/images/sekuwa-3.jpg",
+  image1: "https://spydogenesis.s3.ap-south-1.amazonaws.com/vanshaghar/images/vansha-ghar-building.webp",
   image2: "https://spydogenesis.s3.ap-south-1.amazonaws.com/vanshaghar/images/tandoori-momo.jpg"
 };
 
@@ -17,16 +17,13 @@ const AboutSection = () => {
               <div className="section-title section-title-left mb-30">
                 <span className="sub-title">About Vansha Ghar</span>
                 <h2>
-                  The Best Tasty &amp; Yummy Food and Chief Based on London
+                  The Best Tasty &amp; Yummy Food Based In Nepal
                 </h2>
               </div>
               <p>
-                Sit amet consectetur adipiscing elitsue risus mauris quam
-                neque adipiscing phasellus aenean ante orcirat scelerisque
-                enim ut nulla vestibulum velvitae ut at elementum mauris,
-                etiam ornare diame
+                Discover the warmth of Nepali hospitality at Vansha Ghar. We bring the authentic flavours of Nepal to your table. Enjoy traditional dishes like momos, sekuwa, and Thakali sets, made with the freshest ingredients and a love for Nepali cuisine.
               </p>
-              <Link legacyBehavior href="#">
+              <Link legacyBehavior href="/about">
                 <a className="main-btn btn-red">
                   learn more
                   <i className="far fa-arrow-right" />
@@ -41,14 +38,14 @@ const AboutSection = () => {
                 <div className="col-md-6">
                   <img
                     src={ABOUT_IMAGE.image1}
-                    className="mb-40 wow max-h-[500px] w-full h-full object-contain fadeInDown"
+                    className="mb-40 wow max-h-[500px] max-w-[380px] w-full h-full object-cover fadeInDown"
                     alt="About Image"
                   />
                 </div>
                 <div className="col-md-6">
                   <img
                     src={ABOUT_IMAGE.image2}
-                    className="mb-40 wow max-h-[500px] fadeInDown"
+                    className="mb-40 wow max-h-[500px] max-w-[380px] fadeInDown"
                     alt="About Image"
                   />
                 </div>
