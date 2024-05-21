@@ -4,13 +4,13 @@ import Slider from "react-slick";
 
 const TestimonialSection = () => {
   return (
-    <section className="testimonial-section-one dark-black-bg p-r z-1 pt-120 pb-120">
+    <section className="testimonial-section-one dark-black-bg overflow-hidden p-r z-1 pt-120 pb-120">
       <div className="shape line-shape-one">
         <span>
           <img src="/assets/images/shape/line-1.png" alt="Shape" />
         </span>
       </div>
-      <div className="  max-w-[600px] absolute !right-[-100px] bottom-0">
+      <div className="max-w-[600px] absolute !right-[-100px] bottom-0">
         <span>
           <img src="https://spydogenesis.s3.ap-south-1.amazonaws.com/vanshaghar/images/paratha.webp"
             className='img-fluid w-full'
