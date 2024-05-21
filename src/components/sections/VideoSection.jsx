@@ -21,7 +21,7 @@ const VideoSection = () => {
               {/* <div className="image-overlay" /> */}
               <div className="play-content-box">
                 <a
-                  href="#"
+                  href="https://youtu.be/qPhevxOg1FM?si=XUrnuTt5gtaV5fSA"
                   className="video-popup"
                 >
                   <i className="fas fa-play" />
@@ -43,7 +43,7 @@ const VideoSection = () => {
               </p>
               <ul className="check-style-one mb-30">
                 <li>Best Way to Serve Our Foods</li>
-                <li>Low Cost &amp; Onlie Orders</li>
+                <li>Low Cost &amp; Online Orders</li>
               </ul>
               <Link legacyBehavior href="/about">
                 <a className="main-btn btn-black">

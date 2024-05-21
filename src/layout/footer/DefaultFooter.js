@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const DefaultFooter = () => {
   return (
-    <footer className="footer-dark dark-black-bg text-white p-r z-1 pt-80">
+    <footer className="footer-dark dark-black-bg text-white p-r z-1 pt-40">
       {/*=== Footer Widget ===*/}
       <div className="footer-widget-area pb-10">
         <div className="container">

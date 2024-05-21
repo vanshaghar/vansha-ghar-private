@@ -13,6 +13,11 @@ import ReservationSection from "../src/components/sections/ReservationSection.";
 import TestimonialSection from "../src/components/sections/TestimonialSection";
 import InstagramGallerySection from "../src/components/sections/InstagramgallerySection";
 import Skyline from "../src/components/Skyline";
+
+const getStaticProps = async () => {
+  const graphqlEndpoint = process.env.NEXT_PUBLIC_API_URL;
+  
+};
 const Index = () => {
   return (
     <Layout header={1} footer={1}>

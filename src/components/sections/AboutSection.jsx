@@ -2,8 +2,8 @@ import React from 'react';
 import Link from 'next/link';
 
 const ABOUT_IMAGE = {
-  image1: "/assets/images/about/image-1.jpg",
-  image2: "/assets/images/about/image-2.jpg"
+  image1: "https://spydogenesis.s3.ap-south-1.amazonaws.com/vanshaghar/images/sekuwa-3.jpg",
+  image2: "https://spydogenesis.s3.ap-south-1.amazonaws.com/vanshaghar/images/tandoori-momo.jpg"
 };
 
 const AboutSection = () => {
@@ -41,14 +41,14 @@ const AboutSection = () => {
                 <div className="col-md-6">
                   <img
                     src={ABOUT_IMAGE.image1}
-                    className="mb-40 wow fadeInUp"
+                    className="mb-40 wow max-h-[500px] w-full h-full object-contain fadeInDown"
                     alt="About Image"
                   />
                 </div>
                 <div className="col-md-6">
                   <img
                     src={ABOUT_IMAGE.image2}
-                    className="mb-40 wow fadeInDown"
+                    className="mb-40 wow max-h-[500px] fadeInDown"
                     alt="About Image"
                   />
                 </div>

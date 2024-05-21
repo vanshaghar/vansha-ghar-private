@@ -47,7 +47,7 @@ const BestMenuSection = () => {
             {/*=== Menu Image Box ===*/}
             <div className="menu-image-box mb-50 pl-lg-30 wow fadeInLeft">
               <img
-                src="/assets/images/menu/menu-single-1.jpg"
+                src="https://spydogenesis.s3.ap-south-1.amazonaws.com/vanshaghar/images/butter-chicken.jpg"
                 alt="Menu Image"
               />
             </div>
