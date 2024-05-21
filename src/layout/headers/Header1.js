@@ -3,8 +3,8 @@ import Menus from "./Menus";
 
 const Header1 = ({ openSearchModal }) => {
   return (
-    <header className="header-area transparent-header">
-      <div className="top-bar">
+    <header className="header-area mt-10  transparent-header">
+      <div className="top-bar hidden">
         <div className="container-fluid">
           <div className="row">
             <div className="col-lg-7">
@@ -52,7 +52,7 @@ const Header1 = ({ openSearchModal }) => {
         <div className="nav-overlay" />
         <div className="container-fluid">
           {/*=== Primary Menu ===*/}
-          <div className="primary-menu">
+          <div className="primary-menu rounded-2xl !px-10">
             {/*=== Site Branding ===*/}
             <div className="site-branding">
               <Link legacyBehavior href="/">

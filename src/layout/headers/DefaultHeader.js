@@ -5,7 +5,7 @@ import SearchBtn from "./SearchBtn";
 const DefaultHeader = ({ openSearchModal }) => {
   return (
     <header className="header-area page-header transparent-header">
-      <div className="top-bar text-white">
+      <div className="top-bar hidden text-white">
         <div className="container-fluid">
           <div className="row">
             <div className="col-lg-7">

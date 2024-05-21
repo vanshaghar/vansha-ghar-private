@@ -94,6 +94,49 @@ const Menu = ({
     menus, categories
 }) => {
     const [activeCategory, setActiveCategory] = useState('');
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollPosition = window.scrollY;
+            const categoryElements = categories.map(category => document.getElementById(category.link.replace("#", "")));
+
+            categoryElements.forEach((element, index) => {
+                if (element) {
+                    const rect = element.getBoundingClientRect();
+                    const top = rect.top + window.scrollY;
+
+                    if (scrollPosition >= top - 200 && scrollPosition < top + rect.height) {
+                        setActiveCategory(categories[index].link.replace("#", ""));
+
+                        // Scroll the active category into view
+                        const categoryContainer = document.querySelector('.parent-category');
+                        const activeElement = document.querySelector(`[data-category="${categories[index].link.replace("#", "")}"]`);
+                        if (categoryContainer && activeElement) {
+                            const containerRect = categoryContainer.getBoundingClientRect();
+                            const activeElementRect = activeElement.getBoundingClientRect();
+
+                            if (activeElementRect.left < containerRect.left || activeElementRect.right > containerRect.right) {
+                                activeElement.scrollIntoView({ behavior: 'smooth', inline: 'center' });
+                            }
+                        }
+                    }
+                }
+            });
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, [categories]);
+
+    const handleClick = (category) => {
+        setActiveCategory(category.link.replace("#", ""));
+        const element = document.getElementById(category.link.replace("#", ""));
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+        }
+    };
     return (
         <Layout>
             <PageBanner pageName={"Menu"} title="Menu" />
@@ -104,23 +147,20 @@ const Menu = ({
                     className="sticky py-1 top-0 z-50 bg-white "
                 >
                     <div className="">
-                        <div className="flex max-w-[1300px] flex-nowrap mx-auto  justify-start  hide-scrollbar items-center overflow-x-auto">
+                        <div className="flex max-w-[1300px] parent-category flex-nowrap mx-auto  justify-start  hide-scrollbar items-center overflow-x-auto">
                             {
                                 categories.map((category, index) => (
                                     <div
-                                        className={`p-2 m-2 text-center  bg-[#008249] hover:bg-[#11492C]  !text-nowrap text-white rounded-md font-medium cursor-pointer ${activeCategory === category.link.replace("#", "") ? "bg-[#11492C] text-white" : ""}`}
+                                        className={`p-2 m-2 text-center bg-[#008249] hover:bg-[#11492C] !text-nowrap text-white rounded-md font-medium cursor-pointer ${activeCategory === category.link.replace("#", "") ? "bg-[#11492C] text-white" : ""}`}
                                         key={categories.type}
+                                        onClick={() => handleClick(category)}
+                                        data-category={category.link.replace("#", "")}
                                     >
-                                        <Link href={category.link}
-                                        >
-                                            <span
-                                                className="text-white !text-nowrap w-full"
-                                            >
-
-                                                {category.type}
-                                            </span>
-                                        </Link>
+                                        <span className="text-white !text-nowrap w-full">
+                                            {category.type}
+                                        </span>
                                     </div>
+
                                 ))
                             }
                         </div>
@@ -134,7 +174,7 @@ const Menu = ({
                             menus.map((item, index) => (
                                 <div
                                     key={item.category.name}
-                                    className={`w-full my-[200px] ${index === 0 && "mt-5"}`}
+                                    className={`w-full my-[50px] ${index === 0 && "mt-5"}`}
                                     id={item.category.link?.replace("#", "")}
                                 >
                                     <h2 className="text-4xl relative hidden md:block mx-auto text-center p-3 font-bold mb-1" >
