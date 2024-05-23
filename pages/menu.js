@@ -95,40 +95,6 @@ const Menu = ({
 }) => {
     const [activeCategory, setActiveCategory] = useState('');
 
-    useEffect(() => {
-        const handleScroll = () => {
-            const scrollPosition = window.scrollY;
-            const categoryElements = categories.map(category => document.getElementById(category.link.replace("#", "")));
-
-            categoryElements.forEach((element, index) => {
-                if (element) {
-                    const rect = element.getBoundingClientRect();
-                    const top = rect.top + window.scrollY;
-
-                    if (scrollPosition >= top - 200 && scrollPosition < top + rect.height) {
-                        setActiveCategory(categories[index].link.replace("#", ""));
-
-                        // Scroll the active category into view
-                        const categoryContainer = document.querySelector('.parent-category');
-                        const activeElement = document.querySelector(`[data-category="${categories[index].link.replace("#", "")}"]`);
-                        if (categoryContainer && activeElement) {
-                            const containerRect = categoryContainer.getBoundingClientRect();
-                            const activeElementRect = activeElement.getBoundingClientRect();
-
-                            if (activeElementRect.left < containerRect.left || activeElementRect.right > containerRect.right) {
-                                activeElement.scrollIntoView({ behavior: 'smooth', inline: 'center' });
-                            }
-                        }
-                    }
-                }
-            });
-        };
-
-        window.addEventListener("scroll", handleScroll);
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, [categories]);
 
     const handleClick = (category) => {
         setActiveCategory(category.link.replace("#", ""));

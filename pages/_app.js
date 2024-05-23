@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import PreLoader from "../src/layout/PreLoader";
 import "../styles/globals.css";
 import "/node_modules/sassy-datepicker/dist/styles.css";
+import { FloatingWhatsApp } from 'react-floating-whatsapp';
 
 const App = ({ Component, pageProps }) => {
   const [loader, setLoader] = useState(true);
@@ -67,6 +68,12 @@ const App = ({ Component, pageProps }) => {
         <link rel="stylesheet" href="/assets/css/style.css" />
       </Head>
       {loader && <PreLoader />} {!loader && <Component {...pageProps} />}
+      <FloatingWhatsApp
+        phoneNumber="+971524729073"
+        accountName="Vansha Ghar"
+        avatar="/assets/images/logo/logo-white-bg.jpg"
+        chatMessage="Hi, How can I help you?"
+      />
     </Fragment>
   );
 };

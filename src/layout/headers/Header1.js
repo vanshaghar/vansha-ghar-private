@@ -101,7 +101,7 @@ const Header1 = ({ openSearchModal }) => {
                   </span>
                 </div>
                 <div className="menu-button d-xl-block d-none">
-                  <Link legacyBehavior href="/contact">
+                  <Link legacyBehavior href="https://api.whatsapp.com/send/?phone=971524729073&text=Hello+I+want+to+order+&type=phone_number&app_absent=0">
                     <a className="main-btn btn-red">
                       Order Food Online
                       <i className="fas fa-long-arrow-right" />

@@ -29,7 +29,7 @@ const ScrollToTop = () => {
             type="button"
             data-twe-ripple-init
             data-twe-ripple-color="light"
-            className={`!fixed z-[100] bottom-5 end-5 rounded-full bg-[#11492C] p-3 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-[#11492C] hover:shadow-lg focus:bg-[#11492C] focus:shadow-lg focus:outline-none focus:ring-0 active:bg-[#11492C] active:shadow-lg ${isVisible ? '' : 'hidden'}`}
+            className={`!fixed z-[100] !bottom-[100px] !right-10 end-5 rounded-full bg-[#11492C] p-3 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-[#11492C] hover:shadow-lg focus:bg-[#11492C] focus:shadow-lg focus:outline-none focus:ring-0 active:bg-[#11492C] active:shadow-lg ${isVisible ? '' : 'hidden'}`}
             id="btn-back-to-top"
             onClick={backToTop}
         >

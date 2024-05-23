@@ -14,17 +14,92 @@ import TestimonialSection from "../src/components/sections/TestimonialSection";
 import InstagramGallerySection from "../src/components/sections/InstagramgallerySection";
 import Skyline from "../src/components/Skyline";
 
-const getStaticProps = async () => {
+export async function getStaticProps() {
+
   const graphqlEndpoint = process.env.NEXT_PUBLIC_API_URL;
-  
-};
-const Index = () => {
+
+  const res = await fetch(graphqlEndpoint, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept-Encoding': 'gzip, deflate, br',
+      'X-Auth-Token': `dsdsdsds`
+    },
+    body: JSON.stringify({
+      query: `
+        query {
+          OrganizedMenu(id:"662e03ce152dafe3ff455b3c") {
+            id
+            name
+            category {
+              id
+              name
+              value
+            }
+            menus {
+              menu {
+                name
+                id
+                description
+                price
+                foodType {
+                  type
+                  value
+                }
+                image {
+                  url
+                  alt
+                }
+                ingredients
+              }
+              index
+            }
+          }
+        }
+      `
+    })
+  }).then((response) => response.json());
+  const featured = await fetch(graphqlEndpoint, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept-Encoding': 'gzip, deflate, br',
+      'X-Auth-Token': `dsdsdsds`
+    },
+    body: JSON.stringify({
+      query: `
+        query {
+          Featureds {
+            docs {
+              id
+              name
+              description
+              image {
+                alt
+                url
+              }
+            }
+          }
+        }
+      `
+    })
+  }).then((response) => response.json());
+
+  const menus = res.data?.OrganizedMenu?.menus?.slice(0, 4).map(i => i.menu) ?? [];
+  const featureds = featured.data?.Featureds?.docs ?? [];
+  return {
+    props: { menus, featureds }
+  };
+}
+const Index = ({ menus, featureds }) => {
   return (
     <Layout header={1} footer={1}>
-      <HeroSection />
+      <HeroSection
+        data={featureds}
+      />
       <PopularFood />
       <AboutSection />
-      <BestMenuSection />
+      <BestMenuSection menus={menus} />
       <TeamSection />
       <VideoSection />
       <WorkingHoursSection />

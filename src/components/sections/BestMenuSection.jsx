@@ -29,7 +29,25 @@ const BEST_MENU_DATA = [
 ];
 
 
-const BestMenuSection = () => {
+const BestMenuSection = ({
+  menus
+}) => {
+  React.useEffect(() => {
+    console.log({
+      "name": "Chicken Sizzler",
+      "id": "661921f84851cffd6303d344",
+      "description": "A sizzling hot platter featuring grilled or fried chicken served with sautéed vegetables, a choice of sauce, and often accompanied by rice, fries, or garlic bread, creating a flavorful and visually appealing dish served hot and sizzling on a cast iron plate.",
+      "price": 30,
+      "foodType": [
+        {
+          "type": "Non-veg",
+          "value": "non-veg"
+        }
+      ],
+      "image": null,
+      "ingredients": "Grilled Chicken, Sautéed Vegetables (such as bell peppers, onions, carrots), French Fries or Mashed Potatoes, Sizzler Plate, Sauce or Gravy"
+    });
+  }, []);
   return (
     <section className="menu-section pb-80">
       <div className="container">
@@ -57,7 +75,7 @@ const BestMenuSection = () => {
             <div className="menu-content-box mb-50">
               {/*=== Single Menu Item ===*/}
               {
-                BEST_MENU_DATA.map((item, index) => (
+                menus.map((item, index) => (
                   <div key={index} className="single-menu-item mb-30 wow fadeInUp">
                     <div className="thumb">
                       <img src={item.image} alt="" />
@@ -65,17 +83,18 @@ const BestMenuSection = () => {
                     <div className="text">
                       <h3 className="item-title-price">
                         <Link legacyBehavior href="#">
-                          <a className="item-title">{item.title}</a>
+                          <a className="item-title">{item.name}</a>
                         </Link>
                         <span className="dot-border" />
-                        <span className="price">{item.price}</span>
+                        <span className="price"> {" "}{item.price} AED</span>
                       </h3>
-                      <p>{item.description}</p>
+                      <p
+                        className='line-clamp-2'
+                      >{item.ingredients}</p>
                     </div>
                   </div>
                 ))
               }
-
             </div>
             <div className="main-btn  btn-red cursor-pointer">Order Now</div>
           </div>

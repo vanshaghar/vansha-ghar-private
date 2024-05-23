@@ -32,7 +32,13 @@ const sliderData = [
 
 
 ];
-const HeroSection = () => {
+const HeroSection = ({
+    data
+}) => {
+
+    React.useEffect(() => {
+        console.log(data);
+    }, [data]);
 
     return (
         <section className="banner-one p-r z-1">
@@ -46,14 +52,15 @@ const HeroSection = () => {
                     {...heroSliderOne}
                     className="container hero-slider-one p-r z-1"
                 >
+
                     {
-                        sliderData.map((slide) => (
+                        data.map((slide) => (
                             <div
-                                key={slide.title}
+                                key={slide.id}
                                 className="row !flex lg:!flex-nowrap flex-wrap align-items-center">
-                                <div className=" order-lg-1 order-2 max-w-[51rem]">
+                                <div className="order-lg-1 order-2 max-w-[51rem]">
                                     <div className="hero-content mb-40 pr-lg-40">
-                                        <h1 className="wow fadeInUp">{slide.title}</h1>
+                                        <h1 className="wow fadeInUp">{slide.name}</h1>
                                         <p className="wow fadeInDown">
                                             {slide.description}
                                         </p>
@@ -61,7 +68,7 @@ const HeroSection = () => {
                                             <span>
                                                 <img src="/assets/images/down-arrow.png" alt="" />
                                             </span>
-                                            <Link legacyBehavior href={slide.link}
+                                            <Link legacyBehavior href={`https://api.whatsapp.com/send/?phone=971524729073&text=Hello+I+want+to+order+${slide.name}&type=phone_number&app_absent=0`}
                                             >
                                                 <a className="main-btn btn-red">
                                                     order now
@@ -73,9 +80,9 @@ const HeroSection = () => {
                                 </div>
                                 <div className=" order-lg-2 order-1">
                                     {/*=== Hero Image ===*/}
-                                    <div className="hero-image-box mb-40 wow fadeInRight">
-                                        <img src={slide.image}
-
+                                    <div className="hero-image-box rounded-full overflow-hidden aspect-square max-w-[600px] mb-40 wow fadeInRight">
+                                        <img src={slide?.image?.url}
+                                            className="h-full w-full object-cover"
                                             alt="Hero Image" />
                                     </div>
                                 </div>

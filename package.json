@@ -17,6 +17,7 @@
     "react-bootstrap": "^1.6.1",
     "react-countup": "^6.4.0",
     "react-dom": "18.2.0",
+    "react-floating-whatsapp": "^5.0.8",
     "react-nice-select": "^1.0.4",
     "react-slick": "^0.29.0",
     "react-visibility-sensor": "^5.1.1",
