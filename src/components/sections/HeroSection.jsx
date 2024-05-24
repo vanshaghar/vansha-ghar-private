@@ -57,11 +57,11 @@ const HeroSection = ({
                         data.map((slide) => (
                             <div
                                 key={slide.id}
-                                className="row !flex lg:!flex-nowrap flex-wrap align-items-center">
-                                <div className="order-lg-1 order-2 max-w-[51rem]">
-                                    <div className="hero-content mb-40 pr-lg-40">
+                                className="row relative w-full !flex lg:!flex-nowrap justify-center lg:justify-start flex-wrap align-items-center">
+                                <div className="order-lg-1 bottom-0 bg-white flex lg:block items-center justify-center absolute h-68 py-4 lg:py-0 lg:!bg-transparent lg:relative order-2 w-full lg:max-w-[40vw]">
+                                    <div className="hero-content mx-2 lg:mb-40 pr-lg-40">
                                         <h1 className="wow fadeInUp">{slide.name}</h1>
-                                        <p className="wow fadeInDown">
+                                        <p className="wow fadeInDown line-clamp-2 h-[2rem]">
                                             {slide.description}
                                         </p>
                                         <div className="hero-button wow fadeInUp">
@@ -78,7 +78,7 @@ const HeroSection = ({
                                         </div>
                                     </div>
                                 </div>
-                                <div className=" order-lg-2 order-1">
+                                <div className=" order-lg-2 flex-shrink-0 w-full  lg:block flex items-center justify-center order-1">
                                     {/*=== Hero Image ===*/}
                                     <div className="hero-image-box rounded-full overflow-hidden aspect-square max-w-[600px] mb-40 wow fadeInRight">
                                         <img src={slide?.image?.url}
