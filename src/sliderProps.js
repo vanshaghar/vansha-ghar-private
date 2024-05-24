@@ -137,7 +137,7 @@ export const heroSliderOne = {
   dots: false,
   arrows: false,
   infinite: true,
-  speed: 800,
+  speed: 1200,
   fade: false,
   // appendArrows: sliderArrows,
   autoplay: true,
