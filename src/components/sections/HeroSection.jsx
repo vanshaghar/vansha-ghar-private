@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import { heroSliderOne } from "../../sliderProps";
 import Link from "next/link";
+import Image from "next/image";
 // Define the array of data for the slider
 const sliderData = [
     {
@@ -81,9 +82,12 @@ const HeroSection = ({
                                 <div className=" order-lg-2 flex-shrink-0 w-full  lg:block flex items-center justify-center order-1">
                                     {/*=== Hero Image ===*/}
                                     <div className="hero-image-box rounded-full overflow-hidden aspect-square max-w-[600px] mb-40 wow fadeInRight">
-                                        <img src={slide?.image?.url}
+                                        <Image src={slide?.image?.url}
                                             className="h-full w-full object-cover"
-                                            alt="Hero Image" />
+                                            alt="Hero Image"
+                                            width={1000}
+                                            height={1000}
+                                        />
                                     </div>
                                 </div>
                             </div>))

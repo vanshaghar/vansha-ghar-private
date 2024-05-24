@@ -4,10 +4,10 @@ import Layout from "../src/layout/Layout";
 const Contact = () => {
   return (
     <Layout>
-      <PageBanner pageName={"Contact Us"} title="Contact" />{" "}
-      <section className="contact-section pt-130 pb-130">
-        <div className="container">
-          <div className="contact-info-wrapper pt-70 pb-30 wow fadeInUp">
+      <PageBanner pageName={"Contact Us"} title="Contact" />
+      <section className="contact-section py-30">
+        <div className="container mt-50">
+          <div className="contact-info-wrapper pt-30 pb-30 wow fadeInUp">
             <div className="row justify-content-center">
               <div className="col-xl-6 col-lg-10">
                 <div className="section-title text-center mb-50">
@@ -18,7 +18,7 @@ const Contact = () => {
             </div>
             <div className="row justify-content-center">
               <div className="col-lg-4 col-md-6 col-sm-12">
-                <div className="single-info-box mb-40">
+                <div className="single-info-box mb-10">
                   <div className="icon">
                     <img src="/assets/images/icon/icon-7.png" alt="icon" />
                   </div>
@@ -29,7 +29,7 @@ const Contact = () => {
                 </div>
               </div>
               <div className="col-lg-4 col-md-6 col-sm-12">
-                <div className="single-info-box mb-40">
+                <div className="single-info-box mb-10">
                   <div className="icon">
                     <img src="/assets/images/icon/icon-8.png" alt="icon" />
                   </div>
@@ -45,7 +45,7 @@ const Contact = () => {
                 </div>
               </div>
               <div className="col-lg-4 col-md-6 col-sm-12">
-                <div className="single-info-box mb-40">
+                <div className="single-info-box mb-10">
                   <div className="icon">
                     <img src="/assets/images/icon/icon-9.png" alt="icon" />
                   </div>
@@ -62,11 +62,13 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="contact-wrapper-one mt-80 pt-70 pb-80 wow fadeInUp">
+          <div className="contact-wrapper-one my-10 pt-10 pb-20 wow fadeInUp">
             <div className="row justify-content-center">
               <div className="col-xl-6 col-lg-12">
-                <div className="section-title text-center mb-60">
-                  <span className="sub-title">Consultation</span>
+                <div className="section-title text-center mb-10">
+                  <span className="sub-title">
+                    <span className="title-bg">Contact</span>
+                  </span>
                   <h2>Send Us Message</h2>
                 </div>
               </div>
@@ -147,14 +149,11 @@ const Contact = () => {
           </div>
         </div>
       </section>
-      {/*====== End Contact Section ======*/}
-      {/*====== Start Contact Map Section ======*/}
       <section className="contact-page-map wow fadeInUp">
-        {/*=== Map Box ===*/}
         <div className="map-box">
-          <iframe src="https://maps.google.com/maps?q=new%20york&t=&z=13&ie=UTF8&iwloc=&output=embed" />
+          <iframe src="https://maps.google.com/maps?q=vansha%20ghar%20restaurant%20abu%20dhabi&t=&z=13&ie=UTF8&iwloc=&output=embed" loading="lazy" allowFullScreen />
         </div>
-      </section>{" "}
+      </section>
       <Skyline />
     </Layout>
   );

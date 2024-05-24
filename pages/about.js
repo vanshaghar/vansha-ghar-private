@@ -4,6 +4,7 @@ import Skyline from "../src/components/Skyline";
 import QichenCounter from "../src/components/QichenCounter";
 import TestimonialSliderThree from "../src/components/slider/TestimonialSliderThree";
 import Layout from "../src/layout/Layout";
+import VideoSection from "../src/components/sections/VideoSection";
 const About = () => {
   return (
     <Layout>
@@ -136,7 +137,7 @@ const About = () => {
             <div className="col-xl-6 col-lg-12">
               <div className="choose-content-box content-box-gap mb-30 wow fadeInLeft">
                 <div className="section-title section-title-left mb-10">
-                  <span className="sub-title">Why Choos us</span>
+                  <span className="sub-title">Why Choose us</span>
                   <h2
                     className="text-5xl"
                   >
@@ -171,7 +172,7 @@ const About = () => {
                         <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 14 14"><g fill="none" stroke="currentColor" stroke-linecap="round"><path stroke-linejoin="round" d="M2.243 2.246v1.562m4.563-1.562v1.562M4.525 1.083v1.562" /><path d="M11.509 4.602a.955.955 0 1 0 1.91 0a.955.955 0 1 0-1.91 0" /><path stroke-linejoin="round" d="m10.841 8.677l.212.093c1.48.7 1.889 1.606 1.889 2.85v.298a1 1 0 0 1-1 1H1.64c-.327 0-.634-.161-.76-.463c-.277-.669-.599-2.013.238-3.685c1.21-2.416 4.187-2.947 6.094-1.947l.09.046" /><path d="M10.158 10.006c.928-1.018.976-2.485.108-3.275s-2.323-.605-3.25.413c-.843.925-.96 2.219-.325 3.04c.064.084.137.163.217.235" /><path stroke-linejoin="round" d="M11.806 5.296L10.32 6.781" /></g></svg>
                       </div>
                       <div className="text">
-                        <h3 className="title">Nepali Cusine</h3>
+                        <h3 className="title">Nepali Cuisine</h3>
                         <p>Rich, Spicy, Flavorful, Diverse, Authentic</p>
                         {/* <Link legacyBehavior href="/about">
                           <a className="btn-link">Read more</a>
@@ -308,59 +309,7 @@ const About = () => {
       </section>
       {/*=== End Team Section ===*/}
       {/*=== Start Video Section ===*/}
-      <section className="video-line-section pt-130 pb-80 p-r z-1">
-        <div className="line-shape line-shape-one">
-          <span>
-            <img src="/assets/images/shape/line-1.png" alt="Shape" />
-          </span>
-        </div>
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-7">
-              {/*=== Video Image Box ===*/}
-              <div className="video-one_image-box mb-50 p-r z-1 wow fadeInLeft">
-                <img
-                  src="/assets/images/gallery/video-1.jpg"
-                  alt="Video Image"
-                />
-                <div className="image-overlay" />
-                <div className="play-content-box">
-                  <a
-                    href="#"
-                    className="video-popup"
-                  >
-                    <i className="fas fa-play" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-5">
-              {/*=== Video Content Box ===*/}
-              <div className="video-content-box content-box-gap pl-lg-40 mb-50 wow fadeInRight">
-                <div className="section-title section-title-left">
-                  <span className="sub-title">Watch Videos</span>
-                  <h2
-                    className="text-5xl"
-                  >Our Happy Customers</h2>
-                </div>
-                <p>
-                  "Guests are like gods." It reflects the deeply ingrained cultural value of hospitality in many societies, including Nepali culture. We are delighted to share our customer’s experience with you.
-                </p>
-                <ul className="check-style-one mb-30">
-                  <li>Customer Satisfaction</li>
-                  <li>Feedback and Engagement</li>
-                </ul>
-                <Link legacyBehavior href="/about">
-                  <a className="main-btn btn-black">
-                    watch more
-                    <i className="far fa-arrow-right" />
-                  </a>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <VideoSection />
       {/*=== End Video Section ===*/}
       {/*=== Start Team Section ===*/}
       <section className="testimonial-section-three pb-130">
