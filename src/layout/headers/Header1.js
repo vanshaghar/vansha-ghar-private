@@ -1,9 +1,9 @@
 import Link from "next/link";
 import Menus from "./Menus";
-
-const Header1 = ({ openSearchModal }) => {
+import { VANSHA_GHAR } from "../../lib/constants/vanshaghar";
+const Header1 = () => {
   return (
-    <header className="header-area mt-10  transparent-header">
+    <header className="header-area mt-10 w-full  transparent-header">
       <div className="top-bar hidden">
         <div className="container-fluid">
           <div className="row">
@@ -97,16 +97,18 @@ const Header1 = ({ openSearchModal }) => {
                     className="flex items-center justify-center gap-2"
                   >
                     <img src="/assets/images/call.png" alt="icon" />
-                    <a href="tel:000(123)45689">000 (123) 456 89</a>
+                    <a href={`tel:${VANSHA_GHAR.phoneNumber}`}>
+                      {VANSHA_GHAR.phoneNumber.slice(0, 2) + ' ' + VANSHA_GHAR.phoneNumber.slice(2)}
+                    </a>
                   </span>
                 </div>
                 <div className="menu-button d-xl-block d-none">
-                  <Link legacyBehavior href="https://api.whatsapp.com/send/?phone=971524729073&text=Hello+I+want+to+order+&type=phone_number&app_absent=0">
+                  <a href="#reservation-section">
                     <a className="main-btn btn-red">
                       Order Food Online
                       <i className="fas fa-long-arrow-right" />
                     </a>
-                  </Link>
+                  </a>
                 </div>
                 <div className="navbar-toggler">
                   <span />

@@ -20,13 +20,20 @@ const DATA = [
   }, {
     partner: "Deliveroo",
     image: "https://spydogenesis.s3.ap-south-1.amazonaws.com/vanshaghar/images/Deliveroo_Logo.webp",
-    link: "https://deliveroo.co.uk/menu/Stamford/stamford/nepalese-vansa-ghar",
+    link: "https://deliveroo.ae/menu/abu-dhabi/al-danah/vansha-ghar-restaurant",
     bg: "#41CBBB"
   }
 ];
+
 const ReservationSection = () => {
+
+  const handleOnClick = (link) => {
+    window.open(link, "_blank");
+  };
   return (
-    <section className="reservation-line-section p-r z-1 pt-130 pb-40">
+    <section
+    id="reservation-section"
+    className="reservation-line-section p-r z-1 pt-130 pb-40">
       <div className="line-shape line-shape-one">
         <span>
           <img src="/assets/images/shape/line-1.png" alt="Shape" />
@@ -57,7 +64,8 @@ const ReservationSection = () => {
               {/*=== Reservation Form ===*/}
               <div className="grid grid-cols-2 place-content-center justify-items-center gap-4">
                 {/* Zomato */}
-                <div
+                <button
+                  onClick={() => handleOnClick(DATA[0].link)}
                   key={DATA[0].partner}
                   className={`flex items-center cursor-pointer relative  justify-center w-full max-w-[250px] h-[100px] rounded-md`}
                   style={{ backgroundColor: DATA[0].bg }}
@@ -67,9 +75,10 @@ const ReservationSection = () => {
                     alt={DATA[0].partner}
                     className='img-fluid w-full max-h-[100px] h-auto object-contain scale-[1.5] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 '
                   />
-                </div>
+                </button>
                 {/* Talabat */}
-                <div
+                <button
+                  onClick={() => handleOnClick(DATA[1].link)}
                   key={DATA[1].partner}
                   className={`flex items-center cursor-pointer relative  justify-center w-full max-w-[250px] h-[100px] rounded-md`}
                   style={{ backgroundColor: DATA[1].bg }}
@@ -79,9 +88,10 @@ const ReservationSection = () => {
                     alt={DATA[1].partner}
                     className='img-fluid w-full max-h-[100px] h-auto object-contain  absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 '
                   />
-                </div>
+                </button>
                 {/* Noon */}
-                <div
+                <button
+                  onClick={() => handleOnClick(DATA[2].link)}
                   key={DATA[2].partner}
                   className={`flex items-center cursor-pointer relative  justify-center w-full max-w-[250px] h-[100px] rounded-md`}
                   style={{ backgroundColor: DATA[2].bg }}
@@ -91,9 +101,10 @@ const ReservationSection = () => {
                     alt={DATA[2].partner}
                     className='img-fluid w-full max-h-[100px] h-auto object-contain p-4 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 '
                   />
-                </div>
+                </button>
                 {/* Deliveroo */}
-                <div
+                <button
+                  onClick={() => handleOnClick(DATA[3].link)}
                   key={DATA[3].partner}
                   className={`flex items-center cursor-pointer relative  justify-center w-full max-w-[250px] h-[100px] rounded-md`}
                   style={{ backgroundColor: DATA[3].bg }}
@@ -103,7 +114,7 @@ const ReservationSection = () => {
                     alt={DATA[3].partner}
                     className='img-fluid w-full max-h-[100px] h-auto object-contain p-3 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 '
                   />
-                </div>
+                </button>
 
 
 

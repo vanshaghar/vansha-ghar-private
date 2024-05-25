@@ -38,7 +38,7 @@ const WorkingHoursSection = () => {
         />
         <div
           className="hours-bg bg_cover"
-          style={{ backgroundImage: "url(assets/images/bg/hours-bg-1.jpg)" }}
+          style={{ backgroundImage: "url(https://spydogenesis.s3.ap-south-1.amazonaws.com/vanshaghar/chef-special.webp)" }}
         />
         <div className="container">
           <div className="row">

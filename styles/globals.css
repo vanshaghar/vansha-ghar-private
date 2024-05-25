@@ -7,6 +7,7 @@
   }
 body {
   min-height: 200vh;
+  scroll-behavior: smooth;
 }
 .mobile-menu {
   display: none;

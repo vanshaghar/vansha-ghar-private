@@ -38,11 +38,11 @@ const AboutSection = () => {
                 <div className="col-md-6">
                   <img
                     src={ABOUT_IMAGE.image1}
-                    className="mb-40 wow max-h-[500px] max-w-[380px] w-full h-full object-cover fadeInDown"
+                    className="mb-40 wow md:max-h-[500px] md:max-w-[380px] w-full h-full object-cover fadeInDown"
                     alt="About Image"
                   />
                 </div>
-                <div className="col-md-6">
+                <div className="col-md-6 hidden md:block">
                   <img
                     src={ABOUT_IMAGE.image2}
                     className="mb-40 wow max-h-[500px] max-w-[380px] fadeInDown"

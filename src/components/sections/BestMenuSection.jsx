@@ -1,32 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-
-const BEST_MENU_DATA = [
-  {
-    title: "Hamburger",
-    price: "AED 25",
-    description: "Roasted langoustine, consommé",
-    image: "/assets/images/menu/thumb-1.png"
-  },
-  {
-    title: "Pizza",
-    price: "AED 63",
-    description: "Roasted langoustine, consommé",
-    image: "/assets/images/menu/thumb-2.png"
-  },
-  {
-    title: "Baked Chicken Wings",
-    price: "AED 199",
-    description: "Roasted langoustine, consommé",
-    image: "/assets/images/menu/thumb-3.png"
-  },
-  {
-    title: "Seafood Pizza",
-    price: "AED 352",
-    description: "Roasted langoustine, consommé",
-    image: "/assets/images/menu/thumb-4.png"
-  }
-];
+import Image from 'next/image';
 
 
 const BestMenuSection = ({
@@ -64,9 +38,12 @@ const BestMenuSection = ({
           <div className="col-lg-6">
             {/*=== Menu Image Box ===*/}
             <div className="menu-image-box mb-50 pl-lg-30 wow fadeInLeft">
-              <img
+              <Image
                 src="https://spydogenesis.s3.ap-south-1.amazonaws.com/vanshaghar/images/butter-chicken.jpg"
                 alt="Menu Image"
+                className='img-fluid w-full object-cover lg:max-w-[500px]'
+                width={500}
+                height={900}
               />
             </div>
           </div>
@@ -77,8 +54,10 @@ const BestMenuSection = ({
               {
                 menus.map((item, index) => (
                   <div key={index} className="single-menu-item mb-30 wow fadeInUp">
-                    <div className="thumb">
-                      <img src={item.image} alt="" />
+                    <div className="thumb rounded-full aspect-square overflow-clip">
+                      <img src={item?.image?.url} alt=""
+                        className=' rounded-full aspect-square overflow-clip object-cover'
+                      />
                     </div>
                     <div className="text">
                       <h3 className="item-title-price">
@@ -89,14 +68,16 @@ const BestMenuSection = ({
                         <span className="price"> {" "}{item.price} AED</span>
                       </h3>
                       <p
-                        className='line-clamp-2'
+                        className='line-clamp-2 hidden lg:block'
                       >{item.ingredients}</p>
                     </div>
                   </div>
                 ))
               }
             </div>
-            <div className="main-btn  btn-red cursor-pointer">Order Now</div>
+            <a
+              href='#reservation-section'
+              className="main-btn  btn-red cursor-pointer">Order Now</a>
           </div>
         </div>
       </div>

@@ -1,75 +1,75 @@
 import React from 'react';
 import { testimonialSliderOne } from "../../sliderProps";
 import Slider from "react-slick";
-const DATA = [
+export const DATA = [
   {
     "review": "Absolutely loved the momos and the Thakali set at Vansha Ghar! The flavors are authentic and remind me of my trip to Nepal. The service is excellent, making the whole dining experience delightful.",
-    "name": "Aarav Singh",
+    "name": "Rohan Sharma",
     "date": "2024-05-23",
-    "intials": "AS",
+    "intials": "RS",
     "avatar": "https://avatar.iran.liara.run/public/3"
   },
   {
     "review": "Vansha Ghar is a gem in Abu Dhabi for Nepali cuisine. The sekuwa was perfectly seasoned and cooked just right. The staff are very friendly and make you feel at home.",
-    "name": "Fatima Al Hashimi",
+    "name": "Anjali Mehta",
     "date": "2024-05-15",
-    "intials": "FH",
+    "intials": "AM",
     "avatar": "https://avatar.iran.liara.run/public/70"
   },
   {
     "review": "I had the best dining experience at Vansha Ghar! The momos were to die for, and the Thakali set was a hearty meal. Highly recommend to anyone looking for great Nepali food.",
-    "name": "John Doe",
+    "name": "Rahul Thapa",
     "date": "2024-04-10",
-    "intials": "JD",
+    "intials": "RT",
     "avatar": "https://avatar.iran.liara.run/public/6"
   },
   {
     "review": "Every dish at Vansha Ghar tells a story of Nepal. The ingredients are fresh, and the flavors are incredible. It's definitely my go-to place for Nepali food in Abu Dhabi.",
-    "name": "Sara Al Maktoum",
+    "name": "Priya Koirala",
     "date": "2024-05-01",
-    "intials": "SM",
+    "intials": "PK",
     "avatar": "https://avatar.iran.liara.run/public/74"
   },
   {
     "review": "The authenticity of the Nepali dishes at Vansha Ghar is unmatched! I am a regular here because of their consistent quality and excellent service.",
-    "name": "Mohammed Al Bahrani",
+    "name": "Amit Joshi",
     "date": "2024-03-22",
-    "intials": "MB",
+    "intials": "AJ",
     "avatar": "https://avatar.iran.liara.run/public/1"
   },
   {
     "review": "Vansha Ghar offers a cozy atmosphere with delicious Nepali food. The momos are a must-try! The staff are very attentive and ensure a pleasant dining experience.",
-    "name": "Emily Zhang",
+    "name": "Sneha Patel",
     "date": "2024-05-20",
-    "intials": "EZ",
+    "intials": "SP",
     "avatar": "https://avatar.iran.liara.run/public/77"
   },
   {
     "review": "If you want to try real Nepali cuisine, Vansha Ghar in Abu Dhabi is the place to go. Their Thakali set is absolutely delicious and filling!",
-    "name": "Rashid Al Falasi",
+    "name": "Ravi Shrestha",
     "date": "2024-04-29",
-    "intials": "RF",
+    "intials": "RS",
     "avatar": "https://avatar.iran.liara.run/public/4"
   },
   {
     "review": "Great food, excellent service, and a warm ambiance. Vansha Ghar does Nepali cuisine justice. It's been a wonderful find for me and my family.",
-    "name": "Chen Wei",
+    "name": "Meera Desai",
     "date": "2024-05-05",
-    "intials": "CW",
+    "intials": "MD",
     "avatar": "https://avatar.iran.liara.run/public/6"
   },
   {
     "review": "The sekuwa and momos at Vansha Ghar are simply amazing. The spices they use are authentic and give a real taste of Nepal. Highly recommend!",
-    "name": "Lisa Green",
+    "name": "Kiran Gupta",
     "date": "2024-02-17",
-    "intials": "LG",
+    "intials": "KG",
     "avatar": "https://avatar.iran.liara.run/public/52"
   },
   {
     "review": "From the moment you step in, Vansha Ghar offers a welcoming atmosphere with a fantastic menu. The Thakali sets are my favorite and a great way to explore Nepali cuisine.",
-    "name": "Ali Al Khoori",
+    "name": "Arjun Rana",
     "date": "2024-01-30",
-    "intials": "AK",
+    "intials": "AR",
     "avatar": "https://avatar.iran.liara.run/public/8"
   }
 ];

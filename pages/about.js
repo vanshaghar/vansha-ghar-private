@@ -5,21 +5,13 @@ import QichenCounter from "../src/components/QichenCounter";
 import TestimonialSliderThree from "../src/components/slider/TestimonialSliderThree";
 import Layout from "../src/layout/Layout";
 import VideoSection from "../src/components/sections/VideoSection";
+import { VANSHA_GHAR } from "../src/lib/constants/vanshaghar";
 const About = () => {
   return (
     <Layout>
       <PageBanner pageName={"About Us"} />
-      <section className="about-shape-section pt-130 pb-80 p-r z-1">
-        <div className="shape shape-one">
-          <span>
-            <img src="/assets/images/about/shape-1.png" alt="shape" />
-          </span>
-        </div>
-        <div className="shape shape-two">
-          <span>
-            <img src="/assets/images/about/shape-2.png" alt="shape" />
-          </span>
-        </div>
+      <section className="about-shape-section py-32 p-r z-1">
+
         <div className="container">
           <div className="row">
             <div className="col-lg-6">
@@ -48,7 +40,7 @@ const About = () => {
               </div>
             </div>
             <div className="col-lg-6">
-              <div className="about-three_content-box content-box-gap pl-lg-45 mb-50">
+              <div className="about-three_content-box content-box-gap pl-lg-45 ">
                 <div className="section-title section-title-left mb-30 wow fadeInUp">
                   <span className="sub-title">About Vansha Ghar</span>
                   <h2
@@ -65,7 +57,7 @@ const About = () => {
                         <i className="flaticon-food-serving" />
                       </div>
                       <div className="text">
-                        <h5>532+ Popular Testy Foods Menu</h5>
+                        <h5>171+ Popular Tasty Foods Menu</h5>
                       </div>
                     </div>
                   </div>
@@ -85,7 +77,7 @@ const About = () => {
                         <i className="flaticon-certificate" />
                       </div>
                       <div className="text">
-                        <h5>We’ve 25+ Years Of Experience</h5>
+                        <h5>We’ve 8+ Years Of Experience</h5>
                       </div>
                     </div>
                   </div>
@@ -95,35 +87,32 @@ const About = () => {
                         <i className="flaticon-smartphone" />
                       </div>
                       <div className="text">
-                        <h5>432+ Foods Iteams Online Orders</h5>
+                        <h5>162+ Foods Items Available to Order Online</h5>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div className="about-button wow fadeInUp">
-                  <Link legacyBehavior href="/about">
-                    <a className="main-btn btn-red">
-                      learn more
-                      <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                  <a href="tel:000(123)45689" className="call-button">
-                    <div className="icon">
-                      <i className="fas fa-headset" />
-                    </div>
-                    <div className="text">
+                  <button className="main-btn btn-red"
+                    onClick={(e) => {
+                      window.location.href = `tel:${VANSHA_GHAR.phoneNumber}`;
+                    }}
+                  >
+                    Call for Order <i className="far fa-arrow-right" />
+                  </button>
+                  {/* <a href="tel:000(123)45689" className="call-button">
+
+                    <button className="text">
                       <span>Call For Order</span>
-                      <h5>000 (123) 456 89</h5>
-                    </div>
-                  </a>
+                      <h5>{VANSHA_GHAR.phoneNumber}</h5>
+                    </button>
+                  </a> */}
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      {/*=== End About Section ===*/}
-      {/*=== Start Fact Section ===*/}
+      </section >
       <section className="fact-section dark-red-bg pt-75 pb-35">
         <div className="container">
           <QichenCounter />
@@ -131,7 +120,7 @@ const About = () => {
       </section>
       {/*=== End Fact Section ===*/}
       {/*=== Start Why_choose Section ===*/}
-      <section className="why-choose-us pt-130 pb-100">
+      <section className="why-choose-us pt-52 ">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-xl-6 col-lg-12">
@@ -228,99 +217,14 @@ const About = () => {
           </div>
         </div>
       </section>
-      {/*=== End Why_choose Section ===*/}
-      {/*=== Start Team Section ===*/}
-      <section className="team-section light-red-bg p-r z-1 pt-120 pb-100">
-        <div
-          className="dot-bg bg_cover"
-          style={{ backgroundImage: "url(assets/images/bg/dot-bg.png)" }}
-        />
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-xl-5 col-lg-10">
-              <div className="section-title text-center mb-50 wow fadeInDown">
-                <span className="sub-title">Chef's Special</span>
-                <h2>Meet Our Experience &amp; Master Chefs</h2>
-              </div>
-            </div>
-          </div>
-          <div className="row justify-content-center">
-            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-              <div className="single-team-item mb-30 wow fadeInUp">
-                <div className="chef-img">
-                  <img src="/assets/images/team/chef-7.jpg" alt="Chef Image" />
-                  <div className="chef-overlay" />
-                  <div className="hover-content">
-                    <h3 className="title">Jimmie K. Cryer</h3>
-                    <p className="position">Senior Chef</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-              <div className="single-team-item mb-30 wow fadeInUp">
-                <div className="chef-img">
-                  <img src="/assets/images/team/chef-8.jpg" alt="Chef Image" />
-                  <div className="chef-overlay" />
-                  <div className="hover-content">
-                    <h3 className="title">Jimmie K. Cryer</h3>
-                    <p className="position">Senior Chef</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-              <div className="single-team-item mb-30 wow fadeInUp">
-                <div className="chef-img">
-                  <img src="/assets/images/team/chef-9.jpg" alt="Chef Image" />
-                  <div className="chef-overlay" />
-                  <div className="hover-content">
-                    <h3 className="title">Jimmie K. Cryer</h3>
-                    <p className="position">Senior Chef</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-              <div className="single-team-item mb-30 wow fadeInUp">
-                <div className="chef-img">
-                  <img src="/assets/images/team/chef-10.jpg" alt="Chef Image" />
-                  <div className="chef-overlay" />
-                  <div className="hover-content">
-                    <h3 className="title">Jimmie K. Cryer</h3>
-                    <p className="position">Senior Chef</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-lg-12">
-              <div className="team-button mt-30 text-center wow fadeInUp">
-                <Link legacyBehavior href="/chefs">
-                  <a className="main-btn btn-red">
-                    Meet Our Chefs                    <i className="far fa-arrow-right" />
-                  </a>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/*=== End Team Section ===*/}
-      {/*=== Start Video Section ===*/}
       <VideoSection />
-      {/*=== End Video Section ===*/}
-      {/*=== Start Team Section ===*/}
       <section className="testimonial-section-three pb-130">
         <div className="container">
           <TestimonialSliderThree />
         </div>
       </section>
-      {/*=== End Team Section ===*/}
-      {/*====== Start Skyline Section ======*/}
       <Skyline />
-    </Layout>
+    </Layout >
   );
 };
 export default About;

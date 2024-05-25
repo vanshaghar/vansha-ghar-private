@@ -33,16 +33,6 @@ const Header = ({ header, openSearchModal }) => {
     });
   }, [width]);
 
-  switch (header) {
-    case 1:
-      return <Header1 openSearchModal={openSearchModal} />;
-    case 2:
-      return <Header2 openSearchModal={openSearchModal} />;
-    case 3:
-      return <Header3 openSearchModal={openSearchModal} />;
-
-    default:
-      return <DefaultHeader openSearchModal={openSearchModal} />;
-  }
+  return <Header1 openSearchModal={openSearchModal} />;
 };
 export default Header;

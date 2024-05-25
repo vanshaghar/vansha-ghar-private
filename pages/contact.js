@@ -1,6 +1,7 @@
 import PageBanner from "../src/components/PageBanner";
 import Skyline from "../src/components/Skyline";
 import Layout from "../src/layout/Layout";
+import { VANSHA_GHAR } from "../src/lib/constants/vanshaghar";
 const Contact = () => {
   return (
     <Layout>
@@ -24,7 +25,9 @@ const Contact = () => {
                   </div>
                   <div className="info">
                     <span className="title">Location</span>
-                    <p>55 Main Street, 2nd Floor New York City</p>
+                    <p>
+                      {VANSHA_GHAR.address}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -36,11 +39,11 @@ const Contact = () => {
                   <div className="info">
                     <span className="title">Email Address</span>
                     <p>
-                      <a href="mailto:support@gmail.com">support@gmail.com</a>
+                      <a
+                        className="underline"
+                        href={`mailto:${VANSHA_GHAR.email}`}>{VANSHA_GHAR.email}</a>
                     </p>
-                    <p>
-                      <a href="mailto:contactfood.net">contactfood.net</a>
-                    </p>
+
                   </div>
                 </div>
               </div>
@@ -52,10 +55,17 @@ const Contact = () => {
                   <div className="info">
                     <span className="title">Contact Us</span>
                     <p>
-                      Mobile :<a href="tel:+000(123)4589">+000 (123) 4589</a>
+                      Whatsapp :{" "}
+                      <a
+                        className="underline"
+                        href={VANSHA_GHAR.whatsapp()}>
+                        {VANSHA_GHAR.whatsappNumber}
+                      </a>
                     </p>
                     <p>
-                      Phone :<a href="tel:+012(345)67">+012 (345) 67</a>
+                      Phone :{" "}<a
+                        className="underline"
+                        href={`tel:${VANSHA_GHAR.phoneNumber}`}>{VANSHA_GHAR.phoneNumber}</a>
                     </p>
                   </div>
                 </div>
@@ -102,24 +112,13 @@ const Contact = () => {
                         />
                       </div>
                     </div>
-                    <div className="col-lg-6">
+                    <div className="col-lg-12">
                       <div className="form_group">
                         <input
                           type="email"
                           className="form_control"
                           placeholder="Email Address"
                           name="email"
-                          required=""
-                        />
-                      </div>
-                    </div>
-                    <div className="col-lg-6">
-                      <div className="form_group">
-                        <input
-                          type="url"
-                          className="form_control"
-                          placeholder="Website"
-                          name="website"
                           required=""
                         />
                       </div>

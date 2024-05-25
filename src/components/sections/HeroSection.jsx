@@ -69,7 +69,7 @@ const HeroSection = ({
                                             <span>
                                                 <img src="/assets/images/down-arrow.png" alt="" />
                                             </span>
-                                            <Link legacyBehavior href={`https://api.whatsapp.com/send/?phone=971524729073&text=Hello+I+want+to+order+${slide.name}&type=phone_number&app_absent=0`}
+                                            <Link legacyBehavior href="#reservation-section"
                                             >
                                                 <a className="main-btn btn-red">
                                                     order now
