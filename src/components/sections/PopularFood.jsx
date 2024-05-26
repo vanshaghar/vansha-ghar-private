@@ -4,32 +4,32 @@ import Link from 'next/link';
 const POPULAR_FOODS_MENU = [
   {
     title: 'Momo',
-    link: '/menu',
+    link: '/menu#steam-momo',
     icon: 'https://spydogenesis.s3.ap-south-1.amazonaws.com/vanshaghar/icons/momo.webp'
   },
   {
     title: 'Thakali',
-    link: '/menu',
+    link: '/menu#thakali-set',
     icon: 'https://spydogenesis.s3.ap-south-1.amazonaws.com/vanshaghar/icons/thakali-set.webp'
   },
   {
     title: 'Thupka',
-    link: '/menu',
+    link: '/menu#chowmein/thukpa',
     icon: 'https://spydogenesis.s3.ap-south-1.amazonaws.com/vanshaghar/icons/thupka.webp'
   },
   {
     title: 'Sekuwa',
-    link: '/menu',
+    link: '/menu#sekuwa',
     icon: 'https://spydogenesis.s3.ap-south-1.amazonaws.com/vanshaghar/icons/sekuwa.webp'
   },
   {
     title: 'Khaja Set',
-    link: '/menu',
+    link: '/menu#khaja-set',
     icon: 'https://spydogenesis.s3.ap-south-1.amazonaws.com/vanshaghar/icons/khaja-set.webp'
   },
   {
     title: 'Chef\'s Special',
-    link: '/menu',
+    link: `/menu#chef-s-special`,
     icon: 'https://spydogenesis.s3.ap-south-1.amazonaws.com/vanshaghar/icons/chef-special.webp'
   }
 ];
@@ -78,7 +78,7 @@ const PopularFood = () => {
           }
 
         </div>
-        
+
       </div>
     </section>
   );

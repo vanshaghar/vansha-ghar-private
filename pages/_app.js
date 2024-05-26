@@ -11,7 +11,7 @@ const App = ({ Component, pageProps }) => {
   const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
   useEffect(() => {
     const load = async () => {
-      await delay(1500);
+      await delay(300);
       setLoader(false);
     };
     load();
