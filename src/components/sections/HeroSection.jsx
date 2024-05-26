@@ -3,43 +3,10 @@ import Slider from "react-slick";
 import { heroSliderOne } from "../../sliderProps";
 import Link from "next/link";
 import Image from "next/image";
-// Define the array of data for the slider
-const sliderData = [
-    {
-        title: "Kurkure mo-mo",
-        description: "Sit amet consectetur adipiscing Malesuada morbigrave ullamore alesuada nec pulvinar nisle",
-        image: "/assets/images/hero/hero-1.png",
-        link: "#"
-    },
-    //add 3 more data here with different title, description, but same image
-    {
-        title: "Tasty momo",
-        description: "Sit amet consectetur adipiscing Malesuada morbigrave ullamore alesuada nec pulvinar nisle",
-        image: "/assets/images/hero/hero-1.png",
-        link: "#"
-    },
-    {
-        title: "Dhido Set",
-        description: "Sit amet consectetur adipiscing Malesuada morbigrave ullamore alesuada nec pulvinar nisle",
-        image: "/assets/images/hero/hero-1.png",
-        link: "#"
-    },
-    {
-        title: "Thakali set",
-        description: "Sit amet consectetur adipiscing Malesuada morbigrave ullamore alesuada nec pulvinar nisle",
-        image: "/assets/images/hero/hero-1.png",
-        link: "#"
-    }
 
-
-];
 const HeroSection = ({
     data
 }) => {
-
-    React.useEffect(() => {
-        console.log(data);
-    }, [data]);
 
     return (
         <section className="banner-one p-r z-1">

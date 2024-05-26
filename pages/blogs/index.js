@@ -76,12 +76,7 @@ const BlogStandard = ({
   blogCategories,
   blogs,
 }) => {
-  React.useEffect(() => {
-    console.log({
-      blogCategories,
-      blogs,
-    });
-  });
+
   return (
     <Layout>
       <PageBanner pageName={"Blogs & Events"} title="Blog & Events" />

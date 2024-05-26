@@ -6,22 +6,7 @@ import Image from 'next/image';
 const BestMenuSection = ({
   menus
 }) => {
-  React.useEffect(() => {
-    console.log({
-      "name": "Chicken Sizzler",
-      "id": "661921f84851cffd6303d344",
-      "description": "A sizzling hot platter featuring grilled or fried chicken served with sautéed vegetables, a choice of sauce, and often accompanied by rice, fries, or garlic bread, creating a flavorful and visually appealing dish served hot and sizzling on a cast iron plate.",
-      "price": 30,
-      "foodType": [
-        {
-          "type": "Non-veg",
-          "value": "non-veg"
-        }
-      ],
-      "image": null,
-      "ingredients": "Grilled Chicken, Sautéed Vegetables (such as bell peppers, onions, carrots), French Fries or Mashed Potatoes, Sizzler Plate, Sauce or Gravy"
-    });
-  }, []);
+
   return (
     <section className="menu-section pb-80">
       <div className="container">

@@ -59,6 +59,32 @@ export async function getStaticProps() {
       `
     })
   }).then((response) => response.json());
+  const gallery = await fetch(graphqlEndpoint, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept-Encoding': 'gzip, deflate, br',
+      'X-Auth-Token': `dsdsdsds`
+    },
+    body: JSON.stringify({
+      query: `
+        query {
+          Galleries(where: { name: { equals: "bottom-gallery" } }) {
+            docs {
+              id
+              name
+              images {
+                image {
+                  url
+                  alt
+                }
+              }
+            }
+          }
+        }
+      `
+    })
+  }).then((response) => response.json());
   const featured = await fetch(graphqlEndpoint, {
     method: 'POST',
     headers: {
@@ -75,7 +101,6 @@ export async function getStaticProps() {
               name
               description
               image {
-                alt
                 url
               }
             }
@@ -84,18 +109,18 @@ export async function getStaticProps() {
       `
     })
   }).then((response) => response.json());
-
   const menus = res.data?.OrganizedMenu?.menus?.slice(0, 4).map(i => i.menu) ?? [];
-  const featureds = featured.data?.Featureds?.docs ?? [];
+  const features = featured.data?.Featureds?.docs ?? [];
+  const galleries = gallery.data?.Galleries?.docs[0]?.images?.map(i => i.image) ?? [];
   return {
-    props: { menus, featureds }
+    props: { menus, features, galleries }
   };
 }
-const Index = ({ menus, featureds }) => {
+const Index = ({ menus, features, galleries }) => {
   return (
     <Layout header={1} footer={1}>
       <HeroSection
-        data={featureds}
+        data={features}
       />
       <PopularFood />
       <AboutSection />
@@ -105,7 +130,9 @@ const Index = ({ menus, featureds }) => {
       <WorkingHoursSection />
       <ReservationSection />
       <TestimonialSection />
-      <InstagramGallerySection />
+      <InstagramGallerySection
+        data={galleries}
+      />
       <Skyline />
     </Layout>
   );

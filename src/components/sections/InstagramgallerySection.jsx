@@ -1,51 +1,78 @@
-import React from 'react';
-const INSTAGRAM_DATA = [
-    "/assets/images/instagram/insta-1.jpg",
-    "/assets/images/instagram/insta-2.jpg",
-    "/assets/images/instagram/insta-3.jpg",
-    "/assets/images/instagram/insta-4.jpg",
-    "/assets/images/instagram/insta-5.jpg",
-    "/assets/images/instagram/insta-6.jpg",
-    "/assets/images/instagram/insta-7.jpg",
-    "/assets/images/instagram/insta-8.jpg",
-    "/assets/images/instagram/insta-9.jpg",
-    "/assets/images/instagram/insta-10.jpg",
-    "/assets/images/instagram/insta-11.jpg",
-    "/assets/images/instagram/insta-12.jpg"];
+import React, { useState } from 'react';
+import { CloseButton } from 'react-bootstrap';
+const InstagramGallerySection = ({ data }) => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selectedImage, setSelectedImage] = useState(null);
+
+    const openModal = (url) => {
+        setSelectedImage(url);
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+        setSelectedImage(null);
+    };
+
+    const handleOutsideClick = (e) => {
+        if (e.target.classList.contains('modal-overlay')) {
+            closeModal();
+        }
+    };
 
 
-
-
-const InstagramGallerySection = () => {
     return (
         <section className="instagram-gallery pt-130 pb-100">
             <div className="container-fluid">
                 <div className="row">
                     {
-                        INSTAGRAM_DATA.map((item, index) => (
+                        data.map((item, index) => (
                             <div key={index} className="col-xl-2 col-lg-3 col-md-4 col-sm-6">
                                 {/*=== Instagram Box ===*/}
-                                <div className="instagram-box mb-30 wow fadeInUp">
-                                    <div className="instagram-img">
+                                <div className="instagram-box mb-30 cursor-pointer wow fadeInUp">
+                                    <div className="instagram-img"
+                                        onClick={() => openModal(item.url)}
+
+                                    >
                                         <img
-                                            src={item}
-                                            alt="Instagram Image"
+                                            src={item.url}
+                                            alt={item.alt || "Instagram Image"}
+                                            className='img-fluid w-full object-cover max-w-[100%] h-[100%] aspect-square rounded-10'
                                         />
                                         <div className="insta-overlay" />
-                                        <a
-                                            href={item}
+                                        <div
                                             className="img-popup insta-icon"
                                         >
                                             <i className="fab fa-instagram" />
-                                        </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         ))
                     }
-
                 </div>
             </div>
+            {isModalOpen && (
+                <div className="fixed inset-0 z-40 flex items-center justify-center bg-black bg-opacity-50 modal-overlay" onClick={handleOutsideClick}>
+                    <div className="rounded-lg relative p-4 max-w-lg w-full">
+                        <span className="text-red-700 bg-white w-10 flex items-center justify-center h-10 rounded-full cursor-pointer absolute top-7 right-0 text-4xl" onClick={closeModal}>
+                            <CloseButton />
+                        </span>
+
+                        <div className="mt-4">
+                            <div className="flex justify-center">
+                                <img
+                                    src={selectedImage}
+                                    alt="Selected Instagram Image"
+                                    className='img-fluid w-full object-cover max-w-[100%] h-[100%] rounded-10'
+                                />
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            )}
         </section>
     );
 };
