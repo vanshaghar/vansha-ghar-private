@@ -184,16 +184,30 @@ const Menu = ({
             <PageBanner pageName={"Menu"} title="Menu" />
             <ScrollToTop />
             <div className="mx-auto py-10">
-                <section className="sticky py-2 top-0 z-50 bg-white">
-                    <div className="px-2">
-                        <input
-                            type="text"
-                            placeholder="Search..."
-                            value={searchQuery}
-                            onChange={(e) => setSearchQuery(e.target.value)}
-                            className="p-2 w-full min-w-[200px] border border-gray-300 rounded-md"
-                        />
+                <section className="sticky py-2 top-0  z-50 bg-white">
+                    <div className="px-2   max-w-[1300px] mx-auto">
+                        <div className="relative">
+
+                            <input
+                                type="text"
+                                placeholder="Search your menu..."
+                                value={searchQuery}
+                                onChange={(e) => setSearchQuery(e.target.value)}
+                                className="p-2 w-full min-w-[200px] border border-gray-300 rounded-md"
+                            />
+                            {
+                                searchQuery.trim() !== '' &&
+                                <button
+                                    onClick={() => setSearchQuery('')}
+                                    className="ml-2 p-2  absolute rounded-md top-1/2 right-3  -translate-y-1/2"
+                                >
+                                    <CloseButton
+                                        className="text-3xl"
+                                    />
+                                </button>}
+                        </div>
                     </div>
+
                     <div className="max-w-[1300px] mx-auto flex  justify-between items-center">
                         <div className="flex max-w-[1300px] parent-category flex-nowrap justify-start hide-scrollbar items-center overflow-x-auto">
                             {
@@ -216,69 +230,74 @@ const Menu = ({
                 <section className="rounded-lg my-4">
                     <div className="w-screen max-w-[1300px] mx-auto relative">
                         {
-                            filteredMenus.map((item, index) => (
-                                <div
-                                    key={item.category.name}
-                                    className={`w-full my-[50px] ${index === 0 && "mt-5"}`}
-                                    id={item.category.link?.replace("#", "")}
-                                >
-                                    <h2 className="text-4xl relative hidden md:block mx-auto text-center p-3 font-bold mb-1">
-                                        {item.category.name}
-                                        <span className="absolute top-1/2 left-0 w-1/4 h-[2px] bg-gray-900 transform -translate-y-1/2" />
-                                        <span className="absolute top-1/2 right-0 w-1/4 h-[2px] bg-gray-900 transform -translate-y-1/2" />
-                                    </h2>
-                                    <div className="relative md:hidden w-screen h-[250px] bg-slate-500 flex mb-10">
-                                        <div className="bg-[#11492C] relative w-1/3 flex items-center justify-center">
-                                            <div className="rotate-[-90deg] overflow-clip line-clamp-2 h-[3em] transform w-[220px] max-w-[250px] text-[42px] text-white p-2 text-center mb-2 absolute left-1/2 -translate-x-1/2 font-cabinet font-bold flex justify-start items-center"
-                                                style={{
-                                                    lineHeight: "1",
-                                                }}
-                                            >
-                                                {item.category.name}
-                                            </div>
-                                        </div>
-                                        <FadingImages
-                                            images={item?.menus?.map((menuitem) => menuitem.image).filter((image) => image)}
-                                            duration={10000}
-                                        />
-                                    </div>
-                                    <div className="grid px-3 grid-cols-1 gap-1 !gap-x-3 md:grid-cols-2 place-items-center place-content-center">
-                                        {
-                                            item?.menus?.map((menuitem, index) => (
-                                                <div
-                                                    key={menuitem?.name ?? index}
-                                                    className="flex w-full flex-col items-start bg-white rounded-lg md:flex-col md:max-w-xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
-                                                >
-                                                    <div className="w-full flex gap-4 flex-row justify-between relative mb-4">
-                                                        <div className="absolute bottom-0 left-0 w-full h-0 border-b-2 border-dashed border-gray-300" />
-                                                        <h5 className="mb-2 text-2xl flex justify-start gap-4 font-bold tracking-tight text-gray-900">
-                                                            <span>{menuitem?.name}</span>
-                                                            {
-                                                                menuitem?.image?.url &&
-                                                                <button
-                                                                    className="flex items-center justify-center"
-                                                                    onClick={() => handleImageClick(menuitem.image)}
-                                                                >
-                                                                    <EyeIcon />
-                                                                </button>
-                                                            }
-                                                        </h5>
-                                                        <span className="text-xl font-bold flex-shrink-0 text-gray-900">
-                                                            AED {menuitem?.price}
-                                                        </span>
-                                                    </div>
-                                                    <p className="mb-3 font-sans italic text-[12px] text-gray-700 line-clamp-2">
-                                                        {menuitem?.ingredients}
-                                                    </p>
-                                                    <p className="mb-3 font-sans text-sm text-gray-700 line-clamp-2 hidden lg:block">
-                                                        {menuitem?.description}
-                                                    </p>
-                                                </div>
-                                            ))
-                                        }
-                                    </div>
+                            filteredMenus.length === 0 ? (
+                                <div className="py-20 m-auto">
+                                    <h2 className="text-4xl text-gray-500">No menu items found</h2>
                                 </div>
-                            ))
+                            ) :
+                                filteredMenus.map((item, index) => (
+                                    <div
+                                        key={item.category.name}
+                                        className={`w-full my-[50px] ${index === 0 && "mt-5"}`}
+                                        id={item.category.link?.replace("#", "")}
+                                    >
+                                        <h2 className="text-4xl relative hidden md:block mx-auto text-center p-3 font-bold mb-1">
+                                            {item.category.name}
+                                            <span className="absolute top-1/2 left-0 w-1/4 h-[2px] bg-gray-900 transform -translate-y-1/2" />
+                                            <span className="absolute top-1/2 right-0 w-1/4 h-[2px] bg-gray-900 transform -translate-y-1/2" />
+                                        </h2>
+                                        <div className="relative md:hidden w-screen h-[250px] bg-slate-500 flex mb-10">
+                                            <div className="bg-[#11492C] relative w-1/3 flex items-center justify-center">
+                                                <div className="rotate-[-90deg] overflow-clip line-clamp-2 h-[3em] transform w-[220px] max-w-[250px] text-[42px] text-white p-2 text-center mb-2 absolute left-1/2 -translate-x-1/2 font-cabinet font-bold flex justify-start items-center"
+                                                    style={{
+                                                        lineHeight: "1",
+                                                    }}
+                                                >
+                                                    {item.category.name}
+                                                </div>
+                                            </div>
+                                            <FadingImages
+                                                images={item?.menus?.map((menuitem) => menuitem.image).filter((image) => image)}
+                                                duration={10000}
+                                            />
+                                        </div>
+                                        <div className="grid px-3 grid-cols-1 gap-1 !gap-x-3 md:grid-cols-2 place-items-center place-content-center">
+                                            {
+                                                item?.menus?.map((menuitem, index) => (
+                                                    <div
+                                                        key={menuitem?.name ?? index}
+                                                        className="flex w-full flex-col items-start bg-white rounded-lg md:flex-col md:max-w-xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+                                                    >
+                                                        <div className="w-full flex gap-4 flex-row justify-between relative mb-4">
+                                                            <div className="absolute bottom-0 left-0 w-full h-0 border-b-2 border-dashed border-gray-300" />
+                                                            <h5 className="mb-2 text-2xl flex justify-start gap-4 font-bold tracking-tight text-gray-900">
+                                                                <span>{menuitem?.name}</span>
+                                                                {
+                                                                    menuitem?.image?.url &&
+                                                                    <button
+                                                                        className="flex items-center justify-center"
+                                                                        onClick={() => handleImageClick(menuitem.image)}
+                                                                    >
+                                                                        <EyeIcon />
+                                                                    </button>
+                                                                }
+                                                            </h5>
+                                                            <span className="text-xl font-bold flex-shrink-0 text-gray-900">
+                                                                AED {menuitem?.price}
+                                                            </span>
+                                                        </div>
+                                                        <p className="mb-3 font-sans italic text-[12px] text-gray-700 line-clamp-2">
+                                                            {menuitem?.ingredients}
+                                                        </p>
+                                                        <p className="mb-3 font-sans text-sm text-gray-700 line-clamp-2 hidden lg:block">
+                                                            {menuitem?.description}
+                                                        </p>
+                                                    </div>
+                                                ))
+                                            }
+                                        </div>
+                                    </div>
+                                ))
                         }
                     </div>
                 </section>

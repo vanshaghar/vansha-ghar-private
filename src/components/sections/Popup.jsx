@@ -23,7 +23,7 @@ const Popup = ({
     if (!popup) return null;
 
     return (
-        <div className="fixed inset-0 flex items-center justify-center z-50">
+        <div className="fixed bg-black bg-opacity-25 z-[1000] inset-0 flex items-center justify-center ">
             <div className="bg-white rounded-lg shadow-lg  p-3 max-w-2xl mx-2 sm:mx-auto relative">
                 <button
                     className="absolute -top-2 -right-2 text-gray-700"
