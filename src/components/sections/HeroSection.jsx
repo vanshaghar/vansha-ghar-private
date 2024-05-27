@@ -29,7 +29,7 @@ const HeroSection = ({
                                 <div className="order-lg-1 bottom-0 bg-white flex lg:block items-center justify-center absolute h-68 py-4 lg:py-0 lg:!bg-transparent lg:relative order-2 w-full lg:max-w-[40vw]">
                                     <div className="hero-content mx-2 lg:mb-40 pr-lg-40">
                                         <h1 className="wow fadeInUp">{slide.name}</h1>
-                                        <p className="wow fadeInDown line-clamp-2 h-[2rem]">
+                                        <p className="wow fadeInDown line-clamp-3 h-[5em]">
                                             {slide.description}
                                         </p>
                                         <div className="hero-button wow fadeInUp">
