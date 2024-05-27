@@ -13,6 +13,7 @@ import ReservationSection from "../src/components/sections/ReservationSection.";
 import TestimonialSection from "../src/components/sections/TestimonialSection";
 import InstagramGallerySection from "../src/components/sections/InstagramgallerySection";
 import Skyline from "../src/components/Skyline";
+import Popup from "../src/components/sections/Popup";
 
 export async function getStaticProps() {
 
@@ -85,6 +86,31 @@ export async function getStaticProps() {
       `
     })
   }).then((response) => response.json());
+  const popupRes = await fetch(graphqlEndpoint, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept-Encoding': 'gzip, deflate, br',
+      'X-Auth-Token': `dsdsdsds`
+    },
+    body: JSON.stringify({
+      query: `
+        query {
+          Popups(where: { active: { equals: true } }, limit: 1) {
+            docs {
+              id
+              name
+              link
+              banner {
+                url
+                alt
+              }
+            }
+          }
+        }
+      `
+    })
+  }).then((response) => response.json());
   const featured = await fetch(graphqlEndpoint, {
     method: 'POST',
     headers: {
@@ -112,11 +138,12 @@ export async function getStaticProps() {
   const menus = res.data?.OrganizedMenu?.menus?.slice(0, 4).map(i => i.menu) ?? [];
   const features = featured.data?.Featureds?.docs ?? [];
   const galleries = gallery.data?.Galleries?.docs[0]?.images?.map(i => i.image) ?? [];
+  const popup = popupRes.data?.Popups?.docs[0] ?? {};
   return {
-    props: { menus, features, galleries }
+    props: { menus, features, galleries, popup }
   };
 }
-const Index = ({ menus, features, galleries }) => {
+const Index = ({ menus, features, galleries, popup }) => {
   return (
     <Layout header={1} footer={1}>
       <HeroSection
@@ -134,6 +161,7 @@ const Index = ({ menus, features, galleries }) => {
         data={galleries}
       />
       <Skyline />
+      <Popup banner={popup} />
     </Layout>
   );
 };

@@ -5,11 +5,8 @@ import { useState, useEffect, useRef } from "react";
 import ScrollToTop from "../src/components/ScrollToTop";
 import { CloseButton } from 'react-bootstrap';
 import Image from "next/image";
-import slugify from "slugify";
-
 
 export async function getStaticProps() {
-
     const graphqlEndpoint = process.env.NEXT_PUBLIC_API_URL;
 
     const res = await fetch(graphqlEndpoint, {
@@ -142,7 +139,28 @@ const Menu = ({
     const [activeCategory, setActiveCategory] = useState('');
     const [dialogOpen, setDialogOpen] = useState(false);
     const [selectedImage, setSelectedImage] = useState(null);
-    console.log(categories);
+    const [searchQuery, setSearchQuery] = useState('');
+    const [filteredMenus, setFilteredMenus] = useState(menus);
+
+    useEffect(() => {
+        if (searchQuery.trim() === '') {
+            setFilteredMenus(menus);
+        } else {
+            const lowerCaseQuery = searchQuery.toLowerCase();
+            setFilteredMenus(
+                menus.map((category) => ({
+                    ...category,
+                    menus: category.menus.filter(
+                        (menu) =>
+                            menu?.name?.toLowerCase()?.includes(lowerCaseQuery) ||
+                            menu?.description?.toLowerCase()?.includes(lowerCaseQuery) ||
+                            menu?.ingredients?.toLowerCase()?.includes(lowerCaseQuery)
+                    ),
+                })).filter(category => category.menus.length > 0)
+            );
+        }
+    }, [searchQuery, menus]);
+
     const handleClick = (category) => {
         setActiveCategory(category.link.replace("#", ""));
         const element = document.getElementById(category.link.replace("#", ""));
@@ -166,9 +184,18 @@ const Menu = ({
             <PageBanner pageName={"Menu"} title="Menu" />
             <ScrollToTop />
             <div className="mx-auto py-10">
-                <section className="sticky py-1 top-0 z-50 bg-white">
-                    <div className="">
-                        <div className="flex max-w-[1300px] parent-category flex-nowrap mx-auto justify-start hide-scrollbar items-center overflow-x-auto">
+                <section className="sticky py-2 top-0 z-50 bg-white">
+                    <div className="px-2">
+                        <input
+                            type="text"
+                            placeholder="Search..."
+                            value={searchQuery}
+                            onChange={(e) => setSearchQuery(e.target.value)}
+                            className="p-2 w-full min-w-[200px] border border-gray-300 rounded-md"
+                        />
+                    </div>
+                    <div className="max-w-[1300px] mx-auto flex  justify-between items-center">
+                        <div className="flex max-w-[1300px] parent-category flex-nowrap justify-start hide-scrollbar items-center overflow-x-auto">
                             {
                                 categories.map((category, index) => (
                                     <div
@@ -189,7 +216,7 @@ const Menu = ({
                 <section className="rounded-lg my-4">
                     <div className="w-screen max-w-[1300px] mx-auto relative">
                         {
-                            menus.map((item, index) => (
+                            filteredMenus.map((item, index) => (
                                 <div
                                     key={item.category.name}
                                     className={`w-full my-[50px] ${index === 0 && "mt-5"}`}
@@ -210,9 +237,6 @@ const Menu = ({
                                                 {item.category.name}
                                             </div>
                                         </div>
-                                        {/* <div className="h-full w-full relative flex items-center justify-center overflow-hidden rounded-lg">
-                                            <img src="/assets/images/hero/hero-1.png" alt="seafood" className="object-contain p-1 w-full h-full" />
-                                        </div> */}
                                         <FadingImages
                                             images={item?.menus?.map((menuitem) => menuitem.image).filter((image) => image)}
                                             duration={10000}
@@ -265,14 +289,12 @@ const Menu = ({
     );
 };
 
-
 const FadingImages = ({ images, duration }) => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const touchStartX = useRef(0);
     const touchEndX = useRef(0);
 
     useEffect(() => {
-        console.log({ images });
         const interval = setInterval(() => {
             setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
         }, duration);
