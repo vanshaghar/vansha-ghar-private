@@ -6,6 +6,7 @@ import TestimonialSliderThree from "../src/components/slider/TestimonialSliderTh
 import Layout from "../src/layout/Layout";
 import VideoSection from "../src/components/sections/VideoSection";
 import { VANSHA_GHAR } from "../src/lib/constants/vanshaghar";
+import Image from "next/image";
 const About = () => {
   return (
     <Layout>
@@ -17,23 +18,30 @@ const About = () => {
             <div className="col-lg-6">
               <div className="about-three_image-box text-lg-end mb-20">
                 <div className="row align-items-center">
-                  <div className="col-md-6">
-                    <img
-                      src="/assets/images/about/image-7.jpg"
-                      className="about-img-one mb-30 wow fadeInUp"
+                  <div className="col-md-6 flex items-center justify-center flex-col">
+                    <Image
+                      src="https://spydogenesis.s3.ap-south-1.amazonaws.com/vanshaghar/images/vansha-ghar-building.webp"
+                      className="about-img-one mb-30 max-h-[300px] aspect-[2/3] wow fadeInUp"
                       alt="About Image"
+                      width={200}
+                      height={200}
                     />
-                    <img
-                      src="/assets/images/about/image-8.jpg"
-                      className="about-img-two mb-30 wow fadeInDown"
+                    <Image
+                      src="https://spydogenesis.s3.ap-south-1.amazonaws.com/vanshaghar/thakali.webp"
+                      className="about-img-two aspect-[3/2] max-md:hidden object-cover w-50 h-30 overflow-hidden mb-30 wow fadeInDown"
                       alt="About Image"
+                      width={200}
+                      height={150}
                     />
                   </div>
-                  <div className="col-md-6">
-                    <img
-                      src="/assets/images/about/image-9.jpg"
-                      className="about-img-three mb-30 wow fadeInRight"
+                  <div className="col-md-6 h-full">
+                    <Image
+                      src="https://spydogenesis.s3.ap-south-1.amazonaws.com/vanshaghar/IMG_2352.jpeg"
+                      className="about-img-three mb-10 max-w-[300px] h-full wow fadeInRight"
                       alt="About Image"
+                      width={200}
+                      height={1050}
+                      layout="responsive"
                     />
                   </div>
                 </div>

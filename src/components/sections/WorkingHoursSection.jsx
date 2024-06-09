@@ -2,31 +2,31 @@ import React from 'react';
 const WORKINF_HOURS_DATA = [
     {
         day: "Monday",
-        time: "06am-11pm"
+        time: "08am-12pm"
     },
     {
         day: "Tuesday",
-        time: "06am-11pm"
+        time: "08am-12pm"
     },
     {
         day: "Wednesday",
-        time: "06am-11pm"
+        time: "08am-12pm"
     },
     {
         day: "Thursday",
-        time: "06am-11pm"
+        time: "08am-12pm"
     },
     {
         day: "Friday",
-        time: "06am-11pm"
+        time: "08am-12pm"
     },
     {
         day: "Saturday",
-        time: "06am-11pm"
+        time: "08am-12pm"
     },
     {
         day: "Sunday",
-        time: "06am-11pm"
+        time: "08am-12pm"
     }
 ]
 const WorkingHoursSection = () => {
@@ -47,7 +47,7 @@ const WorkingHoursSection = () => {
               <div className="working-content-box wow fadeInLeft">
                 <div className="section-title section-title-left mb-50">
                   <span className="sub-title">Working hour</span>
-                  <h2>Enjoy Our Foods From 6 Days In a Week</h2>
+                  <h2>Enjoy Our Foods From 7 Days In a Week</h2>
                 </div>
                 {
                     WORKINF_HOURS_DATA.map((item, index) => (

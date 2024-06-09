@@ -1,11 +1,11 @@
 import React from 'react';
-
+import Image from 'next/image';
 const DATA = [
   {
-    partner: "Zomato",
-    image: "https://spydogenesis.s3.ap-south-1.amazonaws.com/vanshaghar/images/Zomato.webp",
-    link: "http://zoma.to/r/18436814",
-    bg: "#E13743"
+    partner: "Smile",
+    image: "https://spydogenesis.s3.ap-south-1.amazonaws.com/vanshaghar/Smiles_logo_EN.svg",
+    link: "https://smilesuae.ae/Smiles-Portal-1.0.0",
+    bg: "#fff"
   },
   {
     partner: "Talabat",
@@ -32,8 +32,8 @@ const ReservationSection = () => {
   };
   return (
     <section
-    id="reservation-section"
-    className="reservation-line-section p-r z-1 pt-130 pb-40">
+      id="reservation-section"
+      className="reservation-line-section p-r z-1 pt-130 pb-40">
       <div className="line-shape line-shape-one">
         <span>
           <img src="/assets/images/shape/line-1.png" alt="Shape" />
@@ -70,10 +70,13 @@ const ReservationSection = () => {
                   className={`flex items-center cursor-pointer relative  justify-center w-full max-w-[250px] h-[100px] rounded-md`}
                   style={{ backgroundColor: DATA[0].bg }}
                 >
-                  <img
+                  <Image
+                    width={250}
+                    height={100}
                     src={DATA[0].image}
                     alt={DATA[0].partner}
-                    className='img-fluid w-full max-h-[100px] h-auto object-contain scale-[1.5] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 '
+                    className='img-fluid w-full max-h-[100px] h-auto object-contain absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 '
+
                   />
                 </button>
                 {/* Talabat */}
@@ -83,7 +86,9 @@ const ReservationSection = () => {
                   className={`flex items-center cursor-pointer relative  justify-center w-full max-w-[250px] h-[100px] rounded-md`}
                   style={{ backgroundColor: DATA[1].bg }}
                 >
-                  <img
+                  <Image
+                    width={250}
+                    height={100}
                     src={DATA[1].image}
                     alt={DATA[1].partner}
                     className='img-fluid w-full max-h-[100px] h-auto object-contain  absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 '
@@ -96,7 +101,9 @@ const ReservationSection = () => {
                   className={`flex items-center cursor-pointer relative  justify-center w-full max-w-[250px] h-[100px] rounded-md`}
                   style={{ backgroundColor: DATA[2].bg }}
                 >
-                  <img
+                  <Image
+                    width={250}
+                    height={100}
                     src={DATA[2].image}
                     alt={DATA[2].partner}
                     className='img-fluid w-full max-h-[100px] h-auto object-contain p-4 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 '
@@ -109,7 +116,9 @@ const ReservationSection = () => {
                   className={`flex items-center cursor-pointer relative  justify-center w-full max-w-[250px] h-[100px] rounded-md`}
                   style={{ backgroundColor: DATA[3].bg }}
                 >
-                  <img
+                  <Image
+                    width={250}
+                    height={100}
                     src={DATA[3].image}
                     alt={DATA[3].partner}
                     className='img-fluid w-full max-h-[100px] h-auto object-contain p-3 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 '

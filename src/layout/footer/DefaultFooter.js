@@ -63,13 +63,16 @@ const DefaultFooter = () => {
                 <p className="mb-4">
                   <Link legacyBehavior href="/menu">Menu</Link>
                 </p>
+                <p className="mb-4">
+                  <Link legacyBehavior href="/menu-old">Menu(Old)</Link>
+                </p>
                 <p className="mb-4"><Link legacyBehavior href="/blog">Blog</Link></p>
                 <p className="mb-4"><Link legacyBehavior href="/contact">Contact</Link></p>
               </div>
               {/* Useful links section */}
               <div>
                 <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-center">Order Online</h6>
-                <p className="mb-4"><Link legacyBehavior href="http://zoma.to/r/18436814">Zomato</Link></p>
+                <p className="mb-4"><Link legacyBehavior href="https://smilesuae.ae/Smiles-Portal-1.0.0/#/">Smiles</Link></p>
                 <p className="mb-4"><Link legacyBehavior href="https://www.talabat.com/uae/vansha-ghar-restaurant">Talabat</Link></p>
                 <p className="mb-4"><Link legacyBehavior href="https://food.noon.com/outlet/VNSHGHDUO6">Noon Foods</Link></p>
                 <p className="mb-4"><Link legacyBehavior href="https://deliveroo.ae/menu/abu-dhabi/al-danah/vansha-ghar-restaurant">Delivero</Link></p>

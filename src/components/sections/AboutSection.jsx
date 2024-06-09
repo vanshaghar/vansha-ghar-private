@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-
+import Image from 'next/image';
 const ABOUT_IMAGE = {
   image1: "https://spydogenesis.s3.ap-south-1.amazonaws.com/vanshaghar/images/vansha-ghar-building.webp",
   image2: "https://spydogenesis.s3.ap-south-1.amazonaws.com/vanshaghar/images/tandoori-momo.jpg"
@@ -35,20 +35,22 @@ const AboutSection = () => {
             {/*=== About Content Box ===*/}
             <div className="about-image-gallery ml-lg-40">
               <div className="row">
-                <div className="col-md-6">
-                  <img
+                <div className="col-md-12">
+                  <Image
                     src={ABOUT_IMAGE.image1}
-                    className="mb-40 wow md:max-h-[500px] md:max-w-[380px] w-full h-full object-cover fadeInDown"
+                    className="mb-40 wow md:max-h-[500px] md:max-w-[750px] w-full h-full object-cover fadeInDown"
                     alt="About Image"
+                    width={500}
+                    height={380}
                   />
                 </div>
-                <div className="col-md-6 hidden md:block">
+                {/* <div className="col-md-6 hidden md:block">
                   <img
                     src={ABOUT_IMAGE.image2}
                     className="mb-40 wow max-h-[500px] max-w-[380px] fadeInDown"
                     alt="About Image"
                   />
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

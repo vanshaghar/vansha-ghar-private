@@ -195,16 +195,15 @@ const BlogStandard = ({
                   className="sidebar-widget contact-info-widget mb-40 border-0 p-0 bg_cover wow fadeInUp"
                   style={{
                     backgroundImage:
-                      "url(assets/images/blog/contact-info-bg.jpg)",
+                      "url(https://spydogenesis.s3.ap-south-1.amazonaws.com/vanshaghar/vansha-ghar-items.jpeg)",
                   }}
                 >
                   <div className="contact-info-content">
                     <h3 className="title">Need Quality and fresh Foods</h3>
                     <p>
-                      Sit amet consectetur adipiscing elit proin pretium cursus
-                      lectus
+                      We are committed to providing you with the freshest and highest quality food.
                     </p>
-                    <a href="#" className="main-btn btn-white">
+                    <a href="/contact" className="main-btn btn-white">
                       Contact us
                     </a>
                   </div>

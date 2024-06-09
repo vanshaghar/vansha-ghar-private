@@ -37,9 +37,7 @@ const VideoSection = () => {
                 <h2>How Can We Made Foods For Customers</h2>
               </div>
               <p>
-                Sit amet consectetur adipiscing elitsue risus mauris quam
-                adipiscing phasellus aene ante orcirat scelerisque enim ut
-                nulla
+                Dive into our collection of videos where we explore the vibrant world of family heritage, cultural traditions, and ancestral stories.
               </p>
               <ul className="check-style-one mb-30">
                 <li>Best Way to Serve Our Foods</li>

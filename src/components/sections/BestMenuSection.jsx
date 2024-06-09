@@ -24,7 +24,7 @@ const BestMenuSection = ({
             {/*=== Menu Image Box ===*/}
             <div className="menu-image-box mb-50 pl-lg-30 wow fadeInLeft">
               <Image
-                src="https://spydogenesis.s3.ap-south-1.amazonaws.com/vanshaghar/images/butter-chicken.jpg"
+                src="https://spydogenesis.s3.ap-south-1.amazonaws.com/vanshaghar/vanshaghar-items.webp"
                 alt="Menu Image"
                 className='img-fluid w-full object-cover lg:max-w-[500px]'
                 width={500}

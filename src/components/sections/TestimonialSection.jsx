@@ -82,13 +82,13 @@ const TestimonialSection = () => {
           <img src="/assets/images/shape/line-1.png" alt="Shape" />
         </span>
       </div>
-      <div className="max-w-[600px] absolute !right-[-100px] bottom-0">
+      {/* <div className="max-w-[600px] absolute !right-[-100px] bottom-0">
         <span>
           <img src="https://spydogenesis.s3.ap-south-1.amazonaws.com/vanshaghar/images/paratha.webp"
             className='img-fluid w-full'
             alt="" />
         </span>
-      </div>
+      </div> */}
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-xl-6 col-lg-10">
@@ -103,17 +103,17 @@ const TestimonialSection = () => {
               {/*=== Testimonial Image Box ===*/}
               <div className="testimonial-one_image-box p-r wow fadeInLeft">
                 <img
-                  src="/assets/images/testimonial/thumb-1.jpg"
+                  src="https://avatar.iran.liara.run/public/1"
                   className="testimonial-img-one"
                   alt="Testimonial Image"
                 />
                 <img
-                  src="/assets/images/testimonial/thumb-2.jpg"
-                  className="testimonial-img-two"
+                  src="https://avatar.iran.liara.run/public/34"
+                  className="testimonial-img-two w-20"
                   alt="Testimonial Image"
                 />
                 <img
-                  src="/assets/images/testimonial/thumb-3.jpg"
+                  src="https://avatar.iran.liara.run/public/6"
                   className="testimonial-img-three"
                   alt="Testimonial Image"
                 />

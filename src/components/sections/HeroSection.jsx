@@ -26,9 +26,9 @@ const HeroSection = ({
                             <div
                                 key={slide.id}
                                 className="row relative w-full !flex lg:!flex-nowrap justify-center lg:justify-start flex-wrap align-items-center">
-                                <div className="order-lg-1 bottom-0 bg-white flex lg:block items-center justify-center absolute h-68 py-4 lg:py-0 lg:!bg-transparent lg:relative order-2 w-full lg:max-w-[40vw]">
+                                <div className="order-lg-1 bottom-[-10px] bg-white flex lg:block items-center justify-center absolute h-68 py-4 lg:py-0 lg:!bg-transparent lg:relative order-2 w-full lg:max-w-[40vw]">
                                     <div className="hero-content mx-2 lg:mb-40 pr-lg-40">
-                                        <h1 className="wow fadeInUp">{slide.name}</h1>
+                                        <h1 className="wow fadeInUp max-md:line-clamp-1">{slide.name}</h1>
                                         <p className="wow fadeInDown line-clamp-3 h-[5em]">
                                             {slide.description}
                                         </p>
