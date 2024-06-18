@@ -24,7 +24,7 @@ const Popup = ({
 
     return (
         <div className="fixed bg-black bg-opacity-25 z-[1000] inset-0 flex items-center justify-center ">
-            <div className="bg-white rounded-lg shadow-lg my-5 p-3 max-w-2xl mx-2 sm:mx-auto relative">
+            <div className="bg-white rounded-lg shadow-lg my-10 p-3 m-4 sm:mx-auto relative">
                 <button
                     className="absolute -top-2 -right-2 text-gray-700"
                     onClick={handleClose}
@@ -38,12 +38,12 @@ const Popup = ({
                     popup.link ?
                         <a href={popup?.link}
                             onClick={handleClose}
-                            className='w-full h-auto rounded-md'
+                            className='w-full block h-auto rounded-md'
                         >
                             <Image
                                 width={500}
                                 height={500}
-                                src={popup?.banner?.url} alt={popup?.banner?.alt} className="w-full h-auto rounded-md" />
+                                src={popup?.banner?.url} alt={popup?.banner?.alt} className="w-full max-h-[800px] h-auto rounded-md" />
                         </a>
                         : <Image width={500}
                             height={500} src={popup?.banner?.url} alt={popup?.banner?.alt} className="w-full h-auto rounded-md" />
