@@ -1,8 +1,47 @@
+import { useState } from "react";
 import PageBanner from "../src/components/PageBanner";
 import Skyline from "../src/components/Skyline";
 import Layout from "../src/layout/Layout";
 import { VANSHA_GHAR } from "../src/lib/constants/vanshaghar";
+
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch("/api/email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+      if (response.ok) {
+        setFormData({
+          name: "",
+          phone: "",
+          email: "",
+          message: "",
+        });
+      } else {
+        alert("Failed to send message. Please try again.");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      alert("An error occurred. Please try again later.");
+    }
+  };
+
   return (
     <Layout>
       <PageBanner pageName={"Contact Us"} title="Contact" />
@@ -85,10 +124,7 @@ const Contact = () => {
             </div>
             <div className="row">
               <div className="col-lg-12">
-                <form
-                  onSubmit={(e) => e.preventDefault()}
-                  className="contact-form-one"
-                >
+                <form onSubmit={handleSubmit} className="contact-form-one">
                   <div className="row justify-content-center">
                     <div className="col-lg-6">
                       <div className="form_group">
@@ -97,7 +133,9 @@ const Contact = () => {
                           className="form_control"
                           placeholder="Name"
                           name="name"
-                          required=""
+                          value={formData.name}
+                          onChange={handleChange}
+                          required
                         />
                       </div>
                     </div>
@@ -108,7 +146,9 @@ const Contact = () => {
                           className="form_control"
                           placeholder="Phone Number"
                           name="phone"
-                          required=""
+                          value={formData.phone}
+                          onChange={handleChange}
+                          required
                         />
                       </div>
                     </div>
@@ -119,7 +159,9 @@ const Contact = () => {
                           className="form_control"
                           placeholder="Email Address"
                           name="email"
-                          required=""
+                          value={formData.email}
+                          onChange={handleChange}
+                          required
                         />
                       </div>
                     </div>
@@ -129,13 +171,14 @@ const Contact = () => {
                           className="form_control"
                           placeholder="Write Message"
                           name="message"
-                          defaultValue={""}
+                          value={formData.message}
+                          onChange={handleChange}
                         />
                       </div>
                     </div>
                     <div className="col-lg-6">
                       <div className="form_group">
-                        <button className="main-btn btn-red">
+                        <button type="submit" className="main-btn btn-red">
                           Send us message
                           <i className="far fa-arrow-right" />
                         </button>
@@ -150,11 +193,12 @@ const Contact = () => {
       </section>
       <section className="contact-page-map wow fadeInUp">
         <div className="map-box">
-          <iframe src="https://maps.google.com/maps?q=vansha%20ghar%20restaurant%20abu%20dhabi&t=&z=13&ie=UTF8&iwloc=&output=embed" loading="lazy" allowFullScreen />
+          <iframe src="https://maps.google.com/maps?q=vansha%20ghar%20restaurant%20abu%20dhabi&t=&z=13&ie=UTF8&iwloc=&output=embed" loading="lazy" allowFullScreen title="Vansha Ghar Restaurant Location" />
         </div>
       </section>
       <Skyline />
     </Layout>
   );
 };
+
 export default Contact;

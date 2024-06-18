@@ -2,17 +2,19 @@ import EmailTemplate from '../../src/components/EmailTemplate';
 import { Resend } from 'resend';
 import { render } from '@react-email/render';
 
-const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY);
+const api = process.env.NEXT_PUBLIC_RESEND_API_KEY;
+const email = process.env.NEXT_PUBLIC_RESEND_EMAIL;
+const resend = new Resend(api);
 
 export default async (req, res) => {
   const { name, phone, email, message } = req.body;
-  
+
   const emailHtml = render(EmailTemplate({ name, phone, email, message }));
-  
+
   const { data, error } = await resend.emails.send({
     from: 'VanshaGhar <info@vanshaghar.com>',
-    to: ['blackkspydo@gmail.com'],
-    subject: 'Hello world',
+    to: [email],
+    subject: 'Contact Form Submission',
     html: emailHtml,
   });
 
