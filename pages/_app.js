@@ -67,7 +67,11 @@ const App = ({ Component, pageProps }) => {
         {/*====== Style css ======*/}
         <link rel="stylesheet" href="/assets/css/style.css" />
       </Head>
-      {loader && <PreLoader />} {!loader && <Component {...pageProps} />}
+      <div
+        className={`transition-opacity ${loader ? "opacity-0" : "opacity-100"}`}
+      >
+        <Component {...pageProps} />
+      </div>
       <FloatingWhatsApp
         phoneNumber="+971524729073"
         accountName="Vansha Ghar"

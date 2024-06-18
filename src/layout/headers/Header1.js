@@ -1,7 +1,13 @@
 import Link from "next/link";
 import Menus from "./Menus";
 import { VANSHA_GHAR } from "../../lib/constants/vanshaghar";
+import Image from "next/image";
 const Header1 = () => {
+  const handleButtonClick = (e) => {
+    e.preventDefault();
+    // href="/#reservation-section" this need to go to home page regardless of the page
+    window.location.href = "/#reservation-section";
+  };
   return (
     <header className="header-area mt-10 w-full  transparent-header">
       <div className="top-bar hidden">
@@ -56,12 +62,14 @@ const Header1 = () => {
             {/*=== Site Branding ===*/}
             <div className="site-branding">
               <Link legacyBehavior href="/">
-                <a className="brand-logo">
-                  <img
+                <div className="p-3">
+                  <Image
                     src="/assets/images/logo/logo-white.svg"
                     alt="Site Logo"
+                    width={200}
+                    height={200}
                   />
-                </a>
+                </div>
               </Link>
             </div>
             {/*=== Nav Inner Menu ===*/}
@@ -103,12 +111,14 @@ const Header1 = () => {
                   </span>
                 </div>
                 <div className="menu-button d-xl-block d-none">
-                  <a href="#reservation-section">
-                    <a className="main-btn btn-red">
+                  <button
+                    onClick={handleButtonClick}
+                  >
+                    <span className="main-btn btn-red">
                       Order Food Online
                       <i className="fas fa-long-arrow-right" />
-                    </a>
-                  </a>
+                    </span>
+                  </button>
                 </div>
                 <div className="navbar-toggler">
                   <span />
