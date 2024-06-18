@@ -11,6 +11,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-email/components": "0.0.19",
     "isotope-layout": "^3.0.6",
     "lucide-react": "^0.379.0",
     "next": "13.1.0",
@@ -22,6 +23,7 @@
     "react-nice-select": "^1.0.4",
     "react-slick": "^0.29.0",
     "react-visibility-sensor": "^5.1.1",
+    "resend": "^3.3.0",
     "sassy-datepicker": "^0.10.2",
     "slick-carousel": "^1.8.1",
     "wowjs": "^1.1.3"
