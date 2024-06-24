@@ -50,7 +50,7 @@ const HeroSection = ({
                                     {/*=== Hero Image ===*/}
                                     <div className="hero-image-box rounded-full overflow-hidden aspect-square max-w-[600px] mb-40 wow fadeInRight">
                                         <Image src={slide?.image?.url}
-                                            className="h-full md:block hidden w-full object-cover"
+                                            className="h-full min-h-[300px] md:block hidden w-full object-cover"
                                             alt="Hero Image"
                                             width={500}
                                             height={500}
