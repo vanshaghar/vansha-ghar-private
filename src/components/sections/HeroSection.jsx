@@ -46,7 +46,7 @@ const HeroSection = ({
                                         </div>
                                     </div>
                                 </div>
-                                <div className=" order-lg-2 flex-shrink-0 w-full  lg:block flex items-center justify-center order-1">
+                                <div className=" order-lg-2 !p-4 flex-shrink-0 w-full  lg:block flex items-center justify-center order-1">
                                     {/*=== Hero Image ===*/}
                                     <div className="hero-image-box rounded-full overflow-hidden aspect-square max-w-[600px] mb-40 wow fadeInRight">
                                         <Image src={slide?.image?.url}
