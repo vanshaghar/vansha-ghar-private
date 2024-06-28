@@ -23,13 +23,13 @@ const Popup = ({
     if (!popup) return null;
 
     return (
-        <div className="fixed bg-black bg-opacity-25 z-[1000] inset-0 flex items-center justify-center ">
-            <div className="bg-white rounded-lg shadow-lg my-10 p-3 m-4 sm:mx-auto relative">
+        <div className="fixed bg-black bg-opacity-25 z-[1000] inset-0 flex items-center justify-center">
+            <div className="bg-white rounded-lg shadow-lg my-10 p-3 m-4 sm:mx-auto relative w-full sm:w-auto">
                 <button
                     className="absolute -top-2 -right-2 text-gray-700"
                     onClick={handleClose}
                 >
-                    <span className="text-red-700 bg-white w-10 flex items-center justify-center h-10 rounded-full cursor-pointer text-4xl" >
+                    <span className="text-red-700 bg-white w-10 flex items-center justify-center h-10 rounded-full cursor-pointer text-4xl">
                         <CloseButton />
                     </span>
                 </button>
@@ -43,10 +43,10 @@ const Popup = ({
                             <Image
                                 width={500}
                                 height={500}
-                                src={popup?.banner?.url} alt={popup?.banner?.alt} className="w-full max-h-[800px] h-auto rounded-md" />
+                                src={popup?.banner?.url} alt={popup?.banner?.alt} className="w-full max-h-[80vh] h-auto rounded-md" />
                         </a>
                         : <Image width={500}
-                            height={500} src={popup?.banner?.url} alt={popup?.banner?.alt} className="w-full h-auto rounded-md" />
+                            height={500} src={popup?.banner?.url} alt={popup?.banner?.alt} className="w-full max-w-full h-auto rounded-md" />
                 }
             </div>
         </div>
