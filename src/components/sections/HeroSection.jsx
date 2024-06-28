@@ -10,7 +10,7 @@ const HeroSection = ({
 
     return (
         <section className="banner-one p-r z-1">
-            <div className="container">
+            <div className="max-w-[1690px] px-[min(20px,5vw)] mx-auto">
                 <div className="shape line-shape-one">
                     <span>
                         <img src="/assets/images/shape/line-1.png" alt="shape" />
@@ -18,15 +18,15 @@ const HeroSection = ({
                 </div>
                 <Slider
                     {...heroSliderOne}
-                    className="container hero-slider-one p-r z-1"
+                    className="max-w-[1690px]  hero-slider-one p-r z-1"
                 >
 
                     {
                         data.map((slide) => (
                             <div
                                 key={slide.id}
-                                className="row relative w-full !flex lg:!flex-nowrap justify-center lg:justify-start flex-wrap align-items-center">
-                                <div className="order-lg-1 bottom-[-10px] bg-white flex lg:block items-center justify-center absolute h-68 py-4 lg:py-0 lg:!bg-transparent lg:relative order-2 w-full lg:max-w-[40vw]">
+                                className="row relative w-full max-w-[1690px] !flex lg:!flex-nowrap justify-center lg:justify-between flex-wrap align-items-center">
+                                <div className="order-lg-1 bottom-[-10px] bg-white flex lg:block items-center justify-center absolute h-68 py-4 lg:py-0 lg:!bg-transparent lg:relative order-2 nax-lg:w-[calc(100%-2rem)] w-full lg:max-w-[40vw]">
                                     <div className="hero-content mx-2 lg:mb-40 pr-lg-40">
                                         <h1 className="wow fadeInUp max-md:line-clamp-1">{slide.name}</h1>
                                         <p className="wow fadeInDown line-clamp-3 h-[5em]">
@@ -46,9 +46,9 @@ const HeroSection = ({
                                         </div>
                                     </div>
                                 </div>
-                                <div className=" order-lg-2 !p-4 flex-shrink-0 w-full  lg:block flex items-center justify-center order-1">
+                                <div className="!p-4 flex-shrink-0 w-full  lg:block flex items-center justify-center order-1">
                                     {/*=== Hero Image ===*/}
-                                    <div className="hero-image-box rounded-full overflow-hidden aspect-square max-w-[600px] mb-40 wow fadeInRight">
+                                    <div className=" rounded-full overflow-hidden aspect-square max-w-[600px] mb-40 wow fadeInRight">
                                         <Image src={slide?.image?.url}
                                             className="h-full min-h-[300px] md:block hidden w-full object-cover"
                                             alt="Hero Image"
