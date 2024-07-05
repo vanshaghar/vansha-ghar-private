@@ -1317,7 +1317,7 @@ button {
 /*====== Banner One ======*/
 .banner-one {
   background-color: #E8F4EA;
-  padding: 240px 0 60px;
+  padding: 200px 0 60px;
 }
 @media (max-width: 767px) {
   .banner-one {
@@ -1347,7 +1347,7 @@ button {
 .banner-one .shape.line-shape-one {
   top: 60%;
   transform: translateY(-60%);
-  right: 155px;
+  right: 0;
 }
 .banner-one .shape.line-shape-one img {
   opacity: 1;

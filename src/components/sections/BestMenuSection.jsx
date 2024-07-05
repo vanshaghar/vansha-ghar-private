@@ -6,7 +6,6 @@ import Image from 'next/image';
 const BestMenuSection = ({
   menus
 }) => {
-
   return (
     <section className="menu-section pb-80">
       <div className="container">
@@ -45,11 +44,10 @@ const BestMenuSection = ({
                       />
                     </div>
                     <div className="text">
-                      <h3 className="item-title-price">
+                      <h3 className="item-title-price font-bold flex justify-between">
                         <Link legacyBehavior href="#">
                           <a className="item-title">{item.name}</a>
                         </Link>
-                        <span className="dot-border" />
                         <span className="price"> {" "}{item.price} AED</span>
                       </h3>
                       <p

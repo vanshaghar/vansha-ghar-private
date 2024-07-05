@@ -48,7 +48,7 @@ const HeroSection = ({
                                 </div>
                                 <div className="!p-4 lg:block flex items-center justify-center order-1">
                                     {/*=== Hero Image ===*/}
-                                    <div className=" rounded-full overflow-hidden aspect-square max-w-[600px] mb-40 fadeInRight">
+                                    <div className=" rounded-full overflow-hidden aspect-square max-w-[500px] mb-40 fadeInRight">
                                         <Image src={slide?.image?.url}
                                             className="h-full min-h-[300px] md:block hidden w-full object-cover"
                                             alt="Hero Image"

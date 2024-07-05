@@ -75,7 +75,7 @@ const DefaultFooter = () => {
                 <p className="mb-4"><Link legacyBehavior href="https://smilesuae.ae/Smiles-Portal-1.0.0/#/">Smiles</Link></p>
                 <p className="mb-4"><Link legacyBehavior href="https://www.talabat.com/uae/vansha-ghar-restaurant">Talabat</Link></p>
                 <p className="mb-4"><Link legacyBehavior href="https://food.noon.com/outlet/VNSHGHDUO6">Noon Foods</Link></p>
-                <p className="mb-4"><Link legacyBehavior href="https://deliveroo.ae/menu/abu-dhabi/al-danah/vansha-ghar-restaurant">Delivero</Link></p>
+                <p className="mb-4"><Link legacyBehavior href="https://deliveroo.ae/menu/abu-dhabi/al-danah/vansha-ghar-restaurant">Deliveroo</Link></p>
               </div>
             </div>
             <div>
