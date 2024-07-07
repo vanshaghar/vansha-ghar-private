@@ -26,7 +26,7 @@ const HeroSection = ({
                             <div
                                 key={slide.id}
                                 className="relative w-full max-w-[1690px] !flex lg:!flex-nowrap justify-center lg:justify-between flex-wrap align-items-center">
-                                <div className="order-lg-1 bottom-[-10px] bg-white flex lg:block items-center justify-center absolute h-68 py-4 lg:py-0 lg:!bg-transparent lg:relative order-2 nax-lg:w-[calc(100%-2rem)] w-full lg:max-w-[40vw]">
+                                <div className="order-lg-1 bottom-[10px] bg-white flex lg:block items-center justify-center h-68 py-4 lg:py-0 lg:!bg-transparent lg:relative order-2 nax-lg:w-[calc(100%-2rem)] w-full lg:max-w-[40vw]">
                                     <div className="hero-content mx-2 lg:mb-40 pr-lg-40">
                                         <h1 className="wow fadeInUp max-md:line-clamp-1">{slide.name}</h1>
                                         <p className="wow fadeInDown line-clamp-3 h-[5em]">
@@ -46,9 +46,9 @@ const HeroSection = ({
                                         </div>
                                     </div>
                                 </div>
-                                <div className="!p-4 lg:block flex items-center justify-center order-1">
+                                <div className="md:p-4 lg:block  lg:order-1">
                                     {/*=== Hero Image ===*/}
-                                    <div className=" rounded-full overflow-hidden aspect-square max-w-[500px] mb-40 fadeInRight">
+                                    <div className=" lg:rounded-full overflow-hidden aspect-square max-w-full lg:max-w-[500px] lg:mb-40 fadeInRight">
                                         <Image src={slide?.image?.url}
                                             className="h-full min-h-[300px] md:block hidden w-full object-cover"
                                             alt="Hero Image"
