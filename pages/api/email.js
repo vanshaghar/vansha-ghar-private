@@ -3,7 +3,7 @@ import { Resend } from 'resend';
 import { render } from '@react-email/render';
 
 const api = process.env.NEXT_PUBLIC_RESEND_API_KEY;
-const email = process.env.NEXT_PUBLIC_RESEND_EMAIL;
+const resend_email = process.env.NEXT_PUBLIC_RESEND_EMAIL;
 const resend = new Resend(api);
 
 export default async (req, res) => {
@@ -13,7 +13,7 @@ export default async (req, res) => {
 
   const { data, error } = await resend.emails.send({
     from: 'VanshaGhar <info@vanshaghar.com>',
-    to: [email],
+    to: [resend_email],
     subject: 'Contact Form Submission',
     html: emailHtml,
   });
