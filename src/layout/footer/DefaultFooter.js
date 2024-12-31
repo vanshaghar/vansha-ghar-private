@@ -64,7 +64,7 @@ const DefaultFooter = () => {
                   <Link legacyBehavior href="/menu">Menu</Link>
                 </p>
                 <p className="mb-4">
-                  <Link legacyBehavior href="/menu-old">Menu(Old)</Link>
+                  <Link legacyBehavior href="/table-menu">Table Menu</Link>
                 </p>
                 <p className="mb-4"><Link legacyBehavior href="/blog">Blog</Link></p>
                 <p className="mb-4"><Link legacyBehavior href="/contact">Contact</Link></p>

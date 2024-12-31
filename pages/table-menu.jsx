@@ -5,18 +5,16 @@ import Layout from "../src/layout/Layout";
 import ScrollToTop from "../src/components/ScrollToTop";
 
 const MENU = [
-    "/assets/menu/1.jpg",
-    "/assets/menu/2.jpg",
-    "/assets/menu/3.jpg",
-    "/assets/menu/4.jpg",
-    "/assets/menu/5.jpg",
-    "/assets/menu/6.jpg",
-    "/assets/menu/7.jpg",
-    "/assets/menu/8.jpg",
-    "/assets/menu/9.jpg",
-    "/assets/menu/10.jpg",
-    "/assets/menu/11.jpg",
-    "/assets/menu/12.jpg",
+    "/assets/menu/1.webp",
+    "/assets/menu/2.webp",
+    "/assets/menu/3.webp",
+    "/assets/menu/4.webp",
+    "/assets/menu/5.webp",
+    "/assets/menu/6.webp",
+    "/assets/menu/7.webp",
+    "/assets/menu/8.webp",
+    "/assets/menu/9.webp",
+    "/assets/menu/10.webp",
 ];
 export async function getStaticProps() {
     const graphqlEndpoint = process.env.NEXT_PUBLIC_API_URL;
@@ -58,7 +56,7 @@ export async function getStaticProps() {
 const MenuOld = ({ menu }) => {
     return (
         <Layout>
-            <PageBanner pageName={"OldMenu"} title="Old Menu" />
+            <PageBanner pageName={"Table Menu"} title="Table Menu" />
             <ScrollToTop />
             <div className="pt-[200px] md:pt-[300px]">
                 <div className="max-w-7xl mx-auto p-5">
