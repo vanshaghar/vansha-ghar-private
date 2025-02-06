@@ -2,8 +2,8 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 const ABOUT_IMAGE = {
-  image1: "https://spydogenesis.s3.ap-south-1.amazonaws.com/vanshaghar/images/vansha-ghar-building.webp",
-  image2: "https://spydogenesis.s3.ap-south-1.amazonaws.com/vanshaghar/images/tandoori-momo.jpg"
+  image1: "https://vanshaghar.s3.me-central-1.amazonaws.com/payload/images/vansha-ghar-building.webp",
+  image2: "https://vanshaghar.s3.me-central-1.amazonaws.com/payload/images/tandoori-momo.jpg"
 };
 
 const AboutSection = () => {

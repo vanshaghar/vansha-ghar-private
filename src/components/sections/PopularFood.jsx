@@ -5,32 +5,32 @@ const POPULAR_FOODS_MENU = [
   {
     title: 'Momo',
     link: '/menu#steam-momo',
-    icon: 'https://spydogenesis.s3.ap-south-1.amazonaws.com/vanshaghar/icons/momo.webp'
+    icon: 'https://vanshaghar.s3.me-central-1.amazonaws.com/payload/icons/momo.webp'
   },
   {
     title: 'Thakali',
     link: '/menu#thakali-set',
-    icon: 'https://spydogenesis.s3.ap-south-1.amazonaws.com/vanshaghar/icons/thakali-set.webp'
+    icon: 'https://vanshaghar.s3.me-central-1.amazonaws.com/payload/icons/thakali-set.webp'
   },
   {
     title: 'Thupka',
     link: '/menu#chowmein/thukpa',
-    icon: 'https://spydogenesis.s3.ap-south-1.amazonaws.com/vanshaghar/icons/thupka.webp'
+    icon: 'https://vanshaghar.s3.me-central-1.amazonaws.com/payload/icons/thupka.webp'
   },
   {
     title: 'Sekuwa',
     link: '/menu#sekuwa',
-    icon: 'https://spydogenesis.s3.ap-south-1.amazonaws.com/vanshaghar/icons/sekuwa.webp'
+    icon: 'https://vanshaghar.s3.me-central-1.amazonaws.com/payload/icons/sekuwa.webp'
   },
   {
     title: 'Khaja Set',
     link: '/menu#khaja-set',
-    icon: 'https://spydogenesis.s3.ap-south-1.amazonaws.com/vanshaghar/icons/khaja-set.webp'
+    icon: 'https://vanshaghar.s3.me-central-1.amazonaws.com/payload/icons/khaja-set.webp'
   },
   {
     title: 'Chef\'s Special',
     link: `/menu#chef-s-special`,
-    icon: 'https://spydogenesis.s3.ap-south-1.amazonaws.com/vanshaghar/icons/chef-special.webp'
+    icon: 'https://vanshaghar.s3.me-central-1.amazonaws.com/payload/icons/chef-special.webp'
   }
 ];
 const SPECIAL_FOODS_MENU_LINK = '/menu?category=special';

@@ -84,7 +84,7 @@ const TestimonialSection = () => {
       </div>
       {/* <div className="max-w-[600px] absolute !right-[-100px] bottom-0">
         <span>
-          <img src="https://spydogenesis.s3.ap-south-1.amazonaws.com/vanshaghar/images/paratha.webp"
+          <img src="https://vanshaghar.s3.me-central-1.amazonaws.com/payload/images/paratha.webp"
             className='img-fluid w-full'
             alt="" />
         </span>

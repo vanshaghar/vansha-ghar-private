@@ -195,7 +195,7 @@ const BlogStandard = ({
                   className="sidebar-widget contact-info-widget mb-40 border-0 p-0 bg_cover wow fadeInUp"
                   style={{
                     backgroundImage:
-                      "url(https://spydogenesis.s3.ap-south-1.amazonaws.com/vanshaghar/vansha-ghar-items.jpeg)",
+                      "url(https://vanshaghar.s3.me-central-1.amazonaws.com/payload/vansha-ghar-items.jpeg)",
                   }}
                 >
                   <div className="contact-info-content">

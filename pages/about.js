@@ -20,14 +20,14 @@ const About = () => {
                 <div className="row align-items-center">
                   <div className="col-md-6 flex items-center justify-center flex-col">
                     <Image
-                      src="https://spydogenesis.s3.ap-south-1.amazonaws.com/vanshaghar/images/vansha-ghar-building.webp"
+                      src="https://vanshaghar.s3.me-central-1.amazonaws.com/payload/images/vansha-ghar-building.webp"
                       className="about-img-one mb-30 max-h-[600px] object-cover aspect-[2/3] wow fadeInUp"
                       alt="About Image"
                       width={300}
                       height={600}
                     />
                     {/* <Image
-                      src="https://spydogenesis.s3.ap-south-1.amazonaws.com/vanshaghar/thakali.webp"
+                      src="https://vanshaghar.s3.me-central-1.amazonaws.com/payload/thakali.webp"
                       className="about-img-two aspect-[3/2] max-md:hidden object-cover w-50 h-30 overflow-hidden mb-30 wow fadeInDown"
                       alt="About Image"
                       width={200}
@@ -36,7 +36,7 @@ const About = () => {
                   </div>
                   <div className="col-md-6 h-full">
                     <Image
-                      src="https://spydogenesis.s3.ap-south-1.amazonaws.com/vanshaghar/IMG_2352.jpeg"
+                      src="https://vanshaghar.s3.me-central-1.amazonaws.com/payload/IMG_2352.jpeg"
                       className="about-img-three mb-10 max-w-[300px] h-full wow fadeInRight"
                       alt="About Image"
                       width={200}

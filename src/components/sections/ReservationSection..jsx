@@ -3,23 +3,23 @@ import Image from 'next/image';
 const DATA = [
   {
     partner: "Smile",
-    image: "https://spydogenesis.s3.ap-south-1.amazonaws.com/vanshaghar/Smiles_logo_EN.svg",
+    image: "https://vanshaghar.s3.me-central-1.amazonaws.com/payload/Smiles_logo_EN.svg",
     link: "https://smilesuae.ae/Smiles-Portal-1.0.0",
     bg: "#fff"
   },
   {
     partner: "Talabat",
-    image: "https://spydogenesis.s3.ap-south-1.amazonaws.com/vanshaghar/images/Talabat-logo.webp",
+    image: "https://vanshaghar.s3.me-central-1.amazonaws.com/payload/images/Talabat-logo.webp",
     link: "https://www.talabat.com/uae/vansha-ghar-restaurant",
     bg: "#F67005"
   }, {
     partner: "Noon",
-    image: "https://spydogenesis.s3.ap-south-1.amazonaws.com/vanshaghar/images/noon-food-logo.webp",
+    image: "https://vanshaghar.s3.me-central-1.amazonaws.com/payload/images/noon-food-logo.webp",
     link: "https://food.noon.com/outlet/VNSHGHDUO6",
     bg: "#FCE719"
   }, {
     partner: "Deliveroo",
-    image: "https://spydogenesis.s3.ap-south-1.amazonaws.com/vanshaghar/images/Deliveroo_Logo.webp",
+    image: "https://vanshaghar.s3.me-central-1.amazonaws.com/payload/images/Deliveroo_Logo.webp",
     link: "https://deliveroo.ae/menu/abu-dhabi/al-danah/vansha-ghar-restaurant",
     bg: "#41CBBB"
   }

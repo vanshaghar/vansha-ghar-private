@@ -15,7 +15,7 @@ const VideoSection = () => {
             {/*=== Video Image Box ===*/}
             <div className="video-one_image-box mb-50 p-r z-1 wow fadeInLeft">
               <img
-                src="https://spydogenesis.s3.ap-south-1.amazonaws.com/vanshaghar/images/vansha-ghar.webp"
+                src="https://vanshaghar.s3.me-central-1.amazonaws.com/payload/images/vansha-ghar.webp"
                 alt="Video Image"
               />
               {/* <div className="image-overlay" /> */}
